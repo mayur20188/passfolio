@@ -229,3 +229,9 @@ $('.password-show-icon').on('click', function(){
 		$(this).parent().find('.input-password').attr('type', 'password')
 	}
 });
+
+
+
+$(".btn-click").click(function(){
+	$(this).toggleClass('active');
+})

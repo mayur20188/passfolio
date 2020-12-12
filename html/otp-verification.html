@@ -11,7 +11,7 @@
         <meta name="author" content="">
         <meta name="description" content="">
         <meta name="keywords" content="">
-        <title>Sign In</title>
+        <title>OTP Verification</title>
         <!-- ================= Favicon ================== -->
         <link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicon/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
@@ -33,7 +33,7 @@
                             <p class="font-open fw-500">Don’t have an account? <a href="login.html" class="fw-600">Get Started</a></p>
                         </div>
                     </div>
-                    <form action="index.html" method="GET">
+                    <form action="javascript:void(0);" method="GET">
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="auth-head-list">
@@ -45,13 +45,31 @@
                                 <div class="form-group">
                                     <label class="form-label">OTP Verification</label>
                                     <p class="form-label-small">Enter verification code sent to **********77.</p>
-                                    <input type="text" class="form-control">
-                                    <p class="form-message">Didn’t receive a message?<a href="javascript:void(0);">Resend code</a></p>
+                                    <div class="right-input-icon">
+                                        <input type="text" class="form-control">
+                                        <div class="right-icon">
+                                            <div class="spinner-border icon-load text-primary" role="status"></div>
+                                            <!-- <i class="fa fa-times-circle text-danger"></i> -->
+                                            <!-- <i class="fa fa-check-circle text-success"></i> -->
+                                        </div>
+                                    </div>
+                                    <p class="form-message">Didn’t receive a message?<a href="javascript:void(0);" class="link">Resend code</a>or<a href="javascript:void(0);" class="link">Send code via email</a></p>
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <input type="submit" name="" class="login-btn mt-btn btn-block btn-disabled" value="Next">
+                                    <button type="submit" class="login-btn btn-click btn-block btn-disabled">
+                                        <span class="btn-text">Continue to Passfolio dashboard</span>
+                                        <span class="btn-loader"><div class="spinner-border text-white" role="status"></div></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group text-center">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="stayradio">
+                                        <label class="custom-control-label" for="stayradio">Stay logged in for 30 days</label>
+                                    </div>
                                 </div>
                             </div>
                         </div>
