@@ -65,6 +65,16 @@ $(document).ready(function() {
 		});
 	}
 
+
+
+	if ($('.mCustomScrollbar').length) {
+		$(".mCustomScrollbar").mCustomScrollbar({
+			theme:"minimal-dark",
+			mouseWheelPixels: 150,
+			scrollInertia: 1000
+		});
+	}
+
 	// --------date-picker-------
 	if ($('#postdate').length) {
 		$('#postdate').datepicker({

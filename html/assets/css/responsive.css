@@ -68,6 +68,9 @@
     .page-ath-content {
         width: 65%;
     }
+    .notification-dropdown .dropdown-menu{
+        left: 0;
+    }
 }
 
 
@@ -199,12 +202,22 @@
     .alert-sections{
         left: 10px;
     }
+
+    .notification-dropdown .dropdown-menu{
+        left: initial;
+        right: -250px;
+    }
 }
 
 
 @media (max-width: 479.98px) {
 	.page-ath-form{
         padding: 30px 20px;
+    }
+    .notification-dropdown .dropdown-menu {
+        left: initial;
+        right: -150px;
+        min-width: 300px;
     }
 }
 
