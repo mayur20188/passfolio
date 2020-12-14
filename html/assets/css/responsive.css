@@ -88,6 +88,9 @@
     .page-ath-gfx:before {
         background-position: center bottom 65%;
     }
+    .alert{
+        min-width: inherit;
+    }
 }
 
 @media (max-width: 767.98px) {
@@ -192,6 +195,9 @@
 
     .page-footer{
         flex-direction: column;
+    }
+    .alert-sections{
+        left: 10px;
     }
 }
 
