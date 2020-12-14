@@ -1,3 +1,7 @@
+.bg-green {
+    background-color: #01A39D !important;
+}
+
 .wrapper{
     height: 100%;
     overflow: hidden;
@@ -86,17 +90,17 @@
     min-width: 32px;
     margin-right: 20px;
 }
-.top-bar-left p{
+.top-bar-left > p{
     font-weight: 500;
     font-size: 17px;
     line-height: 22px;
     color: #102A5E;
     margin-bottom: 0;
 }
-.top-bar-icon li{
+.top-bar-icon > li{
     margin-left: 15px;
 }
-.top-bar-icon li a{
+.top-bar-icon > li > a{
     font-size: 18px;
 }
 .navbar-custom li{
@@ -138,6 +142,87 @@
     background: rgb(0 0 0 / 10%);
     display: none;
 }
+.content-title-part{
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 40px 0;
+}
+.dropdown-menu-small{
+    min-width: inherit;
+}
+.content-title-part h1{
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 22px;
+    color: #102A5E;
+}
+.small-dropdown-btn{
+    padding: 8px 10px 7px 20px;
+    border: 2px solid #01A39D;
+    border-radius: 7px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    display: block;
+    color: #ffffff;
+    font-weight: 500;
+    background-color: #01A39D;
+}
+.small-dropdown-btn i{
+    font-weight: 500;
+    font-size: 20px;
+    margin-left: 30px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.small-dropdown-btn:hover{
+    color: #01A39D;
+    background-color: transparent;
+}
+.d-card-col{
+    background: #FFFFFF;
+    border-radius: 14px;
+    padding: 18px 30px;
+}
+.d-card-col h2{
+    font-size: 34px;
+    font-weight: 500;
+    color: #102A5E;
+    margin-bottom: 10px;
+}
+.d-card-col-content{
+
+}
+.d-card-col-content h5{
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 500;
+    margin-bottom: 0;
+    color: #01A39D;
+}
+.d-card-col-content span{
+    font-size: 14px;
+    line-height: 18px;
+    color: #102A5E;
+    opacity: 0.8;
+}
+.submissions-part{
+    padding: 30px;
+    padding-bottom: 10px;
+}
+.submissions-part h5{
+    font-size: 15px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+.submissions-part p{
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(255, 255, 255, 0.7);
+}
+.submissions-part p span{
+    color: rgba(255, 255, 255, 1);
+}
 
 @media (max-width: 991.98px) {
     .sidenav-container{
@@ -153,6 +238,7 @@
     .navleft-menu li a span, .sidebar-opened .logo-text {
         display: block;
     }
+    .top-bar-left p{display: none;}
 }
 
 

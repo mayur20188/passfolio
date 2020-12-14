@@ -24,32 +24,6 @@ $(document).ready(function() {
 		$('.overlay_bg').hide();
 		$('.toggle-menu-btn').removeClass('open');
 	});
-
-	$('.sidenav-container').on('mouseenter',function () { 
-		$('.wrapper').addClass('sidebar-opened');
-	}).on('mouseleave',function () { 
-		$('.wrapper').removeClass('sidebar-opened');
-		$("#sidebarmenu .collapse").collapse('hide');
-	});
-
-
-	// $(window).on('load', function() {
-	// 	if (window.matchMedia('(min-width: 992px)').matches) {
-	// 		console.log('load-if');
-	// 		$('.wrapper').addClass("on_hove_sidebar");
-	// 	}else{
-	// 		$('.wrapper').removeClass("on_hove_sidebar");
-	// 		console.log('load-else');
-	// 	}
-	// }).on('resize', function(){
-	// 	if (window.matchMedia('(min-width: 992px)').matches) {
-	// 		console.log('resize');
-	// 		$('.wrapper').addClass("on_hove_sidebar");
-	// 	}else{
-	// 		$('.wrapper').removeClass("on_hove_sidebar");
-	// 	}
-	// });
-
 	
 });
 
@@ -269,23 +243,3 @@ function isMobile() {//for detect mobile browser
 	   isIOS = (/iphone|ipad|ipod/gi).test(appsVersion);
    return (isAndroid || isIOS || /(Opera Mini)|Kindle|webOS|BlackBerry|(Opera Mobi)|(Windows Phone)|IEMobile/i.test(navigator.userAgent));
 }
-
-
-
-$('.password-show-icon').on('click', function(){
-	if(!$(this).hasClass('active')){
-		$(this).addClass('active');
-		$(this).find('i').removeClass('fa-eye').addClass('fa-eye-slash');
-		$(this).parent().find('.input-password').attr('type', 'text');
-	}else{
-		$(this).removeClass('active');
-		$(this).find('i').removeClass('fa-eye-slash').addClass('fa-eye');
-		$(this).parent().find('.input-password').attr('type', 'password')
-	}
-});
-
-
-
-$(".btn-click").click(function(){
-	$(this).toggleClass('active');
-})

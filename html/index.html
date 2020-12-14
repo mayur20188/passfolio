@@ -103,12 +103,17 @@
                         <a href="index.html" class="icon-logo-left d-lg-none">
                             <img src="assets/images/icon-logo.svg" class="img-fluid" alt="">
                         </a>
+                        <!-- <a href="javascript:;" class="toggle-menu-btn mr-2">
+                            <img src="assets/images/icons/menu.svg" class="img-fluid" alt="menu">
+                        </a> -->
                         <p>Australian Government Services</p>
                         <ul class="top-bar-icon d-flex list-inline">
-                            <li class="d-lg-none"><a href="javascript:;" class="toggle-menu-btn">
-                                <!-- <i class="feather icon-menu"></i> -->
-                                <img src="assets/images/icons/menu.svg" class="img-fluid" alt="menu">
-                            </a></li>
+                            <li>
+                                <a href="javascript:;" class="toggle-menu-btn">
+                                    <!-- <i class="feather icon-menu"></i> -->
+                                    <img src="assets/images/icons/menu.svg" class="img-fluid" alt="menu">
+                                </a>
+                            </li>
                             <li><a href="javascript:;"><img src="assets/images/icons/notification.svg" class="img-fluid" alt="notification"></a></li>
                         </ul>
                     </div>
@@ -136,6 +141,78 @@
                         </div>
                     </div>
                 </div>
+                <div class="content-title-part d-flex justify-content-between">
+                    <h1>Dashboard</h1>
+                    <div class="content-title-right">
+                        <div class="dropdown">
+                            <a href="javascript:void(0);" class="dropdown-toggle small-dropdown-btn" id="d-addNew" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-display="static">
+                                <!-- <img src="assets/images/avatar.jpg" class="img-fluid" alt="avatar"> -->
+                                <span>Add New</span>
+                                <i class="feather icon-chevron-down"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-small dropdown-menu-right" aria-labelledby="d-addNew">
+                                <div class="profile-dropdown-link">
+                                    <a href="javascript:;">Profile</a>
+                                    <a href="javascript:;">Change Password</a>
+                                    <a href="javascript:;">Sign Out</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-card-part">
+                    <div class="row">
+                        <div class="col-lg-6 col-xl-7 mb-lg-0 mb-4">
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <div class="d-card-col">
+                                        <h2>924</h2>
+                                        <div class="d-card-col-content">
+                                            <h5>Applications</h5>
+                                            <span>Pending</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <div class="d-card-col">
+                                        <h2>763</h2>
+                                        <div class="d-card-col-content">
+                                            <h5>Signed Documents</h5>
+                                            <span>Pending</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-md-0 mb-4">
+                                    <div class="d-card-col">
+                                        <h2>4</h2>
+                                        <div class="d-card-col-content">
+                                            <h5>Forms</h5>
+                                            <span>Review</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-md-0 mb-4">
+                                    <div class="d-card-col">
+                                        <h2>234</h2>
+                                        <div class="d-card-col-content">
+                                            <h5>Online</h5>
+                                            <span>Users</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-xl-5">
+                            <div class="d-card-col bg-green h-100 p-0">
+                                <div class="submissions-part">
+                                    <h5>Submissions</h5>
+                                    <p>This week <span>254,983</span></p>
+                                </div>
+                                <div id="submissionsChart"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="overlay_bg"></div>
         </div>
@@ -148,6 +225,110 @@
         <script src="assets/js/select2.full.min.js"></script>
         <script src="assets/js/jquery.mCustomScrollbar.js"></script>
         <script src="assets/js/bootstrap-datepicker.min.js"></script>
+
+        <script src="assets/js/apexcharts.min.js"></script>
         <script src="assets/js/custom.js"></script>
+        <script>
+            if ($('#submissionsChart').length) {
+                var salesoptions = {
+                    series: [{
+                        name: "USD",
+                        data: [5, 50, 10, 50, 15, 50]
+                    }],
+                    colors: ['#01A39D'],
+                    chart: {
+                        height: 150,
+                        type: 'line',
+                        foreColor: "#fff",
+                        zoom: {
+                            enabled: false
+                        },
+                        toolbar: {
+                            show: false,
+                        },
+                        dropShadow: {
+                            enabled: true,
+                            top: 5,
+                            left: 0,
+                            blur: 5,
+                            color: 'rgba(0,0,0,0.12)',
+                            opacity: 1
+                        }
+                    },
+                    dataLabels: {
+                        enabled: false
+                    },
+                    stroke: {
+                        curve: 'smooth',
+                        colors: '#ffffff',
+                        width: 7,
+                    },
+                    title: {
+                        show: false,
+                    },
+                    grid: {
+                        show: false,
+                        position: 'back',
+                        borderColor: '#3e3b5f',
+                        row: {
+                            colors: ['#3e3b5f', '#3e3b5f'],
+                            opacity: 0
+                        },
+                    },
+                    markers: {
+                        size: 0,
+                        strokeWidth: 6,
+                        // colors: '#ffffff',
+                        colors: '#1C85E8',
+                        hover: {
+                            size: 8,
+                            sizeOffset: 3
+                        }
+                    },
+                    tooltip: {
+                        theme: "dark",
+                        style: {
+                            fontSize: '15px',
+                            fontFamily: 'Rubik, sans-serif'
+                        },
+                    },
+                    xaxis: {
+                        categories: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
+                        labels: {
+                            style: {
+                                colors:'#ffffff',
+                                fontSize: '15px',
+                                fontFamily: 'Rubik, sans-serif',
+                                fontWeight: 500,
+                                cssClass: 'apexcharts-xaxis-label',
+                            },
+                        },
+                        axisBorder: {
+                            show: false,
+                        },
+                        axisTicks: {
+                            show: false,
+                        }
+                    },
+                    yaxis: {
+                        show: false,
+                        labels: {
+                            style: {
+                                colors:'#ffffff',
+                                fontSize: '12px',
+                                fontFamily: 'Rubik, sans-serif',
+                                fontWeight: 500,
+                                cssClass: 'apexcharts-yaxis-label',
+                            },
+                            formatter: function(val, index) {
+                                return "Submissions" + val.toFixed(2);
+                            }
+                        },
+                    }
+                };
+                var todaysSales = new ApexCharts(document.querySelector("#submissionsChart"), salesoptions);
+                todaysSales.render();
+            }
+        </script>
     </body>
 </html>
