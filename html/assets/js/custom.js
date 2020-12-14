@@ -6,14 +6,51 @@ $(window).on('load', function() {
     }, 1000);
 });
 
-
-
 // --------header--------------
 $(document).ready(function() {
-	$('.toggle-btn, .close-menu, .menu-overlay-bg').on('click', function(){
-		$('.menu-part').toggleClass('active');
-		$('.menu-overlay-bg').toggleClass('active');
+	$('.toggle-menu-btn').on('click', function(){
+		if($(this).hasClass('open')){
+			$('.wrapper').removeClass("sidebar-opened");
+			$('.overlay_bg').hide();
+			$(this).removeClass('open');
+		}else{
+			$(this).addClass('open');
+			$('.wrapper').addClass("sidebar-opened");
+			$('.overlay_bg').show();
+		}
 	});
+	$('.overlay_bg').on('click', function(){
+		$('.wrapper').removeClass("sidebar-opened");
+		$('.overlay_bg').hide();
+		$('.toggle-menu-btn').removeClass('open');
+	});
+
+	$('.sidenav-container').on('mouseenter',function () { 
+		$('.wrapper').addClass('sidebar-opened');
+	}).on('mouseleave',function () { 
+		$('.wrapper').removeClass('sidebar-opened');
+		$("#sidebarmenu .collapse").collapse('hide');
+	});
+
+
+	// $(window).on('load', function() {
+	// 	if (window.matchMedia('(min-width: 992px)').matches) {
+	// 		console.log('load-if');
+	// 		$('.wrapper').addClass("on_hove_sidebar");
+	// 	}else{
+	// 		$('.wrapper').removeClass("on_hove_sidebar");
+	// 		console.log('load-else');
+	// 	}
+	// }).on('resize', function(){
+	// 	if (window.matchMedia('(min-width: 992px)').matches) {
+	// 		console.log('resize');
+	// 		$('.wrapper').addClass("on_hove_sidebar");
+	// 	}else{
+	// 		$('.wrapper').removeClass("on_hove_sidebar");
+	// 	}
+	// });
+
+	
 });
 
 
@@ -46,13 +83,12 @@ $(document).ready(function() {
 	});
 
 	// --------mCustomScrollbar-------
-	if ($('.scrollbar-custom').length) {
-		$(".scrollbar-custom").mCustomScrollbar({
+	if ($('.scroll-sidebar').length) {
+		$(".scroll-sidebar").mCustomScrollbar({
 			theme:"minimal-dark",
 			mouseWheelPixels: 300,
 			scrollInertia: 300
 		});
-		//$(".chat-scrollbar").mCustomScrollbar("scrollTo", "bottom");
 	}
 
 	// --------date-picker-------
@@ -66,6 +102,24 @@ $(document).ready(function() {
 			}
 		});
 	}
+
+	$('.password-show-icon').on('click', function(){
+		if(!$(this).hasClass('active')){
+			$(this).addClass('active');
+			$(this).find('i').removeClass('fa-eye').addClass('fa-eye-slash');
+			$(this).parent().find('.input-password').attr('type', 'text');
+		}else{
+			$(this).removeClass('active');
+			$(this).find('i').removeClass('fa-eye-slash').addClass('fa-eye');
+			$(this).parent().find('.input-password').attr('type', 'password')
+		}
+	});
+	
+	
+	
+	$(".btn-click").click(function(){
+		$(this).toggleClass('active');
+	});
 
 	// --------------add active class-on another-page move----------
 	// Get current path and find target link
