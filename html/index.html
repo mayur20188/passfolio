@@ -103,12 +103,9 @@
                         <a href="index.html" class="icon-logo-left d-lg-none">
                             <img src="assets/images/icon-logo.svg" class="img-fluid" alt="">
                         </a>
-                        <!-- <a href="javascript:;" class="toggle-menu-btn mr-2">
-                            <img src="assets/images/icons/menu.svg" class="img-fluid" alt="menu">
-                        </a> -->
                         <p>Australian Government Services</p>
                         <ul class="top-bar-icon d-flex list-inline">
-                            <li>
+                            <li class="d-md-none">
                                 <a href="javascript:;" class="toggle-menu-btn">
                                     <!-- <i class="feather icon-menu"></i> -->
                                     <img src="assets/images/icons/menu.svg" class="img-fluid" alt="menu">
@@ -286,16 +283,19 @@
                     <div class="top-bar-right">
                         <div class="navbar-custom">
                             <ul>
-                                <li class="d-none"><a href="javascript:;"><img src="assets/images/icons/notification.svg" class="img-fluid" alt="notification"></a></li>
                                 <li class="dropdown header-profile-dropdown">
                                     <a href="javascript:void(0);" class="dropdown-toggle userProfile" id="userProfileDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-display="static">
                                         <img src="assets/images/avatar.jpg" class="img-fluid" alt="avatar">
-                                        <div>
+                                        <div class="userProfile-info">
                                             <span>Hello, <i>Pixie</i></span>
                                             <p>Administrator</p>
                                         </div>
                                     </a>
                                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userProfileDropdown">
+                                        <div class="userProfile-info">
+                                            <span>Hello, <i>Pixie</i></span>
+                                            <p>Administrator</p>
+                                        </div>
                                         <div class="profile-dropdown-link">
                                             <a class="" href="javascript:;"><i class="feather icon-user profile-icon"></i> Profile</a>
                                             <a class="" href="javascript:;"><i class="feather icon-lock profile-icon"></i> Change Password</a>
@@ -399,7 +399,7 @@
             var salesoptions = {
                     series: [{
                         name: "Submissions",
-                        data: [15,20,15,8,8,18,10],
+                        data: [15,50,20,60,15,60,10],
                     }],
                     colors: ['#ffffff'],
                     chart: {

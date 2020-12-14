@@ -4,7 +4,6 @@
 
 .wrapper{
     height: 100%;
-    overflow: hidden;
     width: 100%;
 }
 .sidenav-container {
@@ -17,6 +16,16 @@
     top: 0;
     transition: all 0.4s ease;
 }
+.sidenav-container.sidenav-hover{
+    width: 240px;
+}
+.sidenav-container.sidenav-hover .logo-text{
+    display: inline-block;
+}
+.sidenav-container.sidenav-hover .navleft-menu li a span {
+    display: inline-block;
+}
+
 .scroll-sidebar {
     height: calc(100vh - 97px);
     overflow-x: hidden;
@@ -25,9 +34,12 @@
     position: relative;
     margin-left: 75px;
     padding: 30px;
+    padding-bottom: 0;
+    padding-top: 75px;
     min-height: 100vh;
     background: #F6F7FB;
     transition: all 0.4s ease;
+    overflow-x: hidden;
 }
 .sidenav-logo{
     padding: 25px 22px 20px 22px;
@@ -85,7 +97,25 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: 0.4s;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 75px;
+    right: 0;
+    padding: 30px;
+    padding-bottom: 0;
 }
+.sidebar-opened .top-bar{
+left: 240px;
+}
+.top-bar.is-stuck-top{
+    background-color: #fff;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    box-shadow: 15px 0px 15px rgb(0 0 0 / 20%);
+} 
+
 .icon-logo-left img{
     min-width: 32px;
     margin-right: 20px;
@@ -195,6 +225,9 @@
     color: #102A5E;
     opacity: 0.8;
 }
+div#submissionsChart {
+    overflow: hidden;
+}
 .submissions-part{
     padding: 30px;
     padding-bottom: 10px;
@@ -213,6 +246,18 @@
     color: rgba(255, 255, 255, 1);
 }
 
+.userProfile-info span i {
+    display: inline-block;
+    width: 35px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-style: normal;
+    margin-left: 0;
+    color: #01a39d;
+    vertical-align: middle;
+}
+
 @media (max-width: 991.98px) {
     .sidenav-container{
         left: -240px;
@@ -220,6 +265,10 @@
     }
     .content-page, .sidebar-opened .content-page{
         margin-left: 0;
+    }
+    .content-page, .top-bar{
+        padding-left: 15px;
+        padding-right: 15px;
     }
     .sidebar-opened .sidenav-container{
         left: 0;
@@ -238,13 +287,72 @@
         display: none;
         transition: 0.4s;
     }
+    .top-bar{
+        left: 0;
+    }
+    .sidebar-opened .top-bar {
+        left: 0;
+    }
 }
 @media (max-width: 767.98px) {
-    .top-bar-left > p{display: none;}
+    .top-bar-left > p{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        padding: 6px 10px;
+        background: #fff;
+        box-shadow: 0 0 3px rgb(0 0 0 / 27%);
+        font-size: 15px;
+    }
+    .content-page{
+        padding-top: 70px;
+    }
+    .top-bar-icon > li{
+        margin-left: 0;
+        margin-right: 15px;
+    }
+    .top-bar {
+        padding-top: 45px;
+    }
+}
+
+@media (max-width: 479.98px) {
+    .userProfile .userProfile-info{
+        display: none;
+    }
+    .userProfile img{
+        margin-right: 0;
+    }
+    .userProfile-info {
+        padding: 6px 15px;
+        background: #f5f5f5;
+    }
+    .userProfile-info p {
+        color: #8A93A6;
+        margin-bottom: 0;
+    }
+    .userProfile-info span{
+        font-size: 17px;
+        font-weight: 500;
+        display: flex;
+        color: #455882
+    }
+    .userProfile-info span i {
+        width: 120px;
+        margin-left: 4px;
+
+    }
 }
 
 
 
 @media (min-width: 992px) {
-    
+    /* .sidenav-hover .navleft-menu li ul.submenu{
+        display: block ;
+    }
+    .navleft-menu li ul.submenu{
+        display: none;
+    } */
 }
