@@ -26,6 +26,7 @@
     display: inline-block;
 }
 
+
 .scroll-sidebar {
     height: calc(100vh - 97px);
     overflow-x: hidden;
@@ -318,7 +319,8 @@ div#submissionsChart {
     }
 }
 
-@media (max-width: 479.98px) {
+
+@media (max-width: 575.98px){
     .userProfile .userProfile-info{
         display: none;
     }
@@ -327,14 +329,17 @@ div#submissionsChart {
     }
     .userProfile-info {
         padding: 6px 15px;
-        background: #f5f5f5;
+        /*background: #f5f5f5;*/
+        margin-top: 8px;
+        border-bottom: 1px solid #dadee6;
     }
     .userProfile-info p {
         color: #8A93A6;
         margin-bottom: 0;
+        font-size: 14px;
     }
     .userProfile-info span{
-        font-size: 17px;
+        font-size: 15px;
         font-weight: 500;
         display: flex;
         color: #455882
@@ -346,6 +351,10 @@ div#submissionsChart {
     }
 }
 
+@media (max-width: 479.98px) {
+
+}
+
 
 
 @media (min-width: 992px) {
@@ -355,4 +364,7 @@ div#submissionsChart {
     .navleft-menu li ul.submenu{
         display: none;
     } */
+    .sidebar-mini .navleft-menu ul li ul{
+        display: none;
+    }
 }

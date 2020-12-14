@@ -174,7 +174,14 @@
     .auth-head-list h1{
         font-size: 28px;
     }
-
+    .dataTables_wrapper .bottom{
+        flex-direction: column;
+        min-width: 400px;
+        align-items: flex-start;
+    }
+    .dataTables_wrapper .dataTables_paginate{
+        margin-bottom: 20px;
+    }
 
 }
 
@@ -207,6 +214,14 @@
         left: initial;
         right: -250px;
     }
+    .serach-store-box.active{
+        top: 40px;
+        width: 245px;
+    }
+    .serach-store-box{
+        top: 20px;
+        width: 245px;
+    }
 }
 
 
@@ -216,7 +231,7 @@
     }
     .notification-dropdown .dropdown-menu {
         left: initial;
-        right: -150px;
+        right: -183px;
         min-width: 300px;
     }
 }
