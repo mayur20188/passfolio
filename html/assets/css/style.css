@@ -544,4 +544,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    border:2px solid #F6F7FB;
+}
+.staff-radio-box .staff-radio:checked + .staff-label-box{
+    border:2px solid #1C85E8;   
 }
