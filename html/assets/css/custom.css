@@ -178,6 +178,7 @@ left: 240px;
     font-size: 17px;
     line-height: 22px;
     color: #102A5E;
+    margin: 4px 0;
 }
 .small-dropdown-btn{
     padding: 8px 10px 7px 20px;
@@ -283,6 +284,7 @@ div#submissionsChart {
 }
 .user-recent-left{
     display: flex;
+    margin-right: 20px;
 }
 .user-recent-avatar{
     min-width: 40px;
@@ -317,6 +319,7 @@ div#submissionsChart {
     font-size: 14px;
     color: #8A93A6;
     margin-top: 5px;
+    white-space: nowrap;
 }
 .plan-name{
     display: block;
@@ -444,10 +447,7 @@ div#submissionsChart {
 }
 
 @media (max-width: 479.98px) {
-    .content-title-part{
-        flex-direction: column;
-        align-items: flex-start;
-    }
+
 }
 
 @media (max-width: 399.98px){
