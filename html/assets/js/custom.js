@@ -1,8 +1,8 @@
 // --------preloader--------------
 $(window).on('load', function() {
-	setTimeout(function() {
-        $('.preloader').slideUp('slow');
-      	$('.cube-wrapper').fadeOut();
+	setTimeout(() => {
+		$('.loader-icon').addClass('animate__backOutDown');
+		$('.preloader').fadeOut('slow');
 	}, 1000);
 	TopbarStuck();
 });
