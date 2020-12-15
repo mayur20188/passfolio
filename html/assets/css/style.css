@@ -797,6 +797,7 @@ table.table-style.dataTable.display tbody tr:hover{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 30px;
 }
 
 .dataTables_wrapper .dataTables_paginate{
@@ -811,6 +812,9 @@ table.table-style.dataTable.display tbody tr:hover{
 }
 
 /*--------------*/
+.serach-filter {
+    position: relative;
+}
 .serach-store-box.active {
     visibility: visible;
     opacity: 1;
@@ -826,8 +830,8 @@ table.table-style.dataTable.display tbody tr:hover{
     background-color: #fff;
     padding: 4px;
     width: 0px;
-    right: 2px;
-    top: -2px;
+    right: -13px;
+    top: -12px;
     box-shadow: 0px 2px 4px rgba(0,0,0,0.16);
     border-radius: 3px;
     visibility: hidden;
