@@ -109,7 +109,7 @@ h3, .h3{
 
 .site-map-links li a:hover,
 .site-map-links li a:focus{
-    background-color: #00ae86;
+    background-color: #01A39D;
     color: #fff;
 }
 
@@ -120,7 +120,7 @@ h3, .h3{
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #00ae86;
+    background-color: #01A39D;
     z-index: 999999;
 }.cube-folding {
     width: 50px;
@@ -559,23 +559,38 @@ select{
 .bg-blue.bg-blue-disabled:hover{
     background-color: #8db0fc;
 }
+.text-orange{
+    color: #01A39D !important;
+}
 .bg-green{
-    background-color: #00AE86;
+    background-color: #01A39D !important;
     color: #ffffff;
 }
 .bg-green:hover{
-    background-color: #088457;
+    background-color: #088457 !important;
     color: #ffffff;
 }
 .bg-green-disabled{
     opacity: 0.4;
 }
 .bg-green.bg-green-disabled:hover{
-    background-color: #00AE86;
+    background-color: #01A39D;
 }
 .bg-gradient{
-    background: linear-gradient(267.76deg, #006AFA -7.48%, #00AE86 96.45%);
+    background: linear-gradient(267.76deg, #006AFA -7.48%, #01A39D 96.45%);
     color: #fff;
+}
+.text-orange{
+    color: #F27327 !important;
+}
+.bg-orange{
+    background-color: #F27327 !important;
+}
+.bg-light-orange{
+    background-color: rgb(255 134 62 / 20%) !important;
+}
+.bg-light-green{
+    background-color: rgb(1 163 157 / 20%) !important;
 }
 .btn-default .fa-long-arrow-alt-right{
     position: relative;
@@ -605,7 +620,7 @@ select{
     color: #727272;
 }
 .text-green-color{
-    color: #00AE86;
+    color: #01A39D;
 }
 .alert-sections {
     position: fixed;
