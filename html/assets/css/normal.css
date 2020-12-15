@@ -16,7 +16,6 @@ body {
     font-size: 16px;
     color: #4F4F4F;
     font-weight: normal;
-    background-color: #FFFEFB;
 }
 *{
     outline: none;
@@ -174,6 +173,7 @@ h3, .h3{
 .btn-loader .spinner-border {
     width: 18px;
     height: 18px;
+    color: #fff;
 }
 .text-grey {
     color: #8A93A6!important;
@@ -263,6 +263,7 @@ h3, .h3{
 }
 .form-control{
     border:2px solid #F6F7FB;
+    color: #445882;
     height: auto;
     padding: 12px 20px;
     border-radius: 7px;
@@ -781,10 +782,10 @@ select{
     border-color: #1C85E8;
 }
 .modal-backdrop{
-    background: rgba(5, 27, 49, 1);
+    background: #102a5e;
 }
 .modal-backdrop.show{
-    opacity: 0.8;
+    opacity: 0.6;
 }
 
 .card-number-input{
@@ -837,7 +838,7 @@ select{
     background-color: #fff;
 }
 .select2-container--default .select2-selection--single .select2-selection__rendered{
-    color: #757575;
+    color: #445882;
     line-height: 48px;
     padding-right: 40px;
     font-size: 15px;
@@ -981,10 +982,15 @@ select{
 
 
 .select2-container--default .select2-selection--multiple{
-    border: 1px solid #C8C8C8;
+    background-color: #F6F7FB;
+    border: 2px solid #F6F7FB;
     min-height: 50px;
     border-radius: 6px;
     position: relative;
+}
+.select2-container--default.select2-container--focus .select2-selection--multiple{
+    border: 2px solid #1c85e8;
+    background-color: #fff;
 }
 .select2-container--default .select2-selection--multiple .select2-selection__rendered{
     color: #757575;
@@ -1010,9 +1016,19 @@ select{
     right: 15px;
     top: 24px;
 }
-.select2-container--default.select2-container--focus .select2-selection--multiple{
-    border: 1px solid #C8C8C8;
-    
+.dark-multiple .select2-container--default .select2-selection--multiple .select2-selection__choice{
+    background-color: #1C85E8;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    border: none;
+}
+.light-multiple .select2-container--default .select2-selection--multiple .select2-selection__choice{
+    background-color: #F6F7FB;
+    color: #445882;
+    font-size: 12px;
+    font-weight: 400;
+    border: none;
 }
 .select2-container--default .select2-selection--multiple .select2-selection__rendered li {
     list-style: none;
@@ -1025,7 +1041,6 @@ select{
     width: initial !important;
     padding: 5px !important;
     padding-right: 24px !important;
-    font-size: 13px !important;
 }
 .select2-container--default .select2-search--inline .select2-search__field{
     width: 100% !important;
@@ -1039,13 +1054,20 @@ select{
 
 .select2-container--default .select2-selection--multiple .select2-selection__choice__remove{
     position: absolute;
-    font-size: 22px;
+    font-size: 0px;
     width: 20px;
     height: 20px;
-    top: 1px;
+    top: 5px;
     text-align: center;
     color: #006AFA;
     right: 2px;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove:before {
+    font-family: 'feather';
+    content: "\e8f6";
+    font-size: 13px;
+    color: #fff;
+    font-weight: 400;
 }
 .select2-results__option[aria-selected]{
     position: relative;
@@ -1075,23 +1097,61 @@ select{
     background-color: #445882;
     filter:"alpha(opacity=50)";-ms-filter:"alpha(opacity=50)"
 }
-
-.default-button{
-    background-color: #01A39D;
-    color: #fff;
+.default-outline-btn{
+    background-color: #fff;
+    color: #01A39D;
+    border: 2px solid #01A39D;
     display: inline-block;
-    padding: 12px 32px;
-    border: none;
+    padding: 10px 32px;
     border-radius: 7px;
-    font-size: 17px;
-    font-weight: 500;
+    font-size: 16px;
+    font-weight: 400;
     transition: 0.5s;
     text-align: center;
     text-transform: capitalize;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.5px; 
 }
-
-
+.default-outline-btn:hover{
+    background-color: #01A39D;
+    border: 2px solid #01A39D;
+    color: #fff;
+}
+.default-btn{
+    background-color: #01A39D;
+    border: 2px solid #01A39D;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 32px;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: 400;
+    transition: 0.5s;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 0.5px; 
+}
+.default-btn:hover{
+    background-color: #fff;
+    color: #01A39D;
+}
+.default-btn[disabled],
+.default-outline-btn[disabled]{
+    opacity: 0.6;
+}
+.default-btn[disabled]:hover{
+    background-color: #01A39D;
+    border: 2px solid #01A39D;
+    color: #fff;
+}
+.default-outline-btn[disabled]:hover{
+    background-color: #fff;
+    color: #01A39D;
+    border: 2px solid #01A39D;
+}
+.btn-small {
+    font-size: 14px;
+    padding: 8px 32px;
+}
 
 @media (min-width: 768px){
     .alert-popup{

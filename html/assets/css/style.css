@@ -486,10 +486,10 @@
 }
 .login-btn{
     background-color: #01A39D;
+    border: 2px solid #01A39D;
     color: #fff;
     display: inline-block;
-    padding: 12px 32px;
-    border: none;
+    padding: 10px 32px;
     border-radius: 7px;
     font-size: 16px;
     font-weight: 400;
@@ -498,12 +498,19 @@
     text-transform: capitalize;
     letter-spacing: 0.5px; 
 }
+.login-btn:hover{
+    background-color: #fff;
+    color: #01A39D;
+}
+.login-btn.active:hover .spinner-border{
+    color:  #01A39D;
+}
 .login-btn.btn-disabled{
     opacity: 0.7;
 }
 .cancel-btn{
     display: inline-block;
-    padding: 12px 32px;
+    padding: 8px 18px;
     border: none;
     border-radius: 7px;
     font-size: 16px;
@@ -514,6 +521,9 @@
     letter-spacing: 0.5px; 
     background-color: transparent;
     color: #8A93A6;
+}
+.cancel-btn:hover{
+    color: #01A39D;
 }
 .page-auth-center {
     max-width: 480px;
