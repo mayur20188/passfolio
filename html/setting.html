@@ -11,7 +11,7 @@
         <meta name="author" content="">
         <meta name="description" content="">
         <meta name="keywords" content="">
-        <title>Dashboard</title>
+        <title>Passfolio :: Setting</title>
         <!-- ================= Favicon ================== -->
         <link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicon/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
@@ -48,7 +48,7 @@
                     <div class="navleft-menu">
                         <ul id="sidebarmenu">
                             <li>
-                                <a href="index.html" class="active">
+                                <a href="index.html">
                                     <img src="assets/images/icons/home.svg" alt="Dashboard">
                                     <span class="left-menu-title">Dashboard</span>
                                 </a>
@@ -97,7 +97,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="setting.html">
+                                <a href="setting.html" class="active">
                                     <img src="assets/images/icons/settings.svg" alt="">
                                     <span class="left-menu-title">Settings</span>
                                 </a>
@@ -316,87 +316,26 @@
                         </div>
                     </div>
                 </div>
-                <div class="content-title-part d-flex justify-content-between">
-                    <h1>Dashboard</h1>
-                    <div class="content-title-right">
-                        <div class="dropdown">
-                            <a href="javascript:void(0);" class="dropdown-toggle small-dropdown-btn" id="d-addNew" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-display="static">
-                                <span>Add New</span>
-                                <i class="feather icon-chevron-down"></i>
-                            </a>
-                            <div class="dropdown-menu dropdown-medium dropdown-menu-right" aria-labelledby="d-addNew">
-                                <div class="actions-links-data">
-                                    <ul>
-                                        <li><a href="javascript:void(0);">Import data</a></li>
-                                        <li><a href="javascript:void(0);">Download data</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div class="main-content-area">
                     <div class="row">
-                        <div class="col-md-12 mb-4">
-                            <div class="d-card-part">
-                                <div class="row">
-                                    <div class="col-lg-6 col-xl-7 mb-lg-0 mb-4">
-                                        <div class="row">
-                                            <div class="col-sm-6 mb-4">
-                                                <div class="d-card-col">
-                                                    <h2>924</h2>
-                                                    <div class="d-card-col-content">
-                                                        <h5>Applications</h5>
-                                                        <span>Pending</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6 mb-4">
-                                                <div class="d-card-col">
-                                                    <h2>763</h2>
-                                                    <div class="d-card-col-content">
-                                                        <h5>Signed Documents</h5>
-                                                        <span>Pending</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6 mb-sm-0 mb-4">
-                                                <div class="d-card-col">
-                                                    <h2>4</h2>
-                                                    <div class="d-card-col-content">
-                                                        <h5>Forms</h5>
-                                                        <span>Review</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6 mb-sm-0 mb-4">
-                                                <div class="d-card-col">
-                                                    <h2>234</h2>
-                                                    <div class="d-card-col-content">
-                                                        <h5>Online</h5>
-                                                        <span>Users</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-xl-5">
-                                        <div class="d-card-col bg-green h-100 p-0">
-                                            <div class="submissions-part">
-                                                <h5>Submissions</h5>
-                                                <p>This week <span>254,983</span></p>
-                                            </div>
-                                            <div id="submissionsChart"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 col-lg-7 mb-4">
+                        <div class="col-12 mb-4">
                             <div class="card">
                                 <div class="card-body">
+                                    <div class="setting-tab-view">
+                                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" id="pills-setting-tab" data-toggle="pill" href="#pills-setting" role="tab" aria-controls="pills-setting" aria-selected="true">Setting</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" id="pills-plan-tab" data-toggle="pill" href="#pills-plan" role="tab" aria-controls="pills-plan" aria-selected="false">Plan</a>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content" id="pills-tabContent">
+                                            <div class="tab-pane fade show active" id="pills-setting" role="tabpanel" aria-labelledby="pills-setting-tab">setting</div>
+                                            <div class="tab-pane fade" id="pills-plan" role="tabpanel" aria-labelledby="pills-plan-tab">plan</div>
+                                        </div>
+                                    </div>
+
                                     <div class="card-title">
                                         <h1>Recent Activities</h1>
                                         <div class="content-title-right">
@@ -475,76 +414,6 @@
                                                     </div>
                                                 </div>
                                                 <div class="recent-time">2h ago</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-5 mb-4">
-                            <div class="card h-100">
-                                <div class="card-body">
-                                    <div class="card-title">
-                                        <h1>Plan <span class="plan-name">Standard</span></h1>
-                                        <div class="content-title-right">
-                                            <a href="javascript:void(0);" class="view-plan">View Plan</a>
-                                        </div>
-                                    </div>
-                                    <div class="card-content">
-                                        <div class="row">
-                                            <div class="col-sm-6 col-md-12 col-lg-6 mb-4">
-                                                <div class="view-plan-col">
-                                                    <h5>Users</h5>
-                                                    <p><span class="text-orange">950</span> of 999</p>
-                                                    <div class="progress bg-light-orange">
-                                                        <div class="progress-bar bg-orange" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6 col-md-12 col-lg-6 mb-4">
-                                                <div class="view-plan-col">
-                                                    <h5>Applications</h5>
-                                                    <p>350 of 2500</p>
-                                                    <div class="progress bg-light-green">
-                                                        <div class="progress-bar bg-green" role="progressbar" style="width: 10%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6 col-md-12 col-lg-6 mb-4">
-                                                <div class="view-plan-col">
-                                                    <h5>Signed Documents</h5>
-                                                    <p>350 of 2500</p>
-                                                    <div class="progress bg-light-green">
-                                                        <div class="progress-bar bg-green" role="progressbar" style="width: 10%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6 col-md-12 col-lg-6 mb-4">
-                                                <div class="view-plan-col">
-                                                    <h5>Forms</h5>
-                                                    <p>350 of 2500</p>
-                                                    <div class="progress bg-light-green">
-                                                        <div class="progress-bar bg-green" role="progressbar" style="width: 10%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6 col-md-12 col-lg-6 mb-4">
-                                                <div class="view-plan-col">
-                                                    <h5>Documents</h5>
-                                                    <p>350 of 2500</p>
-                                                    <div class="progress bg-light-green">
-                                                        <div class="progress-bar bg-green" role="progressbar" style="width: 10%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6 col-md-12 col-lg-6 mb-4">
-                                                <div class="view-plan-col">
-                                                    <h5>Send Documents</h5>
-                                                    <p>350 of 2500</p>
-                                                    <div class="progress bg-light-green">
-                                                        <div class="progress-bar bg-green" role="progressbar" style="width: 10%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-                                                    </div>
-                                                </div>
                                             </div>
                                         </div>
                                     </div>
