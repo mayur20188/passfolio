@@ -1016,6 +1016,13 @@ select{
     right: 15px;
     top: 24px;
 }
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove:before {
+    font-family: 'feather';
+    content: "\e8f6";
+    font-size: 13px;
+    color: #fff;
+    font-weight: 400;
+}
 .dark-multiple .select2-container--default .select2-selection--multiple .select2-selection__choice{
     background-color: #1C85E8;
     color: #fff;
@@ -1023,12 +1030,19 @@ select{
     font-weight: 400;
     border: none;
 }
+.dark-multiple .select2-container--default .select2-selection--multiple .select2-selection__choice__remove:before{
+    color: #fff;
+}
 .light-multiple .select2-container--default .select2-selection--multiple .select2-selection__choice{
-    background-color: #F6F7FB;
+    background-color: #E3E5EF;
     color: #445882;
     font-size: 12px;
     font-weight: 400;
     border: none;
+}
+.light-multiple .select2-container--default .select2-selection--multiple .select2-selection__choice__remove:before{
+    color: #8A93A6;
+    font-weight: 500;
 }
 .select2-container--default .select2-selection--multiple .select2-selection__rendered li {
     list-style: none;
@@ -1062,13 +1076,7 @@ select{
     color: #006AFA;
     right: 2px;
 }
-.select2-container--default .select2-selection--multiple .select2-selection__choice__remove:before {
-    font-family: 'feather';
-    content: "\e8f6";
-    font-size: 13px;
-    color: #fff;
-    font-weight: 400;
-}
+
 .select2-results__option[aria-selected]{
     position: relative;
 }
