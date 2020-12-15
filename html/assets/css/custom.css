@@ -64,6 +64,7 @@
     font-weight: 500;
     color: #445882;
     line-height: 18px;
+    align-items: center;
 }
 .navleft-menu li a img {
     margin-right: 14px;
@@ -72,6 +73,9 @@
 .navleft-menu li a span{
     display: none;
     margin-left: 14px;
+}
+.navleft-menu li a.active img{
+    filter: invert(54%) sepia(44%) saturate(7009%) hue-rotate(150deg) brightness(84%) contrast(99%);
 }
 .navleft-menu li a.active span{
     color: #01A39D;

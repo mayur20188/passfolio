@@ -28,12 +28,12 @@
         <div class="wrapper">
             <div class="sidenav-container">
                 <div class="sidenav-logo">
-                    <a href="javascript:void(0);">
+                    <a href="index.html">
                         <span class="logo-icon">
                             <img src="assets/images/icon-logo.svg" class="img-fluid" alt="">
                         </span>
                     </a>
-                    <a href="javascript:void(0);">
+                    <a href="index.html">
                         <span class="logo-text">
                             <img src="assets/images/logo-text.svg" class="img-fluid" alt="">
                         </span>
@@ -43,14 +43,14 @@
                     <div class="navleft-menu">
                         <ul id="sidebarmenu">
                             <li>
-                                <a href="javascript:;" class="active">
-                                    <img src="assets/images/icons/home.svg" alt="">
+                                <a href="index.html" class="active">
+                                    <img src="assets/images/icons/home.svg" alt="Dashboard">
                                     <span class="left-menu-title">Dashboard</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="#submissions" data-toggle="collapse" aria-expanded="false">
-                                    <img src="assets/images/icons/message.svg" alt="">
+                                    <img src="assets/images/icons/message.svg" alt="Submissions">
                                     <span class="left-menu-title">Submissions</span>
                                 </a>
                                 <ul class="collapse submenu list-unstyled" id="submissions" data-parent="#sidebarmenu">
@@ -92,7 +92,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="javascript:;">
+                                <a href="setting.html">
                                     <img src="assets/images/icons/settings.svg" alt="">
                                     <span class="left-menu-title">Settings</span>
                                 </a>
@@ -111,7 +111,6 @@
                         <ul class="top-bar-icon d-flex list-inline">
                             <li class="d-lg-none">
                                 <a href="javascript:;" class="toggle-menu-btn">
-                                    <!-- <i class="feather icon-menu"></i> -->
                                     <img src="assets/images/icons/menu.svg" class="img-fluid" alt="menu">
                                 </a>
                             </li>
@@ -317,7 +316,6 @@
                     <div class="content-title-right">
                         <div class="dropdown">
                             <a href="javascript:void(0);" class="dropdown-toggle small-dropdown-btn" id="d-addNew" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-display="static">
-                                <!-- <img src="assets/images/avatar.jpg" class="img-fluid" alt="avatar"> -->
                                 <span>Add New</span>
                                 <i class="feather icon-chevron-down"></i>
                             </a>
@@ -550,8 +548,6 @@
                         </div>
                     </div>
                 </div>
-                
-                
                 <div class="page-footer">
                     <p>© 2020 <a href="javascript:void(0);">Passfolio</a>. All rights reserved. ABN 13 132 738 142</p>
                 </div>
@@ -571,8 +567,7 @@
         <script src="assets/js/apexcharts.min.js"></script>
         <script src="assets/js/custom.js"></script>
         <script>
-            
-            var salesoptions = {
+            var submissionsoptions = {
                     series: [{
                         name: "Submissions",
                         data: [15,50,20,60,15,60,10],
@@ -667,9 +662,8 @@
                         },
                     }
                 };
-                var todaysSales = new ApexCharts(document.querySelector("#submissionsChart"), salesoptions);
+                var todaysSales = new ApexCharts(document.querySelector("#submissionsChart"), submissionsoptions);
                 todaysSales.render();
-
         </script>
     </body>
 </html>
