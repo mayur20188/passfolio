@@ -190,6 +190,8 @@ left: 240px;
     color: #ffffff;
     font-weight: 500;
     background-color: #01A39D;
+    display: flex;
+    justify-content: space-between;
 }
 .small-dropdown-btn i{
     font-weight: 500;
@@ -351,6 +353,86 @@ div#submissionsChart {
 .view-plan-col .progress{
     height: 6px;
 }
+.setting-tab-view .nav-pills {
+    border-bottom: 1px solid #E3E5EF;
+    margin-bottom: 40px;
+}
+.setting-tab-view .nav-pills .nav-item{
+    margin-right: 15px;
+}
+.setting-tab-view .nav-pills .nav-link{
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 22px;
+    color: #445882;
+    position: relative;
+    padding-bottom: 20px;
+}
+.setting-tab-view .nav-pills .nav-link.active{
+    background-color:transparent;
+    color: #102A5E;
+}
+.setting-tab-view .nav-pills .nav-link::before{
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    height: 2px;
+    width: 0%;
+    background-color: #01A39D;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+}
+.setting-tab-view .nav-pills .nav-link.active::before{
+    opacity: 1;
+    visibility: visible;
+    width: 100%;
+}
+.form-title h3{
+    font-size: 17px;
+    line-height: 22px;
+    font-weight: 500;
+    color: #102A5E;
+    margin-bottom: 30px;
+}
+.ags-upload-logo h4{
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 22px;
+    color: #102A5E;
+    margin-bottom: 5px;
+}
+.ags-default-logo{
+    background: #F6F7FB;
+    border-radius: 14px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.ags-default-logo p{
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 41px;
+    color: #8A93A6;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+.ags-upload-logo a {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+.ags-upload-file {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    cursor: pointer;
+    width: 100%;
+}
 
 
 @media (max-width: 991.98px) {
@@ -416,7 +498,6 @@ div#submissionsChart {
     }
 }
 
-
 @media (max-width: 575.98px){
     .userProfile .userProfile-info{
         display: none;
@@ -455,7 +536,6 @@ div#submissionsChart {
 @media (max-width: 399.98px){
 
 }
-
 
 @media (min-width: 992px) {
     /* .sidenav-hover .navleft-menu li ul.submenu{
