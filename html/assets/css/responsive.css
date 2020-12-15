@@ -240,6 +240,9 @@
         min-width: 180px;
         left: -80px;
     }
+    .custom-dropdown.side-dropdown .dropdown-menu{
+        left: auto;
+    }
 	.page-ath-form{
         padding: 30px 20px;
     }

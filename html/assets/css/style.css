@@ -671,8 +671,10 @@
 
 
 /*-------datat-table-------*/
+
 .table-style{
     min-width: 850px;
+    width: 100%;
 }
 .table-style th{
     font-size: 15px;
@@ -736,6 +738,22 @@
 .table-status.badge-grey{
     background-color:  #E3E5EF;
     color: #8A93A6;
+}
+.table-responsive .dataTables_wrapper {
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.table-responsive .dataTables_wrapper .top,
+.table-responsive .dataTables_wrapper .clear,
+.table-responsive .dataTables_wrapper:after{
+    display: none;
+}
+table.table-style.dataTable thead th{
+    color: #102A5E;
+    font-size: 15px;
+    font-weight: 500;
 }
 table.table-style.dataTable tbody th, 
 table.table-style.dataTable tbody td{
@@ -947,4 +965,94 @@ table.table-style.dataTable.display tbody tr:hover{
 }
 .add-area-btn a i {
     font-weight: 900;
+}
+
+
+/*--------application---*/
+.table-app-msg {
+    width: 350px;
+    display: inline-block;
+}
+.table-app-msg h5{
+    color: #445882;
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+.table-app-msg p{
+    color: #8A93A6;
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 4px;   
+}
+.table-app-msg.active h5{
+    color: #01A39D;
+}
+.table-user-data{
+    display: flex;
+    align-items: center;
+}
+.tb-user-img{
+    margin-right: 10px;
+}
+.tb-user-img img{
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+    border-radius: 50%;
+}
+.tb-user-dtl h6{
+    color: #445882;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 2px;
+}
+.tb-user-dtl p{
+    color: #8A93A6;
+    font-size: 14px;
+    margin-bottom: 0;
+    font-weight: 400;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 165px;
+}
+.empty-table{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+    flex-direction: column;
+}
+.empty-table p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #8A93A6;
+    margin-bottom: 5px;
+}
+.empty-table a{
+    display: inline-block;
+    color: #01A39D;
+    font-size: 14px;
+    font-weight: 500;
+}
+.application-table thead tr th:nth-child(1){
+    width: 55px !important;
+}
+.application-table thead tr th:nth-child(2){
+    width: 106px !important;
+}
+/*.application-table thead tr th:nth-child(3){
+    width: 350px !important;
+}*/
+.application-table thead tr th:nth-child(4){
+    width: 250px !important;
+}
+.application-table thead tr th:nth-child(5){
+    width: 120px !important;
+}
+.application-table thead tr th:nth-child(6){
+    width: 60px !important;
 }
