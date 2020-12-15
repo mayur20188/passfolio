@@ -315,19 +315,47 @@
                 <div class="main-content-area main-content-white-area">
                     <div class="row m-0">
                         <div class="col-md-12">
-                            <div class="content-title-part d-flex justify-content-between mt-2">
+                            <div class="content-title-part multiple-filter-title d-flex justify-content-between mt-2">
                                 <h1>All Notifications</h1>
                                 <div class="content-title-right">
                                     <div class="action-buttons">
                                         <div class="serach-filter">
                                             <a href="javascript:void(0);" class="search-filter-btn">
-                                                <i class="feather icon-search"></i>
+                                                <img src="assets/images/search.svg" alt="">
                                             </a>
                                             <div class="serach-store-box">
-                                                <button class="search-icon"><i class="feather icon-search"></i></button>
+                                                <button class="search-icon"><img src="assets/images/search.svg" alt=""></button>
                                                 <input type="text" name="" class="search-store-input">
                                                 <button class="search-close-icon"><i class="feather icon-x"></i></button>
                                             </div>
+                                        </div>
+                                        <div class="side-filter">
+                                            <a href="javascript:void(0);">
+                                                <img src="assets/images/filter.svg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="side-dropdown dropdown">
+                                            <a href="javascript:void(0);" class="dropdown-toggle" id="actiondropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-display="static">
+                                                <img src="assets/images/actions.svg" alt="">
+                                            </a>
+                                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="actiondropdown">
+                                                <div class="actions-links-data">
+                                                    <ul>
+                                                        <li class="disable"><a href="javascript:void(0);">Approve</a></li>
+                                                        <li class="disable"><a href="javascript:void(0);">Deny</a></li>
+                                                        <li class="disable"><a href="javascript:void(0);">Mark as  unread</a></li>
+                                                        <li class="active"><a href="javascript:void(0);">Edit column</a></li>
+                                                        <li><a href="javascript:void(0);">Edit status</a></li>
+                                                        <li><a href="javascript:void(0);">Import data</a></li>
+                                                        <li><a href="javascript:void(0);">Download data</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="add-area-btn">
+                                            <a href="javascript:void(0);">
+                                                <i class="feather icon-plus"></i>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>

@@ -214,18 +214,32 @@
         left: initial;
         right: -250px;
     }
-    .serach-store-box.active{
-        top: 40px;
-        width: 245px;
-    }
     .serach-store-box{
         top: 20px;
-        width: 245px;
+        width: 260px;
+        left: inherit;
+        right: -20px;
     }
+    .serach-store-box.active{
+        top: 40px;
+        width: 260px;
+    }
+    
 }
 
 
 @media (max-width: 479.98px) {
+    .content-title-part.multiple-filter-title{
+        flex-direction: column;
+        align-items: center;
+    }
+    .multiple-filter-title .serach-store-box{
+        left: -58px;
+    }
+    .side-dropdown .dropdown-menu {
+        min-width: 180px;
+        left: -80px;
+    }
 	.page-ath-form{
         padding: 30px 20px;
     }
@@ -234,6 +248,7 @@
         right: -183px;
         min-width: 300px;
     }
+    
 }
 
 

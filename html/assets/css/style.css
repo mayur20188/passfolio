@@ -24,6 +24,11 @@
     visibility: hidden;
     transition: all 0.5s ease;
     transform: translateY(20%) !important;
+    -webkit-box-shadow: 0px 4px 12px rgba(68, 88, 130, 0.2);
+    box-shadow: 0px 4px 12px rgba(68, 88, 130, 0.2);
+    border-radius: 10px;
+    border: none;
+    min-width: 200px;
 }
 .dropdown-menu.show {
     opacity: 1;
@@ -812,6 +817,10 @@ table.table-style.dataTable.display tbody tr:hover{
 }
 
 /*--------------*/
+.action-buttons{
+    display: flex;
+    align-items: center;
+}
 .serach-filter {
     position: relative;
 }
@@ -825,18 +834,23 @@ table.table-style.dataTable.display tbody tr:hover{
     color: #8A93A6;
     padding: 5px;
 }
+.search-filter-btn img {
+    width: 16px;
+}
 .serach-store-box {
     position: absolute;
     background-color: #fff;
     padding: 4px;
     width: 0px;
-    right: -13px;
+    right: -2px;
     top: -12px;
     box-shadow: 0px 2px 4px rgba(0,0,0,0.16);
     border-radius: 3px;
     visibility: hidden;
     opacity: 0;
     transition: 0.5s;
+    z-index: 1;
+    overflow: hidden;
 }
 .search-store-input {
         width: 100%;
@@ -845,6 +859,7 @@ table.table-style.dataTable.display tbody tr:hover{
     color: #445882;
     font-size: 14px;
     font-weight: 400;
+    padding-right: 25px;
 }
 .search-icon{
     position: absolute;
@@ -860,12 +875,12 @@ table.table-style.dataTable.display tbody tr:hover{
 }
 .search-close-icon {
     position: absolute;
-    right: 8px;
+    right: -2px;
     height: 42px;
     width: 35px;
     background-color: #fff;
     border: none;
-    font-size: 15px;
+    font-size: 17px;
     color: #8A93A6;
     visibility: hidden;
     opacity: 0;
@@ -874,4 +889,58 @@ table.table-style.dataTable.display tbody tr:hover{
 .serach-store-box.active .search-close-icon{
     visibility: visible;
     opacity: 1;
+}
+.side-filter {
+    display: inline-block;
+    margin-left: 15px;
+}
+.side-filter a img{
+    width: 16px;
+}
+
+.side-dropdown{
+    display: inline-block;
+    margin-left: 15px;
+}
+.side-dropdown .dropdown-toggle img{
+    width: 16px;
+}
+.side-dropdown .dropdown-menu{
+    min-width: 180px;
+}
+.actions-links-data ul li a{
+    display: inline-block;
+    padding: 10px 21px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #445882;
+    width: 100%;
+    transition: 0.5s;
+}
+.actions-links-data ul li.disable a{
+    color: #8A93A6;
+}
+.actions-links-data ul li.disable a:hover {
+    background-color: #8a93a62e;
+    color: #8A93A6;
+}
+.actions-links-data ul li a:hover,
+.actions-links-data ul li.active a{
+    background-color: #01A39D;
+    color: #fff;
+}
+.add-area-btn{
+    display: inline-block;
+    margin-left: 15px;
+}
+.add-area-btn a {
+    font-size: 16px;
+    color: #fff;
+    padding: 8px 13px;
+    display: inline-block;
+    background-color: #01A39D;
+    border-radius: 7px;
+}
+.add-area-btn a i {
+    font-weight: 900;
 }
