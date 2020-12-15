@@ -185,11 +185,14 @@ h3, .h3{
     font-size: 17px !important;
     font-weight: 500 !important;
 }
+.text-danger {
+    color: #FC5D68 !important;
+}
+.text-primary {
+    color: #1c85e8!important;
+}
 .text-success{
     color: #01A39D !important;
-}
-.text-danger{
-    color: #FF9594 !important;
 }
 .p-text-16{ 
     font-size: 16px !important; 
@@ -507,10 +510,7 @@ select{
     color: #1CA129 !important;
 }
 .bg-danger{
-    background: #EB5757 !important;
-}
-.text-danger {
-    color: #EB5757 !important;
+    background: #FC5D68 !important;
 }
 
 .bg-light-success{
@@ -568,7 +568,7 @@ select{
     position: absolute;
     top: 14px;
     left: 15px;
-    color: #C8C8C8;
+    color: #8A93A6;
 }
 .link-text-group .form-control{
     /* padding-right: 90px; */
@@ -586,6 +586,70 @@ select{
     background: #F2F2F2;
     border: 1px solid #C8C8C8;
     color: #4F4F4F;
+}
+.input-icon-right,
+.input-icon-left{
+    position: relative;
+}
+.input-icon-right .input-icon,
+.input-icon-left .input-icon {
+    position: absolute;
+    top: 18px;
+    opacity: 0;
+    visibility: hidden;
+}
+.input-icon-right .input-icon{
+    right: 18px;
+}
+.input-icon-left .input-icon {
+    left: 18px;
+}
+.has-success .input-icon-right .form-control,
+.has-error .input-icon-right .form-control,
+.has-typing .input-icon-right .form-control{
+    padding-right: 45px;
+}
+.has-success .input-icon-left .form-control,
+.has-error .input-icon-left .form-control,
+.has-typing .input-icon-left .form-control{
+    padding-left: 45px;
+}
+.has-success .input-icon-right .input-icon,
+.has-success .input-icon-left .input-icon,
+.has-error .input-icon-right .input-icon,
+.has-error .input-icon-left .input-icon,
+.has-typing .input-icon-right .input-icon,
+.has-typing .input-icon-left .input-icon{
+    opacity: 1;
+    visibility: visible;
+}
+.error-message{
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 0;
+    display: none;
+}
+.has-success .form-control{
+    border-color: #01a39d;
+    background-color: #fff;
+}
+.has-typing .form-control{
+    border-color: #1c85e8;
+    background-color: #fff;
+}
+.has-error .form-control{
+    border-color: #FF9594;
+    background-color: #fff;
+}
+.has-error .error-message{
+    color: #FC5D68;
+}
+.has-success .error-message{
+    color: #01a39d;
+}
+.has-error .error-message,
+.has-success .error-message{
+    display: block;
 }
 
 .bg-fixed{
@@ -738,29 +802,43 @@ select{
 .card-number-img img{
     max-width: 136px;
 }
+.select-country-box .select2-container--default .select2-selection--single{
+    background-color: #F6F7FB;
+    border: 2px solid #F6F7FB;
+}
+.default-select .select2-container--default .select2-selection--single{
+    background-color: #F6F7FB;
+    border: 2px solid #F6F7FB;
+}
 .search-select .select2-container .select2-selection--single .select2-selection__rendered{
     padding-left: 40px;
 }
 .search-select .select2-container--default .select2-selection--single{
     position: relative;
+    background-color: #F6F7FB;
+    border: 2px solid #F6F7FB;
 }
 .search-select .select2-container--default .select2-selection--single:before{
     content: "\e8bd";
     font-family: 'feather';
     font-weight: 500;
     position: absolute;
-    top: 12px;
+    top: 11px;
     left: 12px;
     color: #8A93A6;
     font-size: 17px;
 }
 .select2-container--default .select2-selection--single{
-    border: 1px solid #C8C8C8;
+    border: 2px solid #C8C8C8;
     height: 50px;
+}
+.select2-container--focus.select2-container--default .select2-selection--single{
+    border: 2px solid #1c85e8;
+    background-color: #fff;
 }
 .select2-container--default .select2-selection--single .select2-selection__rendered{
     color: #757575;
-    line-height: 50px;
+    line-height: 48px;
     padding-right: 40px;
     font-size: 15px;
 }
@@ -997,6 +1075,24 @@ select{
     background-color: #445882;
     filter:"alpha(opacity=50)";-ms-filter:"alpha(opacity=50)"
 }
+
+.default-button{
+    background-color: #01A39D;
+    color: #fff;
+    display: inline-block;
+    padding: 12px 32px;
+    border: none;
+    border-radius: 7px;
+    font-size: 17px;
+    font-weight: 500;
+    transition: 0.5s;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+}
+
+
+
 @media (min-width: 768px){
     .alert-popup{
         min-width: 400px;

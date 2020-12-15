@@ -639,10 +639,7 @@
 }
 
 /*---------------*/
-.select-country-box .select2-container--default .select2-selection--single{
-    background-color: #F6F7FB;
-    border: 1px solid #F6F7FB
-}
+
 .page-footer{
     display: inline-block;
     width: 100%;
