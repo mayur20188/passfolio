@@ -30,6 +30,10 @@
     border: none;
     min-width: 200px;
 }
+.dropdown-medium{
+    width: 180px;
+    min-width: inherit;
+}
 .dropdown-menu.show {
     opacity: 1;
     transform: translateY(5%) !important;
