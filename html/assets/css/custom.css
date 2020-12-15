@@ -264,6 +264,9 @@ div#submissionsChart {
     border: none;
     border-radius: 14px;
 }
+.card-body {
+    padding: 25px 30px;
+}
 .card-title{
     display: flex;
     justify-content: space-between;
@@ -424,6 +427,9 @@ div#submissionsChart {
     position: relative;
     display: inline-block;
     overflow: hidden;
+    color: #1C85E8;
+    font-weight: 500;
+    font-size: 14px;
 }
 .ags-upload-file {
     position: absolute;
