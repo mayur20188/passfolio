@@ -433,7 +433,34 @@ div#submissionsChart {
     cursor: pointer;
     width: 100%;
 }
+.ags-default-logo img {
+    max-width: 200px;
+}
 
+.modal-content{
+    background: #FFFFFF;
+    border-radius: 28px;
+    border: none;
+}
+.d-modal-body {
+    padding: 55px 50px;
+}
+
+.d-modal-content h2{
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 22px;
+    color: #102A5E;
+
+}
+.d-modal-content p{
+    font-size: 14px;
+    color: #445882;
+}
+.download-AllData-form {
+    max-width: 550px;
+    margin: 30px auto 0;
+}
 
 @media (max-width: 991.98px) {
     .sidenav-container{
@@ -535,6 +562,13 @@ div#submissionsChart {
 
 @media (max-width: 399.98px){
 
+}
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 735px;
+        margin-top: 9em;
+    }
 }
 
 @media (min-width: 992px) {

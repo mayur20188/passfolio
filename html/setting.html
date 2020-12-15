@@ -337,11 +337,11 @@
                                                 </div>
                                                 <div class="form-content">
                                                     <form action="javascript:;">
-                                                        <div class="row align-items-center">
+                                                        <div class="row align-items-center mb-5">
                                                             <div class="col-md-6">
                                                                 <div class="ags-default-logo">
-                                                                    <!-- <p>ags</p> -->
-                                                                    <img src="assets/images/avatar.jpg" class="img-fluid" alt="">
+                                                                    <p>ags</p>
+                                                                    <!-- <img src="assets/images/logo.svg" class="img-fluid" alt=""> -->
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-6">
@@ -351,7 +351,102 @@
                                                                 </div>
                                                             </div>
                                                         </div>
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                                    <label class="form-label">Organisation Name</label>
+                                                                    <input type="text" class="form-control">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-group select2Part default-select">
+                                                                    <label class="form-label">Time Zone</label>
+                                                                    <select class="form-control customSelect">
+                                                                        <option value="">Select Time Zone</option>
+                                                                        <option value="">UTC +10:00 Australia/Brisbane</option>
+                                                                        <option value="">UTC +10:00 Australia/Brisbane</option>
+                                                                        <option value="">UTC +10:00 Australia/Brisbane</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-group select2Part default-select">
+                                                                    <label class="form-label">Category</label>
+                                                                    <select class="form-control customSelect">
+                                                                        <option value="">Select Category</option>
+                                                                        <option value="">Government 1</option>
+                                                                        <option value="">Government 2</option>
+                                                                        <option value="">Government 3</option>
+                                                                        <option value="">Government 4</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                                    <label class="form-label">Address Line</label>
+                                                                    <input type="text" class="form-control">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                                    <label class="form-label">Email</label>
+                                                                    <input type="text" class="form-control">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-group select2Part default-select">
+                                                                    <label class="form-label">Country</label>
+                                                                    <select class="form-control customSelect">
+                                                                        <option value="">Select Country</option>
+                                                                        <option value="">India</option>
+                                                                        <option value="">USA</option>
+                                                                        <option value="">UK</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                                    <label class="form-label">Contact Number</label>
+                                                                    <input type="text" class="form-control">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-group select2Part default-select">
+                                                                    <label class="form-label">State / Province</label>
+                                                                    <select class="form-control customSelect">
+                                                                        <option value="">Select State / Province</option>
+                                                                        <option value="">Gujarat</option>
+                                                                        <option value="">New York</option>
+                                                                        <option value="">Mirzapur</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-group select2Part default-select">
+                                                                    <label class="form-label">Organisation size</label>
+                                                                    <select class="form-control customSelect">
+                                                                        <option value="">Select Organisation size</option>
+                                                                        <option value="">Organisation size 1</option>
+                                                                        <option value="">Organisation size 2</option>
+                                                                        <option value="">Organisation size 3</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                                    <label class="form-label">Zip Code</label>
+                                                                    <input type="text" class="form-control">
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </form>
+                                                </div>
+                                                <div class="form-title">
+                                                    <h3>Data and Security</h3>
+                                                </div>
+                                                <div class="form-content">
+                                                    <button class="default-button" data-toggle="modal" data-target="#downloadAllData">Download all Data</button>
+                                                    <a href="javascript:;" class="cancel-btn">Delete Account</a>
                                                 </div>
                                             </div>
                                             <div class="tab-pane fade" id="pills-plan" role="tabpanel" aria-labelledby="pills-plan-tab">plan</div>
@@ -368,6 +463,31 @@
             </div>
             <div class="overlay_bg"></div>
         </div>
+
+        <div class="modal fade" id="downloadAllData" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body d-modal-body">
+                        <div class="d-modal-content">
+                            <h2>Download All Data</h2>
+                            <p>An email will be sent once data is ready for download. Enter your email address below.</p>
+                            <div class="download-AllData-form">
+                                <div class="form-group">
+                                    <label class="form-label">Enter email address</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <button class="default-btn btn-small">Confirm</button>
+                                    <a href="javascript:;" data-dismiss="modal" class="cancel-btn">Cancel</a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
         
         <!--js -->
         <script src="assets/js/jquery-3.4.1.min.js"></script>
@@ -380,104 +500,5 @@
         <script src="assets/js/apexcharts.min.js"></script>
         <script src="assets/js/Sortable.js"></script>
         <script src="assets/js/custom.js"></script>
-        <script>
-            var submissionsoptions = {
-                    series: [{
-                        name: "Submissions",
-                        data: [15,50,20,60,15,60,10],
-                    }],
-                    colors: ['#ffffff'],
-                    chart: {
-                        type: 'line',
-                        height: 150,
-                        foreColor: "#000000",
-                        zoom: {
-                            enabled: false
-                        },
-                        toolbar: {
-                            show: false,
-                        },
-                        dropShadow: {
-                            enabled: true,
-                            top: 5,
-                            left: 0,
-                            blur: 5,
-                            color: 'rgba(0,0,0,0.25)',
-                            opacity: 1
-                        }
-                    },
-                    dataLabels: {
-                        enabled: false
-                    },
-                    stroke: {
-                        curve: 'smooth',
-                        width: 7,
-                    },
-                    title: {
-                        show: false,
-                    },
-                    grid: {
-                        show: false,
-                        position: 'back',
-                        borderColor: '#000',
-                        row: {
-                            colors: ['#000', '#000'],
-                            opacity: 0
-                        },
-                    },
-                    markers: {
-                        size: 0,
-                        strokeWidth: 6,
-                        colors: '#1C85E8',
-                        hover: {
-                            size: 8,
-                            sizeOffset: 3
-                        }
-                    },
-                    tooltip: {
-                        enabled: true,
-                        theme: "dark",
-                        style: {
-                            fontSize: '15px',
-                            fontFamily: 'Rubik, sans-serif',
-                        },
-                    },
-                    xaxis: {
-                        categories: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
-                        labels: {
-                            style: {
-                                colors:'#ffffff',
-                                fontSize: '15px',
-                                fontFamily: 'Rubik, sans-serif',
-                                fontWeight: 500,
-                                cssClass: 'apexcharts-xaxis-label',
-                            },
-                        },
-                        axisBorder: {
-                            show: false,
-                        },
-                        axisTicks: {
-                            show: false,
-                        }
-                    },
-                    yaxis: {
-                        show: false,
-                        labels: {
-                            style: {
-                                colors:'#ffffff',
-                                fontSize: '12px',
-                                fontFamily: 'Rubik, sans-serif',
-                                fontWeight: 500,
-                                cssClass: 'apexcharts-yaxis-label',
-                            },
-                            formatter: function(val, index) {
-                                return val;
-                            }
-                        },
-                    }
-                };
-                var todaysSales = new ApexCharts(document.querySelector("#submissionsChart"), submissionsoptions);
-                todaysSales.render();
-        </script>
     </body>
 </html>
