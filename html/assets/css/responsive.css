@@ -186,7 +186,21 @@
     .dataTables_wrapper .dataTables_paginate{
         margin-bottom: 20px;
     }
-
+    .form-barcode-header{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .barcode-flex-box{
+        margin-bottom: 15px;
+    }
+    .form-content-area{
+        max-width: inherit;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .history-table-box{
+        max-width: inherit;
+    }
 }
 
 @media (max-width: 575.98px) {
@@ -227,6 +241,11 @@
     .serach-store-box.active{
         top: 40px;
         width: 260px;
+    }
+    .form-content-area{
+        max-width: inherit;
+        padding-left: 0px;
+        padding-right: 0px;
     }
     
 }
