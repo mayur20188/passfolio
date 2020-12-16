@@ -231,6 +231,23 @@ h3, .h3{
     display: inline-block;
     width: 100%;
 }
+.label-no{
+    position: absolute;
+    font-weight: 500;
+    font-size: 14px;
+    color: #01A39D;
+    right: 100%;
+    margin-right: 12px;
+}
+.form-group .form-label.label-light{
+    font-size: 14px;
+    font-weight: 400;
+}
+.label-bold{
+    font-size: 14px;
+    font-weight: 500;
+    color: #102A5E;
+}
 .form-group .form-label{
     color: #102A5E;
     font-size: 15px;
@@ -238,6 +255,7 @@ h3, .h3{
     margin-left: 10px;
     display: inline-block;
     width: 100%;
+    position: relative;
 }
 .form-message{
     font-size: 14px;

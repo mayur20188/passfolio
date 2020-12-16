@@ -663,6 +663,8 @@
     font-weight: 400;
 }
 .main-content-area {
+    max-width: 1440px;
+    margin: auto;
     margin-top: 30px;
     min-height: calc(100vh - 182px);
 }
@@ -1208,4 +1210,103 @@ table.table-style.dataTable.display tbody tr:hover{
 
 .form-body{
     padding: 20px;
+}
+.form-barcode-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.barcode-box{
+    padding: 5px;
+    border: 2px solid #01A39D;
+    display: inline-block;
+    margin-right: 15px;
+}   
+.barcode-box img{
+    width: 66px;
+    height: 66px;
+}
+.barcode-flex-box{
+    display: flex;
+    align-items: center;
+}
+.barcode-detail h5{
+    font-size: 17px;
+    font-weight: 500;
+    color: #102A5E;
+    margin-bottom: 5px;
+}
+.barcode-detail p{
+    color: #445882;
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+.form-label-area{
+    background-color: #1C85E8;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+.form-barcode-header .table-user-data{
+    min-width: 265px;
+}
+.form-barcode-header .tb-user-dtl h6{
+    font-size: 17px;
+    font-weight: 500;
+    color: #102A5E;
+    margin-bottom: 5px;
+}
+.form-barcode-header .tb-user-dtl p{
+    color: #445882;
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+.form-label-area p{
+    display: inline-block;
+    margin-bottom: 0;
+    margin-right: 15px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+}
+.form-tabs{
+    margin-bottom: 0;
+}
+.form-tabs.nav-pills .nav-item{
+    margin-right: 10px;
+}
+.form-tabs.nav-pills .nav-link{
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(255,255,255,0.7);
+    border-radius: 7px;
+    padding: 9px 15px;
+}
+.form-tabs.nav-pills .nav-link.active, 
+.form-tabs.nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.13);
+}
+.form-content-area{
+    max-width: 75%;
+    width: 100%;
+    margin: 0 auto;
+}
+.form-content-area .max-form-data .form-control{
+    max-width: 450px;
+    display: inline-block;
+}
+.form-heading{
+    margin-bottom: 30px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #e3e5ef;
+    margin-top: 20px;
+}
+.form-heading h6{
+    font-size: 17px;
+    font-weight: 500;
+    color: #102A5E;
+    margin-bottom: 0;
 }
