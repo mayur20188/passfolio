@@ -11,7 +11,7 @@
         <meta name="author" content="">
         <meta name="description" content="">
         <meta name="keywords" content="">
-        <title>Edit Column of Application</title>
+        <title>Application Form</title>
         <!-- ================= Favicon ================== -->
         <link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicon/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
@@ -317,106 +317,58 @@
                         </div>
                     </div>
                 </div>
-                <div class="main-content-area main-content-white-area">
-                    <div class="row m-0">
-                        <div class="col-md-12">
-                            <div class="content-title-part multiple-filter-title d-flex justify-content-between mt-2">
-                                <h1>Edit Column Of Application</h1>
+                <div class="main-content-area">
+                    <div class="form-card">
+                        <div class="form-body border-bottom">
+                            <div class="content-title-part d-flex justify-content-between mt-0 mb-0">
+                                <h1>Application Form</h1>
+                                <div class="content-title-right">
+                                    <div class="action-buttons">
+                                        <div class="user-icon-box mr-3">
+                                            <img src="assets/images/avatar.jpg" alt="">
+                                            <div class="user-status bg-success"></div>
+                                        </div>
+                                        <div class="status-dropdown status-warning dropdown">
+                                            <a href="javascript:void(0);" class="dropdown-toggle" id="actiondropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-display="static">
+                                                <span>Pending</span>
+                                                <i class="feather icon-chevron-down"></i>
+                                            </a>
+                                            <div class="dropdown-menu dropdown-medium dropdown-menu-right" aria-labelledby="d-addNew">
+                                                <div class="actions-links-data">
+                                                    <ul>
+                                                        <li class="active"><a href="javascript:void(0);">Pending</a></li>
+                                                        <li><a href="javascript:void(0);">Reviewing</a></li>
+                                                        <li><a href="javascript:void(0);">Approved</a></li>
+                                                        <li><a href="javascript:void(0);">Denied</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="view-more-dropdown dropdown">
+                                            <a href="javascript:void(0);" class="dropdown-toggle" id="actiondropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-display="static">
+                                                <img src="assets/images/actions.svg" alt="">
+                                            </a>
+                                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="actiondropdown">
+                                                <div class="actions-links-data">
+                                                    <ul>
+                                                        <li><a href="javascript:void(0);">Download form</a></li>
+                                                        <li><a href="javascript:void(0);">Print form</a></li>
+                                                        <li><a href="javascript:void(0);">View PDF version</a></li>
+                                                        <li><a href="javascript:void(0);">View form template<i class="fa fa-external-link-alt ml-2"></i></a></li>
+                                                        <li><a href="javascript:void(0);">Status history</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-md-12">
-                            <div class="table-responsive">
-                                <table class="table table-design table-style edit-column">
-                                    <thead>
-                                        <tr>
-                                            <th>Default Column Title</th>
-                                            <th>New Title</th>
-                                            <th>Apply for Admin</th>
-                                            <th>Apply for  User</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody id="editColumn" class="dragable-table">
-                                        <tr>
-                                            <td><div class="table-title-edt"><img src="assets/images/drag.svg" alt="" class="drag-handle">Date</div></td>
-                                            <td><div class="table-new-title-edt"><a href="javascript:void(0);" class="set-new-title"><img src="assets/images/edit-icon.svg" alt=""></a>Date</div></td>
-                                            <td>
-                                                <div class="custom-control custom-switch switch-center without-label">
-                                                    <input type="checkbox" class="custom-control-input" id="edit1" checked>
-                                                    <label class="custom-control-label" for="edit1"></label>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="custom-control custom-switch switch-center without-label">
-                                                    <input type="checkbox" class="custom-control-input" id="edit2" checked>
-                                                    <label class="custom-control-label" for="edit2"></label>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td><div class="table-title-edt"><img src="assets/images/drag.svg" alt="" class="drag-handle">Application</div></td>
-                                            <td><div class="table-new-title-edt"><a href="javascript:void(0);" class="set-new-title"><img src="assets/images/edit-icon.svg" alt=""></a>Application</div></td>
-                                            <td>
-                                                <div class="custom-control custom-switch switch-center without-label">
-                                                    <input type="checkbox" class="custom-control-input" id="edit3" checked>
-                                                    <label class="custom-control-label" for="edit3"></label>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="custom-control custom-switch switch-center without-label">
-                                                    <input type="checkbox" class="custom-control-input" id="edit4" checked>
-                                                    <label class="custom-control-label" for="edit4"></label>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td><div class="table-title-edt"><img src="assets/images/drag.svg" alt="" class="drag-handle">Sender</div></td>
-                                            <td><div class="table-new-title-edt"><a href="javascript:void(0);" class="set-new-title"><img src="assets/images/edit-icon.svg" alt=""></a>Sender</div></td>
-                                            <td>
-                                                <div class="custom-control custom-switch switch-center without-label">
-                                                    <input type="checkbox" class="custom-control-input" id="edit5" checked>
-                                                    <label class="custom-control-label" for="edit5"></label>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="custom-control custom-switch switch-center without-label">
-                                                    <input type="checkbox" class="custom-control-input" id="edit6">
-                                                    <label class="custom-control-label" for="edit6"></label>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td><div class="table-title-edt"><img src="assets/images/drag.svg" alt="" class="drag-handle">Status</div></td>
-                                            <td><div class="table-new-title-edt"><a href="javascript:void(0);" class="set-new-title"><img src="assets/images/edit-icon.svg" alt=""></a>Status</div></td>
-                                            <td>
-                                                <div class="custom-control custom-switch switch-center without-label">
-                                                    <input type="checkbox" class="custom-control-input" id="edit7" checked>
-                                                    <label class="custom-control-label" for="edit7"></label>
-                                                </div>
-                                            </td>
-                                            <td>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td><div class="table-title-edt"><img src="assets/images/drag.svg" alt="" class="drag-handle">Action</div></td>
-                                            <td><div class="table-new-title-edt"><a href="javascript:void(0);" class="set-new-title"><img src="assets/images/edit-icon.svg" alt=""></a>Action</div></td>
-                                            <td>
-                                                <div class="custom-control custom-switch switch-center without-label">
-                                                    <input type="checkbox" class="custom-control-input" id="edit9" checked>
-                                                    <label class="custom-control-label" for="edit9"></label>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="custom-control custom-switch switch-center without-label">
-                                                    <input type="checkbox" class="custom-control-input" id="edit10" checked>
-                                                    <label class="custom-control-label" for="edit10"></label>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="reset-default-box mt-5">
-                                <button class="default-btn btn-small">Reset Default</button>
+                        <div class="form-body border-bottom">
+                            <div class="form-barcode-header">
+                                <div class="barcode-box">
+                                    <img src="assets/images/barcode.svg" alt="">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -439,27 +391,5 @@
         <script src="assets/js/apexcharts.min.js"></script>
         <script src="assets/js/Sortable.js"></script>
         <script src="assets/js/custom.js"></script>
-        <script type="text/javascript">
-            $(document).ready( function () {
-                $('.custom-table').DataTable({
-                    "dom": '<"top">rt<"bottom"pi><"clear">',
-                     // "ordering": false,
-                    'aaSorting': [],
-                    language: {
-                        paginate: {
-                            next: ['<i class="fa fa-angle-double-right"></i>'],
-                            previous: ['<i class="fa fa-angle-double-left"></i>']
-                        }
-                      }
-                });
-
-                // -----sortable-------
-                new Sortable(editColumn, {
-                    handle: '.drag-handle', // handle's class
-                    animation: 150
-                });
-                
-            });
-        </script>
     </body>
 </html>

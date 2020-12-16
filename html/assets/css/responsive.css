@@ -91,6 +91,10 @@
     .page-ath-gfx:before {
         background-position: center bottom 65%;
     }
+    .alert-sections{
+        left: 10px;
+        right: 10px;
+    }
     .alert{
         min-width: inherit;
     }

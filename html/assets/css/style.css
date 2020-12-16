@@ -676,6 +676,16 @@
 
 /*-------datat-table-------*/
 
+.table-design thead th,
+.table-design tbody td{
+    color: #102A5E;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    border-bottom: 1px solid #E3E5EF;
+    padding: 15px 10px;
+    vertical-align: middle;
+}
 .table-style{
     min-width: 850px;
     width: 100%;
@@ -1063,4 +1073,139 @@ table.table-style.dataTable.display tbody tr:hover{
 }
 .application-table thead tr th:nth-child(6){
     width: 60px !important;
+}
+
+
+/*---------edit-column------*/
+.edit-column tbody td{
+    padding: 10px 10px;
+}
+.edit-column tbody td:nth-child(1){
+    width: 280px;
+}
+.edit-column tbody td:nth-child(3),
+.edit-column tbody td:nth-child(4){
+    width: 180px;
+}
+.drag-handle{
+    width: 26px;
+    padding: 10px;
+    margin-right: 10px;
+    cursor: grabbing;
+}
+.sortable-ghost .drag-handle,
+.sortable-ghost{
+    cursor: grabbing;
+}
+.table-title-edt{
+    font-size: 14px;
+    color: #445882;
+    font-weight: 500;
+}
+.table-new-title-edt {
+    font-size: 14px;
+    font-weight: 400;
+    color: #8A93A6;
+    position: relative;
+}
+.set-new-title{
+    position: absolute;
+    left: -25px;
+    visibility: hidden;
+    opacity: 0;
+}
+.edit-column tbody td:hover:nth-child(2) .table-new-title-edt:hover>.set-new-title{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/*------status-dropdown----*/
+.status-dropdown .dropdown-toggle{
+    padding: 8px 12px;
+    border: 2px solid #01A39D;
+    border-radius: 7px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    display: block;
+    color: #ffffff;
+    font-weight: 400;
+    background-color: #01A39D;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 180px;
+}
+.status-dropdown .dropdown-toggle i{
+    font-weight: 600;
+}
+.status-primary .dropdown-toggle{
+    background-color:  #1C85E8;
+    border-color:  #1C85E8;
+   
+}
+.status-grey .dropdown-toggle{
+    background-color: #8A93A6;
+    border-color: #8A93A6;
+}
+.status-warning .dropdown-toggle{
+    background-color: #F5AA3F;
+     border-color: #F5AA3F;
+}
+.status-success .dropdown-toggle{
+    background-color: #01A39D;
+    border-color: #01A39D;
+}
+.status-danger .dropdown-toggle{
+    background-color: #FC5D68;
+    border-color: #FC5D68;
+}
+
+/*------------*/
+.view-more-dropdown{
+    display: inline-block;
+    margin-left: 15px;
+}
+.view-more-dropdown .dropdown-toggle img{
+    width: 16px;
+}
+.view-more-dropdown .dropdown-menu{
+    min-width: 180px;
+}
+.view-more-dropdown .dropdown-menu .actions-links-data ul li a{
+    white-space: nowrap;
+}
+.view-more-dropdown .dropdown-menu .actions-links-data ul li a i{
+    font-size: 12px;
+}
+
+
+/*------------*/
+.user-icon-box{
+    position: relative;
+}
+.user-icon-box img{
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+    border-radius: 50%;
+}
+.user-status {
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background-color: #333;
+    bottom: -2px;
+    right: 0;
+}
+.form-card{
+    background-color: #fff;
+    border-radius: 14px;
+}
+
+.form-body{
+    padding: 20px;
 }
