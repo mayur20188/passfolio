@@ -168,7 +168,8 @@ left: 240px;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     align-items: center;
-    margin: 40px 0;
+    max-width: 1440px;
+    margin: 40px auto;
 }
 .dropdown-menu-small{
     min-width: inherit;
@@ -457,7 +458,6 @@ div#submissionsChart {
     font-size: 17px;
     line-height: 22px;
     color: #102A5E;
-
 }
 .d-modal-content p{
     font-size: 14px;
@@ -467,6 +467,119 @@ div#submissionsChart {
     max-width: 550px;
     margin: 30px auto 0;
 }
+.plan-title{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.plan-title h3{
+    font-weight: 500;
+    font-size: 22px;
+    color: #102A5E;
+    margin: 5px 0;
+}
+.plan-row{
+    margin-bottom: 30px;
+}
+.plan-box-left{
+    padding: 50px 40px;
+    background: #01A39D;
+    box-shadow: 0px 10px 10px rgba(1, 163, 157, 0.1);
+    border-radius: 14px;
+}
+.plan-name-left p{
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 20px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+.plan-name-left h2{
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 500;
+    color: #FFFFFF;
+    margin-bottom: 0;
+}
+.plan-name-right a{
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 7px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0.5px;
+    display: inline-block;
+    padding: 12px 13px;
+}
+.plan-name-right h2{
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #FFFFFF;
+    margin-bottom: 0;
+    margin-top: 2px;
+}
+.plan-name-right p{
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 18px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+.plan-need-more p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #8A93A6;
+    text-align: center;
+    margin-top: 20px;
+}
+.plan-need-more p a{
+    font-weight: 500;
+    color: #1C85E8;
+}
+.p-method-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.p-method-card{
+    display: flex;
+    align-items: center;
+}
+.p-card-m{
+    margin-right: 25px;
+}
+.p-method-img{
+    min-width: 65px;
+    max-width: 65px;
+}
+.p-card-m h5{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    color: #102A5E;
+    margin-bottom: 8px;
+}
+.p-card-m p{
+    font-size: 14px;
+    color: #445882;
+    margin-bottom: 0;
+}
+.p-card-m p i {
+    font-size: 10px;
+    margin: 0 2px;
+}
+.p-billing-table .table-responsive .dataTables_wrapper{
+    min-height: auto;
+}
+.invoice-number h5{
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 0px;
+    color: #01A39D;
+}
+
 
 @media (max-width: 991.98px) {
     .sidenav-container{
@@ -563,7 +676,9 @@ div#submissionsChart {
 }
 
 @media (max-width: 479.98px) {
-
+    .plan-title{
+        display: block;
+    }
 }
 
 @media (max-width: 399.98px){
