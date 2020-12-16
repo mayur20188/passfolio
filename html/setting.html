@@ -332,7 +332,7 @@
                                             </li>
                                         </ul>
                                         <div class="tab-content" id="pills-tabContent">
-                                            <div class="tab-pane fade" id="pills-setting" role="tabpanel" aria-labelledby="pills-setting-tab">
+                                            <div class="tab-pane fade show active" id="pills-setting" role="tabpanel" aria-labelledby="pills-setting-tab">
                                                 <div class="setting-tabContent">
                                                     <div class="form-title">
                                                         <h3>Organisation Information</h3>
@@ -346,7 +346,7 @@
                                                                         <!-- <img src="assets/images/logo.svg" class="img-fluid" alt=""> -->
                                                                     </div>
                                                                 </div>
-                                                                <div class="col-md-6">
+                                                                <div class="col-md-6 mt-4 mt-md-0">
                                                                     <div class="ags-upload-logo">
                                                                         <h4>Australian Government Services</h4>
                                                                         <a href="javascript:;">Upload Logo <input type="file" class="ags-upload-file"></a>
@@ -452,9 +452,9 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="tab-pane fade show active" id="pills-plan" role="tabpanel" aria-labelledby="pills-plan-tab">
+                                            <div class="tab-pane fade" id="pills-plan" role="tabpanel" aria-labelledby="pills-plan-tab">
                                                 <div class="setting-tabContent">
-                                                    <div class="plan-title">
+                                                    <div class="plan-title d-flex">
                                                         <h3>Plan</h3>
                                                         <div class="plan-title-right">
                                                             <a href="javascript:;" class="default-outline-btn btn-small">Manage Plan</a>
@@ -560,19 +560,21 @@
                                                     </div>
                                                     <div class="plan-title">
                                                         <h3>Payment Method</h3>
-                                                        <div class="plan-title-right">
-                                                            <a href="javascript:;" class="default-outline-btn btn-small">Add New</a>
+                                                        <div class="plan-title-right text-right">
+                                                            <a href="javascript:;" class="default-outline-btn btn-small" data-toggle="modal" data-target="#pmAddCard">Add New</a>
                                                         </div>
                                                     </div>
                                                     <div class="plan-row">
                                                         <div class="p-method-row">
                                                             <div class="p-method-card">
-                                                                <div class="p-card-m p-method-img">
-                                                                    <img src="assets/images/card-visa.png" class="img-fluid" alt="">
-                                                                </div>
-                                                                <div class="p-card-m">
-                                                                    <h5>Card Number</h5>
-                                                                    <p><span><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i></span> 4335</p>
+                                                                <div class="d-flex">
+                                                                    <div class="p-card-m p-method-img">
+                                                                        <img src="assets/images/card-visa.png" class="img-fluid" alt="">
+                                                                    </div>
+                                                                    <div class="p-card-m">
+                                                                        <h5>Card Number</h5>
+                                                                        <p><span>&#9679 &#9679 &#9679 &#9679</span> 4335</p>
+                                                                    </div>
                                                                 </div>
                                                                 <div class="p-card-m">
                                                                     <h5>Expires on</h5>
@@ -596,7 +598,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="plan-title">
+                                                    <div class="plan-title d-flex">
                                                         <h3>Billing</h3>
                                                         <div class="plan-title-right">
                                                             <div class="action-buttons">
@@ -617,11 +619,8 @@
                                                                      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="BillingActionDropdown">
                                                                         <div class="actions-links-data">
                                                                             <ul>
-                                                                                <li class="disable"><a href="javascript:void(0);">Approve</a></li>
-                                                                                <li class="disable"><a href="javascript:void(0);">Deny</a></li>
-                                                                                <li class="disable"><a href="javascript:void(0);">Mark as  unread</a></li>
-                                                                                <li class="active"><a href="javascript:void(0);">Edit column</a></li>
-                                                                                <li><a href="javascript:void(0);">Edit status</a></li>
+                                                                                <!-- <li class="disable"><a href="javascript:void(0);">Approve</a></li>
+                                                                                <li class="disable"><a href="javascript:void(0);">Deny</a></li> -->
                                                                                 <li><a href="javascript:void(0);">Import data</a></li>
                                                                                 <li><a href="javascript:void(0);">Download data</a></li>
                                                                             </ul>
@@ -752,7 +751,9 @@
                 <div class="modal-content">
                     <div class="modal-body d-modal-body">
                         <div class="d-modal-content">
-                            <h2>Download All Data</h2>
+                            <div class="d-modal-content-title">
+                                <h2>Download All Data</h2>
+                            </div>
                             <p>An email will be sent once data is ready for download. Enter your email address below.</p>
                             <div class="download-AllData-form">
                                 <div class="form-group">
@@ -763,6 +764,166 @@
                                     <button class="default-btn btn-small">Confirm</button>
                                     <a href="javascript:;" data-dismiss="modal" class="cancel-btn">Cancel</a>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="pmAddCard" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body d-modal-body">
+                        <div class="d-modal-content">
+                            <div class="d-modal-content-title mb-5">
+                                <h2>Select Payment Method</h2>
+                            </div>
+                            <div class="select-pm">
+                                <div class="row align-items-center">
+                                    <div class="col-xl-3">
+                                        <a href="javascript:;" class="select-pm-icon">
+                                            <img src="assets/images/icons/pay-with-card.svg" class="img-fluid" alt="Pay with Card">
+                                        </a>
+                                    </div>
+                                    <div class="col-xl-9">
+                                        <div class="select-pm-detail">
+                                            <a href="javascript:;"><h4>Pay with Card</h4></a>
+                                            <p>Fully integrated payment processing, secure payments for you.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center">
+                                    <div class="col-xl-3">
+                                        <a href="javascript:;" class="select-pm-icon">
+                                            <img src="assets/images/icons/pay-with-paypal.svg" class="img-fluid" alt="Pay with PayPal">
+                                        </a>
+                                    </div>
+                                    <div class="col-xl-9">
+                                        <div class="select-pm-detail">
+                                            <a href="javascript:;"><h4>Pay with PayPal</h4></a>
+                                            <p>No account yet? Simply <span class="text-green-color">create your free account</span> while paying the benefit from <a href="javascript:;">buyer protection.</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center">
+                                    <div class="col-xl-3">
+                                        <a href="javascript:;" class="select-pm-icon">
+                                            <img src="assets/images/icons/pay-with-bank.svg" class="img-fluid" alt="Pay with Bank Transfer / Online Transfer">
+                                        </a>
+                                    </div>
+                                    <div class="col-xl-9">
+                                        <div class="select-pm-detail">
+                                            <a href="javascript:;"><h4>Pay with Bank Transfer / Online Transfer</h4></a>
+                                            <p>Please note that it takes approximately 3 to 7 days to process your transfer. If your Passfolio account has not been credited after 7 days please, contact <a href="javascript:;" class="text-green-color">Customer Support.</a> </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="PayWithCard" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body d-modal-body">
+                        <div class="d-modal-content">
+                            <div class="d-modal-content-title mb-4">
+                                <h2>Pay with Card</h2>
+                                <p>Enter the card details below.</p>
+                            </div>
+                            <div class="payCard-form">
+                                <form action="javacript:;">
+                                    <div class="content-title-part mb-4">
+                                        <h1>Card Details</h1>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 col-lg-8">
+                                            <div class="form-group has-typing">
+                                                <label class="form-label">Card number</label>
+                                                <div class="left-input-icon input-icon-right">
+                                                    <input type="text" class="form-control" />
+                                                    <div class="spinner-border icon-load input-icon text-primary"></div>
+                                                    <div class="password-show-icon left-icon"><img src="assets/images/icons/card-icon.svg" class="img-fluid" alt=""></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4">
+                                            <div class="form-group">
+                                                <label class="form-label">Expiration Date</label>
+                                                <input type="text" class="form-control" placeholder="mm/yy">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-8">
+                                            <div class="form-group">
+                                                <label class="form-label">Cardholder’s name</label>
+                                                <input type="text" class="form-control" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4">
+                                            <div class="form-group">
+                                                <label class="form-label">CVV</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="content-title-part mb-4">
+                                        <h1>Billing Address</h1>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <label class="form-label">Address Line</label>
+                                                <input type="text" class="form-control" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group select2Part default-select">
+                                                <label class="form-label">Country</label>
+                                                <select class="form-control customSelect">
+                                                    <option value="">Select Country</option>
+                                                    <option value="">India</option>
+                                                    <option value="">USA</option>
+                                                    <option value="">UK</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group select2Part default-select">
+                                                <label class="form-label">State / Province</label>
+                                                <select class="form-control customSelect">
+                                                    <option value="">Select State / Province</option>
+                                                    <option value="">Gujarat</option>
+                                                    <option value="">New York</option>
+                                                    <option value="">Mirzapur</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="form-label">Zip Code</label>
+                                                <input type="text" class="form-control" />
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <div class="custom-control custom-checkbox ">
+                                                    <input type="checkbox" class="custom-control-input" id="pmDefault">
+                                                    <label class="custom-control-label" for="pmDefault">Set as default payment method</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <button class="default-btn btn-small">Add Card</button>
+                                                <a href="javascript:;" data-dismiss="modal" class="cancel-btn">Back</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -783,7 +944,7 @@
         <script src="assets/js/custom.js"></script>
         <script type="text/javascript">
             $(document).ready( function () {
-                
+                $('#PayWithCard').modal('show')
             });
         </script>
     </body>
