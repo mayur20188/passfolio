@@ -743,7 +743,39 @@
                     <i class="feather icon-x"></i>
                 </button>
             </div>
-            
+            <div class="alert alert-warning" role="alert">
+                <div class="alert-message">
+                    <i class="fa fa-exclamation-circle alert-icon"></i><span>You have reached the limits of your plan. <a href="javascript:;" class="text-white text-underline"><strong>Upgrade your plan</strong></a> to receive pending submissions and more.</span>
+                </div>
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <i class="feather icon-x"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="modal fade" id="cancelPlan" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body d-modal-body">
+                        <div class="d-modal-content">
+                            <div class="d-modal-content-title">
+                                <h2>Cancel Plan</h2>
+                                <p>Your subscription will be cancelled at the end of your billing period and will remain fully accessible until May 11, 2020. After this period you can resubscribe anytime.</p>
+                            </div>
+                            <div class="download-AllData-form">
+                                <div class="form-group">
+                                    <label class="form-label">Enter password to cancel your subscription</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <button class="default-btn default-danger-btn btn-small">Confirm Cancel Plan</button>
+                                    <a href="javascript:;" data-dismiss="modal" class="cancel-btn">Back</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="modal fade" id="downloadAllData" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -753,8 +785,8 @@
                         <div class="d-modal-content">
                             <div class="d-modal-content-title">
                                 <h2>Download All Data</h2>
+                                <p>An email will be sent once data is ready for download. Enter your email address below.</p>
                             </div>
-                            <p>An email will be sent once data is ready for download. Enter your email address below.</p>
                             <div class="download-AllData-form">
                                 <div class="form-group">
                                     <label class="form-label">Enter email address</label>
@@ -841,7 +873,7 @@
                                         <h1>Card Details</h1>
                                     </div>
                                     <div class="row">
-                                        <div class="col-md-6 col-lg-8">
+                                        <div class="col-sm-8">
                                             <div class="form-group has-typing">
                                                 <label class="form-label">Card number</label>
                                                 <div class="left-input-icon input-icon-right">
@@ -851,19 +883,19 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-6 col-lg-4">
+                                        <div class="col-sm-4">
                                             <div class="form-group">
                                                 <label class="form-label">Expiration Date</label>
                                                 <input type="text" class="form-control" placeholder="mm/yy">
                                             </div>
                                         </div>
-                                        <div class="col-md-6 col-lg-8">
+                                        <div class="col-sm-8">
                                             <div class="form-group">
                                                 <label class="form-label">Cardholder’s name</label>
                                                 <input type="text" class="form-control" />
                                             </div>
                                         </div>
-                                        <div class="col-md-6 col-lg-4">
+                                        <div class="col-sm-4">
                                             <div class="form-group">
                                                 <label class="form-label">CVV</label>
                                                 <input type="text" class="form-control">
@@ -881,7 +913,7 @@
                                             </div>
                                         </div>
                                         <div class="col-md-6">
-                                            <div class="form-group select2Part default-select">
+                                            <div class="form-group select2Part w-100 default-select">
                                                 <label class="form-label">Country</label>
                                                 <select class="form-control customSelect">
                                                     <option value="">Select Country</option>
@@ -930,6 +962,164 @@
                 </div>
             </div>
         </div>
+
+        <div class="modal fade" id="payWithPayPal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body d-modal-body">
+                        <div class="d-modal-content">
+                            <div class="d-modal-content-title">
+                                <h2>Pay with PayPal</h2>
+                                <p>Enter the card details below.</p>
+                            </div>
+                            <div class="download-AllData-form">
+                                <div class="form-group">
+                                    <label class="form-label">PayPal email address</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="payPalDefault">
+                                        <label class="custom-control-label" for="payPalDefault">Set as default payment method</label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <button class="default-btn btn-small">Continue</button>
+                                    <a href="javascript:;" data-dismiss="modal" class="cancel-btn">Back</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="PayWithBank" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body d-modal-body">
+                        <div class="d-modal-content">
+                            <div class="d-modal-content-title mb-4">
+                                <h2>Pay with Bank Transfer / Online Transfer</h2>
+                                <p>Select payment option:</p>
+                            </div>
+                            <div class="PayWithBank-form">
+                                <form action="javacript:;">
+                                    <div class="paybank-option d-flex mb-5">
+                                        <div class="custom-control custom-radio mr-4">
+                                            <input type="radio" id="paybanktransfer" name="paymentoption" class="custom-control-input" checked>
+                                            <label class="custom-control-label" for="paybanktransfer">Pay by Bank Transfer</label>
+                                        </div>
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="paycheque" name="paymentoption" class="custom-control-input">
+                                            <label class="custom-control-label" for="paycheque">Pay by Cheque</label>
+                                        </div>
+                                    </div>
+                                    <div class="paybank-content">
+                                        <div id="paybanktransfer" class="paybank">
+                                            <div class="content-title-part d-flex justify-content-between mb-4">
+                                                <div>
+                                                    <h1>Pay by Bank Transfer</h1>
+                                                    <p>Send your payment to:</p>
+                                                </div>
+                                                <div class="plan-title-right">
+                                                    <a href="javascript:;" class="default-btn btn-small">Copy</a>
+                                                </div>
+                                            </div>
+                                            <div class="bank-detail">
+                                                <div class="row">
+                                                    <div class="col-sm-5 col-md-5 col-xl-4">
+                                                        <p>Bank Name:</p>
+                                                    </div>
+                                                    <div class="col-sm-7 col-md-7 col-xl-8">
+                                                        <p>Commonwealth Bank of Australia</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-5 col-md-5 col-xl-4">
+                                                        <p>Bank Address:</p>
+                                                    </div>
+                                                    <div class="col-sm-7 col-md-7 col-xl-8">
+                                                        <p>Westfield Shoppingtown Parramatta</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-5 col-md-5 col-xl-4">
+                                                        <p>BSB (Routing Number):</p>
+                                                    </div>
+                                                    <div class="col-sm-7 col-md-7 col-xl-8">
+                                                        <p>023341</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-5 col-md-5 col-xl-4">
+                                                        <p>Account Name:</p>
+                                                    </div>
+                                                    <div class="col-sm-7 col-md-7 col-xl-8">
+                                                        <p>Passfolio</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-5 col-md-5 col-xl-4">
+                                                        <p>Account Number:</p>
+                                                    </div>
+                                                    <div class="col-sm-7 col-md-7 col-xl-8">
+                                                        <p>1034220</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>Bank charges and currency exchange costs (if any) will be borne by the sender. Therefore, please ensure that the amount you send is suffcient to cover all such charges by your bank.</p>
+                                            <div class="content-title-part mb-2">
+                                                <h1>Send Proof of Payment</h1>
+                                            </div>
+                                            <p>After you have made the bank transfer, please complete the information below so that we can track your payment.</p>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="form-group">
+                                                        <label class="form-label">Transaction Number</label>
+                                                        <input type="text" class="form-control" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label class="form-label">Amount Sent</label>
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label class="form-label">Date Sent</label>
+                                                        <input type="text" class="form-control" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label class="form-label">Sender Name</label>
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label class="form-label">Bank Name</label>
+                                                        <input type="text" class="form-control" />
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="col-12">
+                                                    <div class="form-group">
+                                                        <button class="default-btn btn-small">Add Card</button>
+                                                        <a href="javascript:;" data-dismiss="modal" class="cancel-btn">Back</a>
+                                                    </div>
+                                                </div> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         
         <!--js -->
         <script src="assets/js/jquery-3.4.1.min.js"></script>
@@ -944,7 +1134,7 @@
         <script src="assets/js/custom.js"></script>
         <script type="text/javascript">
             $(document).ready( function () {
-                $('#PayWithCard').modal('show')
+                $('#cancelPlan').modal('show')
             });
         </script>
     </body>

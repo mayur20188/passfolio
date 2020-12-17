@@ -749,7 +749,6 @@ select{
     color: #fff; 
 }
 
-
 .custom-radio .custom-control-label{
     font-size: 14px;
     font-weight: 400;
@@ -789,8 +788,6 @@ select{
     font-weight: 900;
     color: #1C85E8;
 }
-
-
 .custom-switch{
     padding-left: 60px;
 }
@@ -1235,6 +1232,24 @@ select{
     background-color: #fff;
     color: #01A39D;
     border: 2px solid #01A39D;
+}
+.default-danger-btn{
+    background-color: #FC5D68;
+    border: 2px solid #FC5D68;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 32px;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: 400;
+    transition: 0.5s;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+}
+.default-btn:hover{
+    background-color: #fff;
+    color: #FC5D68;
 }
 .btn-small {
     font-size: 14px;

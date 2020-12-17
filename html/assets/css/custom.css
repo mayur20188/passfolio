@@ -1,3 +1,9 @@
+.text-underline{
+    text-decoration: underline;
+}
+b, strong{
+    font-weight: 600;
+}
 .wrapper{
     height: 100%;
     width: 100%;
@@ -611,6 +617,25 @@ div#submissionsChart {
     color: #102A5E;
 }
 
+.paybank-content p{
+    font-size: 14px;
+    color: #445882;
+}
+.bank-detail{
+    background: #F6F7FB;
+    border: 2px solid #01A39D;
+    border-radius: 7px;
+    padding: 20px;
+    margin-bottom:20px;
+}
+.bank-detail p{
+    font-size: 14px;
+    color: #102A5E;
+}
+.bank-detail p{
+    margin-bottom: 5px;
+}
+
 
 @media (max-width: 991.98px) {
     .sidenav-container{
@@ -709,6 +734,16 @@ div#submissionsChart {
     .card-body{
         padding: 20px 15px;
     }
+    .bank-detail{
+        padding: 10px;
+    }
+    .bank-detail > .row {
+        margin: 8px 0;
+    }
+    .bank-detail p {
+        margin-bottom: 0;
+    }
+    
 }
 
 @media (max-width: 479.98px) {
