@@ -83,6 +83,9 @@ h3, .h3{
     font-family: 'Rubik', sans-serif;
     font-size: 18px;
 }
+img{
+    max-width: 100%;
+}
 /*---------sitemap-------------*/
 .sitemap-heading h2{
     margin-bottom: 40px;
@@ -102,7 +105,7 @@ h3, .h3{
     display: inline-block;
     width: 100%;
     line-height: initial;
-    color: #102A5E;
+    color: #333;
     background-color: #eff0f4;
     text-transform: capitalize;
 }

@@ -1428,3 +1428,144 @@ table.table-style.dataTable.display tbody tr:hover{
 .table-history tbody td{
     border-bottom: none;
 }
+
+
+
+
+/*--------agreement-form------*/
+.agree-data-list-box{
+    max-width: 740px;
+}
+.agree-data-list-box b{
+    font-weight: 500;
+}
+.agree-data-container{
+    margin-top: 20px;
+}
+.agree-data-container h5{
+    font-size: 17px;
+    font-weight: 500;
+    color: #102A5E;
+    margin-bottom: 20px;
+}
+.agree-data-container p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #102A5E;
+}
+.devider-line{
+    border-bottom: 1px solid #E3E5EF;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.agree-content-box{
+    margin-bottom: 15px;
+}
+.agree-content-box h6{
+    font-size: 15px;
+    font-weight: 500;
+    color: #102A5E;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.agree-content-box p{
+    color: #102A5E;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    line-height: 25px;
+}
+.agree-content-box a{
+    display: inline-block;
+    word-break: break-all;
+    font-weight: 500;
+    color: #102A5E;
+    margin: 0px 3px;
+}
+.agree-small-cnt{
+    display: flex;
+    align-content: flex-start;
+}
+.agree-small-cnt span{
+    display: inline-block;
+    color: #01A39D;
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 20px;
+}
+.agree-small-cnt h6{
+    font-size: 15px;
+    font-weight: 500;
+    color: #102A5E;
+    text-transform: uppercase;
+}
+.agree-small-cnt p{
+    color: #102A5E;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    line-height: 25px;   
+}
+.signed-agree-box{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+.agree-sign-data{
+    margin-bottom: 30px;
+}
+.agree-sign-data p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #102A5E;
+}
+.signed-detil h6{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    color: #102A5E;
+}
+.signed-detil p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #102A5E;
+}
+.signed-img-box {
+    text-align: center;
+    min-width: 340px;
+}
+.signed-img-box h6{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    color: #102A5E;
+}
+.signed-img-box h5{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    color: #102A5E;
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+.signed-img-box p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #102A5E;
+}
+.signed-img {
+    padding: 10px;
+    width: 100%;
+    background-color: #F6F7FB;
+    border: 2px solid #01A39D;
+    text-align: center;
+    border-radius: 8px;
+}
+.profile-upload{
+    position: relative;
+    color: #1C85E8;
+    font-weight: 500;
+    color: 14px;
+    margin-bottom: 0px;
+}

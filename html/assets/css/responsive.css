@@ -201,6 +201,9 @@
     .history-table-box{
         max-width: inherit;
     }
+    .signed-agree-box{
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 575.98px) {
@@ -246,6 +249,14 @@
         max-width: inherit;
         padding-left: 0px;
         padding-right: 0px;
+    }
+    .status-dropdown .dropdown-toggle{
+        min-width: 170px;
+    }
+    .signed-img-box{
+        min-width: inherit;
+        width: 100%;
+        max-width: 340px;
     }
     
 }
