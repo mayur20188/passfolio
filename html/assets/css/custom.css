@@ -380,14 +380,14 @@ div#submissionsChart {
 }
 .setting-tab-view .nav-pills .nav-link.active{
     background-color:transparent;
-    color: #102A5E;
+    color: #01A39D;
 }
 .setting-tab-view .nav-pills .nav-link::before{
     content: '';
     position: absolute;
     bottom: -1px;
     left: 0;
-    height: 2px;
+    height: 3px;
     width: 0%;
     background-color: #01A39D;
     opacity: 0;

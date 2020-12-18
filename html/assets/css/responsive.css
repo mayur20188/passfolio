@@ -277,6 +277,10 @@
         min-width: 180px;
         left: -80px;
     }
+    .setting-dropdown.side-dropdown .dropdown-menu{
+        right: 0;
+        left: inherit;
+    }
     .custom-dropdown.side-dropdown .dropdown-menu{
         left: auto;
     }
