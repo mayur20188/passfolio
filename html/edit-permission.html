@@ -11,7 +11,7 @@
         <meta name="author" content="">
         <meta name="description" content="">
         <meta name="keywords" content="">
-        <title>Profile</title>
+        <title>Edit Permission</title>
         <!-- ================= Favicon ================== -->
         <link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicon/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
@@ -320,103 +320,82 @@
                 <div class="main-content-area main-content-white-area">
                     <div class="row m-0">
                         <div class="col-md-12">
-                            <div class="content-title-part multiple-filter-title d-flex justify-content-between mt-2">
-                                <h1>Profile</h1>
+                            <div class="content-title-part multiple-filter-title d-flex justify-content-between mt-2 mb-3">
+                                <h1>Edit Permission</h1>
                             </div>
                         </div>
                         <div class="col-md-12">
-                            <div class="profile-avtar-change">
+                            <div class="edit-pr-container">
                                 <form action="">
-                                    <div class="profile-header">
-                                        <h6>Information</h6>
-                                    </div>
-                                    <div class="profile-change-box">
-                                        <div class="profile-cng-img">
-                                            <img src="assets/images/avatar.jpg" alt="">
-                                        </div>
-                                        <div class="profile-cng-dtl">
-                                            <h6>Pixie Boule</h6>
-                                            <p>Administrator</p>
-                                            <div class="profile-upload">
-                                                <p>Change Avatar</p>
-                                                <input type="file" class="profile-input">
+                                    <div class="edit-pr-heading">
+                                        <h2>General Information</h2>
+                                        <div class="content-title-right">
+                                            <div class="action-buttons">
+                                                <div class="serach-filter">
+                                                    <a href="javascript:void(0);" class="search-filter-btn">
+                                                        <img src="assets/images/search.svg" alt="">
+                                                    </a>
+                                                    <div class="serach-store-box">
+                                                        <button class="search-icon"><img src="assets/images/search.svg" alt=""></button>
+                                                        <input type="text" name="" class="search-store-input">
+                                                        <button class="search-close-icon"><i class="feather icon-x"></i></button>
+                                                    </div>
+                                                </div>
+                                                <div class="side-filter">
+                                                    <a href="javascript:void(0);">
+                                                        <img src="assets/images/filter.svg" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="side-dropdown dropdown">
+                                                    <a href="javascript:void(0);" class="dropdown-toggle" id="actiondropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-display="static">
+                                                        <img src="assets/images/actions.svg" alt="">
+                                                    </a>
+                                                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="actiondropdown">
+                                                        <div class="actions-links-data">
+                                                            <ul>
+                                                                <li class="disable"><a href="javascript:void(0);">Approve</a></li>
+                                                                <li class="disable"><a href="javascript:void(0);">Deny</a></li>
+                                                                <li class="disable"><a href="javascript:void(0);">Mark as  unread</a></li>
+                                                                <li class="active"><a href="javascript:void(0);">Edit column</a></li>
+                                                                <li><a href="javascript:void(0);">Edit status</a></li>
+                                                                <li><a href="javascript:void(0);">Import data</a></li>
+                                                                <li><a href="javascript:void(0);">Download data</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="add-area-btn">
+                                                    <a href="javascript:void(0);">
+                                                        <i class="feather icon-plus"></i>
+                                                    </a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="profile-form-list">
+                                    <div class="edit-pr-content">
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <div class="form-group">
-                                                    <label class="form-label label-light">First Name</label>
-                                                    <input type="text" class="form-control">
+                                                    <label class="form-label label-light mb-3">Role Name</label>
+                                                    <input type="text" class="form-control" placeholder="Manager">
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="form-group">
-                                                    <label class="form-label label-light">Last Name</label>
-                                                    <input type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <label class="form-label label-light">Organisation Email</label>
-                                                    <input type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <label class="flex-label form-label label-light">Current Password <a href="javascript:void(0);" class="action-link">Forgot Password</a></label>
-                                                    <input type="password" class="form-control input-password" placeholder="Enter current password">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <label class="form-label label-light">Change Password</label>
-                                                    <input type="text" class="form-control" placeholder="Enter new password">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <label class="form-label label-light">Verify Password</label>
-                                                    <input type="text" class="form-control" placeholder="Enter new password">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <label class="form-label label-light">Mobile</label>
-                                                    <input type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="profile-header">
-                                        <h6>Security</h6>
-                                    </div>
-                                    <div class="two-step-data-verification">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="form-group">
-                                                    <div class="custom-control custom-checkbox data-checkbox">
-                                                        <input type="checkbox" class="custom-control-input" id="step1" checked>
-                                                        <label class="custom-control-label" for="step1">
-                                                            <span>Two factor verification</span>
-                                                            <p>After you log in, you will be asked for additional information to confirm your identity and protect your account from being compromised.</p>
+                                                    <label class="form-label label-light mb-3">Status</label>
+                                                    <div class="text-switch status-switch mt-2">
+                                                        <input type="checkbox" name="" id="check3" class="text-switch-check" checked>
+                                                        <label for="check3" class="text-switch-label">
+                                                            <span class="text-swtch-data">
+                                                                <span class="left">Active</span>
+                                                                <span class="dot-circle"></span>
+                                                                <span class="right">Inactive</span>
+                                                            </span>
                                                         </label>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md-12">
-                                                <div class="form-group">
-                                                    <div class="custom-control custom-checkbox data-checkbox">
-                                                        <input type="checkbox" class="custom-control-input" id="step2" checked>
-                                                        <label class="custom-control-label" for="step2">
-                                                            <span>Remember me for 30 days</span>
-                                                            <p>For extra security, this requires you to confirm your email or phone number when you change this option.</p>
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>  
+                                        </div>
                                     </div>
                                 </form>
                             </div>
@@ -440,7 +419,22 @@
         <script src="assets/js/jquery.dataTables.min.js"></script>
         <script src="assets/js/apexcharts.min.js"></script>
         <script src="assets/js/Sortable.js"></script>
-        <script src="assets/js/signature_pad.min.js"></script>
         <script src="assets/js/custom.js"></script>
+        <script type="text/javascript">
+            $(document).ready( function () {
+                $('.custom-table').DataTable({
+                    "dom": '<"top">rt<"bottom"pi><"clear">',
+                     // "ordering": false,
+                    'aaSorting': [],
+                    language: {
+                        paginate: {
+                            next: ['<i class="fa fa-angle-double-right"></i>'],
+                            previous: ['<i class="fa fa-angle-double-left"></i>']
+                        }
+                      }
+                });
+                
+            });
+        </script>
     </body>
 </html>

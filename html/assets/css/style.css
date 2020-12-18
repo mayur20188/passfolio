@@ -39,6 +39,8 @@
 
 .form-group .form-label.flex-label {
     display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 .action-link{
@@ -732,6 +734,25 @@
     font-weight: 400;
     margin-bottom: 4px;
     white-space: nowrap;
+}
+.table-assinee p{
+    margin-bottom: 0;
+    
+    color: #445882;
+    font-weight: 400;
+    font-size: 14px;
+}
+.table-assinee.active p{
+    color: #01A39D;
+}
+.table-simple-text p{
+    color: #8A93A6;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 4px;
+}
+.table-simple-text.active p{
+    color: #445882;
 }
 .table-datetime p{
     font-size: 14px;
@@ -1562,6 +1583,18 @@ table.table-style.dataTable.display tbody tr:hover{
     text-align: center;
     border-radius: 8px;
 }
+.profile-header {
+    border-bottom: 1px solid #E3E5EF;
+    margin-bottom: 28px;
+    padding-bottom: 20px;
+}
+.profile-header h6 {
+    font-size: 15px;
+    font-weight: 500;
+    color: #102A5E;
+    margin-bottom: 0;
+    margin-left: 10px;
+}
 .profile-cng-dtl h6{
     font-size: 17px;
     font-weight: 500;
@@ -1600,6 +1633,7 @@ table.table-style.dataTable.display tbody tr:hover{
 .profile-change-box{
     display: flex;
     align-items: center;
+    margin-bottom: 50px;
 }
 .profile-upload .profile-input{
     position: absolute;
@@ -1609,4 +1643,132 @@ table.table-style.dataTable.display tbody tr:hover{
     height: 100%;
     opacity: 0;
     z-index: 1;
+}
+.profile-form-list{
+    margin-bottom: 30px;
+}
+.data-checkbox span{
+
+}
+.data-checkbox p{
+    color: #8A93A6;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+.data-checkbox.custom-control {
+    padding-left: 40px;
+}
+.data-checkbox.custom-checkbox .custom-control-label:before {
+    top: 2px;
+    left: -40px;
+}
+.data-checkbox.custom-checkbox .custom-control-label:after {
+    top: 6px;
+    left: -38px;
+}
+
+
+.nav-users{
+    margin-bottom: 0;
+}
+.nav-users.nav-pills .nav-item{
+    margin-right: 10px;
+}
+.nav-users.nav-pills .nav-link{
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 22px;
+    color: #8A93A6;
+    margin: 4px 0;
+    background-color: transparent;
+    padding: 8px 16px;
+}
+.nav-users.nav-pills .nav-link.active, 
+.nav-users.nav-pills .show>.nav-link {
+    color: #102A5E;
+    background-color: transparent;
+}
+
+.users-table .table-datetime.active p:last-child{
+    color: #01A39D;
+}
+.user-role p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #445882;
+    margin-bottom: 0;
+}
+.users-table .tb-user-dtl h6{
+    font-weight: 500;
+}
+.table-user-data.active .tb-user-dtl h6{
+    color: #01A39D;
+}
+.users-table thead tr th:nth-child(1){
+    width: 20px !important;
+}
+.users-table thead tr th:nth-child(2){
+    width: 250px !important;
+}
+.users-table thead tr th:nth-child(3){
+    width: 230px !important;
+}
+.users-table thead tr th:nth-child(4){
+    width: 150px !important;
+}
+.users-table thead tr th:nth-child(5){
+    width: 100px !important;
+}
+.users-table thead tr th:nth-child(6){
+    width: 50px !important;
+}
+
+
+/*------------*/
+.permission-table-box{
+    min-height: 400px;
+    padding-bottom: 80px;
+}
+.permission-table .table-app-msg{
+    width: auto;
+}
+.permission-table tbody td{
+    padding: 22px 10px;
+}
+.permission-table tbody tr:hover{
+    background-color: #f1f9f8;
+}
+.permission-table thead tr th:nth-child(1){
+    width: 280px !important;
+}
+.permission-table thead tr th:nth-child(2){
+    width: auto !important;
+}
+.permission-table thead tr th:nth-child(3){
+    width: 150px !important;
+}
+.permission-table thead tr th:nth-child(4){
+    width: 150px !important;
+}
+.permission-table thead tr th:nth-child(5){
+    width: 150px !important;
+}
+
+
+.edit-pr-heading {
+    display: flex;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.edit-pr-heading h2{
+    color: #102A5E;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 0px;
+    padding-left: 20px;
 }
