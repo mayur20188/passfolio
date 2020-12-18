@@ -460,7 +460,7 @@ select{
     position: fixed;
     top: 10px;
     left: 100px;
-    z-index: 1;
+    z-index: 2;
 }
 .alert {
     padding: 18px 24px;
@@ -1377,7 +1377,7 @@ select{
     text-transform: capitalize;
     letter-spacing: 0.5px;
 }
-.default-btn:hover{
+.default-danger-btn:hover{
     background-color: #fff;
     color: #FC5D68;
 }

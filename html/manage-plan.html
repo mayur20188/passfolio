@@ -319,111 +319,108 @@
                     </div>
                 </div>
                 <div class="main-content-area main-content-white-area">
-                    <div class="row m-0">
-                        <div class="col-md-12">
-                            <div class="content-title-part border-b-title d-flex justify-content-between mt-2">
-                                <h1>Manage Plan</h1>
-                                <div class="content-title-right">
-                                    <a href="setting.html" class="cancel-btn">Back</a>
+                    <div class="content-title-part border-b-title d-flex justify-content-between mt-2">
+                        <h1>Manage Plan</h1>
+                        <div class="content-title-right">
+                            <a href="setting.html" class="cancel-btn">Back</a>
+                        </div>
+                    </div>
+                    <div class="manage-plan-price">
+                        <div class="manage-pp-title text-center">
+                            <h4>Plans and Pricing</h4>
+                            <p>Everything you need for paperless surveys, forms, contracts, and document processing.</p>
+                            <div class="manage-pp-switch d-flex justify-content-center align-items-center">
+                                <div class="custom-control custom-switch pl-0">
+                                    <span class="active">Monthly</span>
+                                    <input type="checkbox" class="custom-control-input" id="customswitch">
+                                    <label class="custom-control-label" for="customswitch"></label>
+                                    <span>Annually</span>
                                 </div>
+                                <p>SAVE 20%</p>
                             </div>
                         </div>
-                        <div class="col-md-12">
-                            <div class="manage-plan-price">
-                                <div class="manage-pp-title text-center">
-                                    <h4>Plans and Pricing</h4>
-                                    <p>Everything you need for paperless surveys, forms, contracts, and document processing.</p>
-                                    <div class="manage-pp-switch d-flex justify-content-center align-items-center">
-                                        <div class="custom-control custom-switch pl-0">
-                                            <span class="active">Monthly</span>
-                                            <input type="checkbox" class="custom-control-input" id="customswitch">
-                                            <label class="custom-control-label" for="customswitch"></label>
-                                            <span>Annually</span>
+                        <div class="manage-pp-part">
+                            <div class="swiper-container manage-pp-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide manage-pp-col">
+                                        <div class="manage-pp-header">
+                                            <div class="manage-pp-header-left">
+                                                <p>Essentials</p>
+                                                <h5>Basic</h5>
+                                            </div>
+                                            <div class="manage-pp-header-monthly">
+                                                <p>Monthly</p>
+                                                <h6><sup>$</sup> <span>99</span></h6>
+                                            </div>
                                         </div>
-                                        <p>SAVE 20%</p>
+                                        <div class="manage-pp-content">
+                                            <ul>
+                                                <li>10 forms and templates</li>
+                                                <li>1000 submissions per form</li>
+                                                <li>100 users</li>
+                                            </ul>
+                                        </div>
+                                        <div class="manage-pp-footer text-center">
+                                            <a href="javascript:;" data-toggle="modal" data-target="#reviewPlanSelected">Downgrade</a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide manage-pp-col pp-recommended-col  pp-currentplan-col">
+                                        <div class="pp-recommended-label">Recommended</div>
+                                        <div class="manage-pp-header">
+                                            <div class="manage-pp-header-left">
+                                                <p>Professional</p>
+                                                <h5>Standard</h5>
+                                            </div>
+                                            <div class="manage-pp-header-monthly">
+                                                <p>Monthly</p>
+                                                <h6><sup>$</sup> <span>199</span></h6>
+                                            </div>
+                                        </div>
+                                        <div class="manage-pp-content">
+                                            <ul>
+                                                <li>30 forms and templates</li>
+                                                <li>2500 submissions per form</li>
+                                                <li>999 users</li>
+                                                <li>edit status and column</li>
+                                                <li>online support</li>
+                                            </ul>
+                                        </div>
+                                        <div class="manage-pp-footer text-center">
+                                            <a href="javascript:;">Current Plan</a>
+                                            <!-- <a href="javascript:;" data-toggle="modal" data-target="#reviewPlanSelected">Downgrade</a> -->
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide manage-pp-col">
+                                        <div class="manage-pp-header">
+                                            <div class="manage-pp-header-left">
+                                                <p>Premium</p>
+                                                <h5>Enterprise</h5>
+                                            </div>
+                                            <div class="manage-pp-header-monthly">
+                                                <p>Monthly</p>
+                                                <h6><sup>$</sup> <span>399</span></h6>
+                                            </div>
+                                        </div>
+                                        <div class="manage-pp-content">
+                                            <ul>
+                                                <li>100 forms and templates</li>
+                                                <li>20000 submissions per form</li>
+                                                <li>1000 users</li>
+                                                <li>edit status and column</li>
+                                                <li>online support</li>
+                                            </ul>
+                                        </div>
+                                        <div class="manage-pp-footer text-center">
+                                            <a href="javascript:;" class="pp-upgrade" data-toggle="modal" data-target="#reviewPlanSelected">Upgrade</a>
+                                            <!-- <a href="javascript:;">Current Plan</a> -->
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="manage-pp-part">
-                                    <div class="swiper-container manage-pp-swiper">
-                                        <div class="swiper-wrapper">
-                                            <div class="swiper-slide manage-pp-col">
-                                                <div class="manage-pp-header">
-                                                    <div class="manage-pp-header-left">
-                                                        <p>Essentials</p>
-                                                        <h5>Basic</h5>
-                                                    </div>
-                                                    <div class="manage-pp-header-monthly">
-                                                        <p>Monthly</p>
-                                                        <h6><sup>$</sup> <span>99</span></h6>
-                                                    </div>
-                                                </div>
-                                                <div class="manage-pp-content">
-                                                    <ul>
-                                                        <li>10 forms and templates</li>
-                                                        <li>1000 submissions per form</li>
-                                                        <li>100 users</li>
-                                                    </ul>
-                                                </div>
-                                                <div class="manage-pp-footer text-center">
-                                                    <a href="javascript:;">Downgrade</a>
-                                                </div>
-                                            </div>
-                                            <div class="swiper-slide manage-pp-col pp-recommended-col  pp-currentplan-col">
-                                                <div class="pp-recommended-label">Recommended</div>
-                                                <div class="manage-pp-header">
-                                                    <div class="manage-pp-header-left">
-                                                        <p>Professional</p>
-                                                        <h5>Standard</h5>
-                                                    </div>
-                                                    <div class="manage-pp-header-monthly">
-                                                        <p>Monthly</p>
-                                                        <h6><sup>$</sup> <span>199</span></h6>
-                                                    </div>
-                                                </div>
-                                                <div class="manage-pp-content">
-                                                    <ul>
-                                                        <li>30 forms and templates</li>
-                                                        <li>2500 submissions per form</li>
-                                                        <li>999 users</li>
-                                                        <li>edit status and column</li>
-                                                        <li>online support</li>
-                                                    </ul>
-                                                </div>
-                                                <div class="manage-pp-footer text-center">
-                                                    <a href="javascript:;">Current Plan</a>
-                                                    <!-- <a href="javascript:;">Downgrade</a> -->
-                                                </div>
-                                            </div>
-                                            <div class="swiper-slide manage-pp-col">
-                                                <div class="manage-pp-header">
-                                                    <div class="manage-pp-header-left">
-                                                        <p>Premium</p>
-                                                        <h5>Enterprise</h5>
-                                                    </div>
-                                                    <div class="manage-pp-header-monthly">
-                                                        <p>Monthly</p>
-                                                        <h6><sup>$</sup> <span>399</span></h6>
-                                                    </div>
-                                                </div>
-                                                <div class="manage-pp-content">
-                                                    <ul>
-                                                        <li>100 forms and templates</li>
-                                                        <li>20000 submissions per form</li>
-                                                        <li>1000 users</li>
-                                                        <li>edit status and column</li>
-                                                        <li>online support</li>
-                                                    </ul>
-                                                </div>
-                                                <div class="manage-pp-footer text-center">
-                                                    <a href="javascript:;" class="pp-upgrade">Upgrade</a>
-                                                    <!-- <a href="javascript:;">Current Plan</a> -->
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="swiper-nav-btn d-md-none">
+                                    <div class="swiper-arrow-prev"><i class="fas fa-chevron-left"></i></div>
+                                    <div class="swiper-arrow-next"><i class="fas fa-chevron-right"></i></div>
                                 </div>
                             </div>
-                            
                         </div>
                     </div>
                 </div>
@@ -444,19 +441,42 @@
                             </div>
                             <div class="review-plan-form">
                                 <div class="review-plan-row">
-                                    <div class="review-plan-row">
-                                        
+                                    <div class="review-plan-left">
+                                        <h4>Enterprise</h4>
+                                        <p>Uprade Plan</p>
+                                    </div>
+                                    <div class="review-plan-right">
+                                        <p><em>SAVE 20%</em><span>$ 3,828</span> USD</p>
+                                        <div class="text-switch pay-switch">
+                                            <input type="checkbox" name="" id="check4" class="text-switch-check" checked="">
+                                            <label for="check4" class="text-switch-label">
+                                                <span class="text-swtch-data">
+                                                    <span class="left">Pay Annually</span>
+                                                    <span class="dot-circle"></span>
+                                                    <span class="right">Pay Monthly</span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="review-plan-row">
+                                    <div class="review-plan-left">
+                                        <p class="mb-2">Payment Option</p>
+                                        <h4 class="mb-0">VISA Card <span>&#9679 &#9679 &#9679 &#9679 4335</span> </h4>
+                                    </div>
+                                    <div class="review-plan-right">
+                                        <a href="javascript:;" class="review-changeBtn">Change</a>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="payPalDefault">
-                                        <label class="custom-control-label" for="payPalDefault">Set as default payment method</label>
+                                        <input type="checkbox" class="custom-control-input" id="changingplan">
+                                        <label class="custom-control-label" for="changingplan">I confirm that changing my plan would update the billing date.</label>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <button class="default-btn btn-small">Continue</button>
-                                    <a href="javascript:;" data-dismiss="modal" class="cancel-btn">Back</a>
+                                    <button class="default-btn btn-small">Upgrade Plan</button>
+                                    <a href="javascript:;" data-dismiss="modal" class="cancel-btn">Cancel</a>
                                 </div>
                             </div>
                         </div>
@@ -464,6 +484,18 @@
                 </div>
             </div>
         </div>
+
+        <div class="alert-sections">
+            <div class="alert alert-success" role="alert">
+                <div class="alert-message">
+                    <i class="fa fa-check-circle alert-icon"></i><span>Plan successfully upgraded. You are now on Enterprise plan. Billing period has change to every 12th of the Month,</span>
+                </div>
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <i class="feather icon-x"></i>
+                </button>
+            </div>
+        </div>
+
         <!--js -->
         <script src="assets/js/jquery-3.4.1.min.js"></script>
         <script src="assets/js/popper.min.js"></script>
@@ -478,38 +510,26 @@
         <script src="assets/js/swiper-bundle.js"></script>
         <script src="assets/js/custom.js"></script>
         <script>
-            $('#reviewPlanSelected').modal('show')
             if ($('.manage-pp-swiper').length) {
-                var mySwiper = new Swiper ('.manage-pp-swiper', {
-                    speed: 400,
-                    initialSlide: 0,
-                    autoHeight: false,
-                    calculateHeight: false,
-                    // direction: 'horizontal',
-                    loop: false,
-                    autoplay: false,
-                    autoplayStopOnLast: false, 
-                    //nextButton: '.swiper-button-next',
-                    //prevButton: '.swiper-button-prev',
-                    effect: 'slide',
+                var manageppSwiper = new Swiper ('.manage-pp-swiper', {
                     spaceBetween: 30,
                     slidesPerView: 3,
-                    grabCursor: false,
-                    noSwiping:false,
+                    speed: 400,
+                    navigation: {
+                        nextEl: '.swiper-arrow-next',
+                        prevEl: '.swiper-arrow-prev',
+                    },
                     breakpoints: {
                         0: {
-                            spaceBetween: 20,
+                            spaceBetween: 10,
                             slidesPerView: 1,
-                        },
-                        480: {
-                            spaceBetween: 20,
-                            slidesPerView: 1,
-                        },
-                        576: {
-                            spaceBetween: 20
+                            autoplay: {
+                                delay: 5000,
+                            },
                         },
                         768: {
-                            spaceBetween: 20
+                            spaceBetween: 10,
+                            slidesPerView: 3
                         }
                     }
                 });
