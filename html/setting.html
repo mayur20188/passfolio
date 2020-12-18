@@ -454,6 +454,14 @@
                                             </div>
                                             <div class="tab-pane fade" id="pills-plan" role="tabpanel" aria-labelledby="pills-plan-tab">
                                                 <div class="setting-tabContent">
+                                                    <div class="alert alert-danger mb-4" role="alert">
+                                                        <div class="alert-message">
+                                                            <i class="fa fa-exclamation-circle alert-icon"></i><span>You have 2 days to access your account. <strong>Export your data or Resubscribe Plan.</strong></span>
+                                                        </div>
+                                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                                            <i class="feather icon-x"></i>
+                                                        </button>
+                                                    </div>
                                                     <div class="plan-title d-flex">
                                                         <h3>Plan</h3>
                                                         <div class="plan-title-right">
@@ -473,7 +481,8 @@
                                                                         </div>
                                                                         <div class="col-6">
                                                                             <div class="plan-name-right text-right">
-                                                                                <a href="javascript:;">Cancel Plan</a>
+                                                                                <!-- <a href="javascript:;">Cancel Plan</a> -->
+                                                                                <a href="javascript:;">resubscribe</a>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -813,40 +822,40 @@
                             </div>
                             <div class="select-pm">
                                 <div class="row align-items-center">
-                                    <div class="col-xl-3">
-                                        <a href="javascript:;" class="select-pm-icon">
+                                    <div class="col-sm-4 col-lg-3 mb-4 mb-sm-0">
+                                        <a href="javascript:;" class="select-pm-icon" data-toggle="modal" data-target="#PayWithCard">
                                             <img src="assets/images/icons/pay-with-card.svg" class="img-fluid" alt="Pay with Card">
                                         </a>
                                     </div>
-                                    <div class="col-xl-9">
+                                    <div class="col-sm-8 col-lg-9">
                                         <div class="select-pm-detail">
-                                            <a href="javascript:;"><h4>Pay with Card</h4></a>
+                                            <a href="javascript:;" data-toggle="modal" data-target="#PayWithCard"><h4>Pay with Card</h4></a>
                                             <p>Fully integrated payment processing, secure payments for you.</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row align-items-center">
-                                    <div class="col-xl-3">
-                                        <a href="javascript:;" class="select-pm-icon">
+                                    <div class="col-sm-4 col-lg-3 mb-4 mb-sm-0">
+                                        <a href="javascript:;" class="select-pm-icon"  data-toggle="modal" data-target="#payWithPayPal">
                                             <img src="assets/images/icons/pay-with-paypal.svg" class="img-fluid" alt="Pay with PayPal">
                                         </a>
                                     </div>
-                                    <div class="col-xl-9">
+                                    <div class="col-sm-8 col-lg-9">
                                         <div class="select-pm-detail">
-                                            <a href="javascript:;"><h4>Pay with PayPal</h4></a>
+                                            <a href="javascript:;" data-toggle="modal" data-target="#payWithPayPal"><h4>Pay with PayPal</h4></a>
                                             <p>No account yet? Simply <span class="text-green-color">create your free account</span> while paying the benefit from <a href="javascript:;">buyer protection.</a></p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row align-items-center">
-                                    <div class="col-xl-3">
-                                        <a href="javascript:;" class="select-pm-icon">
+                                    <div class="col-sm-4 col-lg-3 mb-4 mb-sm-0">
+                                        <a href="javascript:;" class="select-pm-icon"  data-toggle="modal" data-target="#PayWithBank">
                                             <img src="assets/images/icons/pay-with-bank.svg" class="img-fluid" alt="Pay with Bank Transfer / Online Transfer">
                                         </a>
                                     </div>
-                                    <div class="col-xl-9">
+                                    <div class="col-sm-8 col-lg-9">
                                         <div class="select-pm-detail">
-                                            <a href="javascript:;"><h4>Pay with Bank Transfer / Online Transfer</h4></a>
+                                            <a href="javascript:;" data-toggle="modal" data-target="#PayWithBank"><h4>Pay with Bank Transfer / Online Transfer</h4></a>
                                             <p>Please note that it takes approximately 3 to 7 days to process your transfer. If your Passfolio account has not been credited after 7 days please, contact <a href="javascript:;" class="text-green-color">Customer Support.</a> </p>
                                         </div>
                                     </div>
@@ -999,6 +1008,9 @@
                 <div class="modal-content">
                     <div class="modal-body d-modal-body">
                         <div class="d-modal-content">
+                            <div class="popup-back text-right">
+                                <a href="javascript:;" data-dismiss="modal" class="cancel-btn py-0">Back</a>
+                            </div>
                             <div class="d-modal-content-title mb-4">
                                 <h2>Pay with Bank Transfer / Online Transfer</h2>
                                 <p>Select payment option:</p>
@@ -1132,10 +1144,5 @@
         <script src="assets/js/apexcharts.min.js"></script>
         <script src="assets/js/Sortable.js"></script>
         <script src="assets/js/custom.js"></script>
-        <script type="text/javascript">
-            $(document).ready( function () {
-                $('#cancelPlan').modal('show')
-            });
-        </script>
     </body>
 </html>
