@@ -1,9 +1,4 @@
-.text-underline{
-    text-decoration: underline;
-}
-b, strong{
-    font-weight: 600;
-}
+
 .wrapper{
     height: 100%;
     width: 100%;
@@ -616,7 +611,6 @@ div#submissionsChart {
 }
 .select-pm-detail p a{
     color: #102A5E;
-    text-decoration: underline;
 }
 .select-pm-detail h4 a{
     color: #102A5E;

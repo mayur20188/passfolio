@@ -481,8 +481,8 @@
                                                                         </div>
                                                                         <div class="col-6">
                                                                             <div class="plan-name-right text-right">
-                                                                                <!-- <a href="javascript:;">Cancel Plan</a> -->
-                                                                                <a href="javascript:;">resubscribe</a>
+                                                                                <!-- <a href="javascript:;">resubscribe</a> -->
+                                                                                <a href="javascript:;" data-toggle="modal" data-target="#cancelPlan">Cancel Plan</a>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -778,7 +778,7 @@
                                 </div>
                                 <div class="form-group">
                                     <button class="default-btn default-danger-btn btn-small">Confirm Cancel Plan</button>
-                                    <a href="javascript:;" data-dismiss="modal" class="cancel-btn">Back</a>
+                                    <a href="javascript:;" data-dismiss="modal" class="cancel-btn">Cancel</a>
                                 </div>
                             </div>
                         </div>
@@ -843,7 +843,7 @@
                                     <div class="col-sm-8 col-lg-9">
                                         <div class="select-pm-detail">
                                             <a href="javascript:;" data-toggle="modal" data-target="#payWithPayPal"><h4>Pay with PayPal</h4></a>
-                                            <p>No account yet? Simply <span class="text-green-color">create your free account</span> while paying the benefit from <a href="javascript:;">buyer protection.</a></p>
+                                            <p>No account yet? Simply <a href="javascript:;"><span class="text-green-color">create your free account</span></a> while paying the benefit from <a href="javascript:;" class="text-underline">buyer protection.</a></p>
                                         </div>
                                     </div>
                                 </div>
@@ -856,7 +856,7 @@
                                     <div class="col-sm-8 col-lg-9">
                                         <div class="select-pm-detail">
                                             <a href="javascript:;" data-toggle="modal" data-target="#PayWithBank"><h4>Pay with Bank Transfer / Online Transfer</h4></a>
-                                            <p>Please note that it takes approximately 3 to 7 days to process your transfer. If your Passfolio account has not been credited after 7 days please, contact <a href="javascript:;" class="text-green-color">Customer Support.</a> </p>
+                                            <p>Please note that it takes approximately 3 to 7 days to process your transfer. If your Passfolio account has not been credited after 7 days please, contact <a href="javascript:;"  class="text-green-color">Customer Support.</a> </p>
                                         </div>
                                     </div>
                                 </div>
@@ -933,7 +933,7 @@
                                             </div>
                                         </div>
                                         <div class="col-md-6">
-                                            <div class="form-group select2Part default-select">
+                                            <div class="form-group select2Part w-100 default-select">
                                                 <label class="form-label">State / Province</label>
                                                 <select class="form-control customSelect">
                                                     <option value="">Select State / Province</option>
@@ -977,6 +977,9 @@
                 <div class="modal-content">
                     <div class="modal-body d-modal-body">
                         <div class="d-modal-content">
+                            <div class="popup-back text-right">
+                                <a href="javascript:;" data-dismiss="modal" class="cancel-btn py-0">Back</a>
+                            </div>
                             <div class="d-modal-content-title">
                                 <h2>Pay with PayPal</h2>
                                 <p>Enter the card details below.</p>
@@ -994,7 +997,6 @@
                                 </div>
                                 <div class="form-group">
                                     <button class="default-btn btn-small">Continue</button>
-                                    <a href="javascript:;" data-dismiss="modal" class="cancel-btn">Back</a>
                                 </div>
                             </div>
                         </div>

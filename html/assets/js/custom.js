@@ -173,3 +173,11 @@ function readURL(input) {
 	}
 }
 
+
+
+
+
+// ----tooltip----------
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})

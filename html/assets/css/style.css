@@ -694,6 +694,9 @@
     padding: 15px 10px;
     vertical-align: middle;
 }
+.table-style tbody tr:hover{
+    background-color: #f1f9f8;
+}
 .table-design tbody td{
     color: #8A93A6;
     font-size: 14px;
@@ -760,6 +763,36 @@
     color: #8A93A6;
     margin-bottom: 0;
     white-space: nowrap;
+}
+.table-id p{
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    color: #445882;
+}
+.table-form-date h6{
+    font-size: 14px;
+    font-weight: 500;
+    color: #445882;
+    margin-bottom: 0;
+}
+.table-form-date p{
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 0;
+    color: #8A93A6;
+}
+.table-form-date.active h6{
+    color: #01A39D;
+}
+.table-form-date.active p{
+    color: #445882;
+}
+.table-formname h6{
+    font-size: 14px;
+    font-weight: 500;
+    color: #102A5E;
+    margin-bottom: 0;
 }
 .table-status{
     font-size: 12px;
@@ -1633,7 +1666,7 @@ table.table-style.dataTable.display tbody tr:hover{
 .profile-change-box{
     display: flex;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 .profile-upload .profile-input{
     position: absolute;
@@ -1736,9 +1769,7 @@ table.table-style.dataTable.display tbody tr:hover{
 .permission-table tbody td{
     padding: 22px 10px;
 }
-.permission-table tbody tr:hover{
-    background-color: #f1f9f8;
-}
+
 .permission-table thead tr th:nth-child(1){
     width: 280px !important;
 }
@@ -1763,12 +1794,139 @@ table.table-style.dataTable.display tbody tr:hover{
     flex-wrap: wrap;
     align-items: center;
     margin-top: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 .edit-pr-heading h2{
     color: #102A5E;
     font-size: 22px;
     font-weight: 500;
-    margin-bottom: 0px;
-    padding-left: 20px;
+    margin: 4px 0px;
+    padding-left: 12px;
+}
+.edit-permission-table tbody td{
+    padding: 22px 10px;
+}
+.edit-pr-msg p{
+    font-size: 14px;
+    font-weight: 500;
+    color: #445882;
+    margin-bottom: 0;
+}
+.inner-edit-pr{
+    padding-left: 30px;
+}
+.edit-permission-table thead tr th:nth-child(1){
+    width: 280px !important;
+}
+.edit-permission-table thead tr th:nth-child(2){
+    width: 125px !important;
+}
+.edit-permission-table thead tr th:nth-child(3){
+    width: 125px !important;
+}
+.edit-permission-table thead tr th:nth-child(4){
+    width: 125px !important;
+}
+.edit-permission-table thead tr th:nth-child(5){
+    width: 125px !important;
+}
+.edit-permission-table thead tr th:nth-child(6){
+    width: 125px !important;
+}
+.edit-permission-table thead tr th:nth-child(7){
+    width: 90px !important;
+}
+.edit-permission-table tbody tr.border-none-table td{
+    border: none;
+}
+
+
+/*------------manager-table-------*/
+.manager-table-box {
+    min-height: 200px;
+    padding-bottom: 80px;
+}
+.manager-table thead tr th:nth-child(1){
+    width: 20px !important;
+}
+.manager-table thead tr th:nth-child(2){
+    width: 450px !important;
+}
+.manager-table thead tr th:nth-child(3){
+    width: 150px !important;
+}
+.manager-table thead tr th:nth-child(4){
+    width: 100px !important;
+}
+.manager-table thead tr th:nth-child(5){
+    width: 50px !important;
+}
+.manager-table .tb-user-dtl h6{
+    font-weight: 500;
+}
+.manager-table .table-datetime.active p:last-child{
+    color: #01A39D;
+}
+
+.permission-history{
+    padding-bottom: 40px;
+}
+.permission-history ul{
+    margin-left: 12px;
+}
+.permission-history ul li{
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+.permission-history ul li i {
+    font-size: 6px;
+    position: relative;
+    top: 7px;
+    margin-right: 10px;
+    color: #01A39D;
+}
+.permission-history ul li p{
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    color: #445882;
+}
+.permission-history ul li p .user-clr{
+    color: #01A39D;
+    display: inline-block;
+    margin: 0px 4px;
+}
+
+
+
+/*--------form-table-------*/
+.form-table-box{
+    min-height: 400px;
+    padding-bottom: 100px;
+}
+.form-table tbody td{
+    padding: 22px 10px;
+}
+.form-table thead tr th:nth-child(1){
+    width: 50px !important;
+}
+.form-table thead tr th:nth-child(2){
+    width: 150px !important;
+}
+.form-table thead tr th:nth-child(3){
+    width: 450px !important;
+}
+.form-table thead tr th:nth-child(4){
+    width: 200px !important;
+}
+.form-table thead tr th:nth-child(5){
+    width: 100px !important;
+}
+.form-table thead tr th:nth-child(6){
+    width: 100px !important;
+}
+.form-table .tb-user-dtl h6{
+    font-weight: 500;
 }

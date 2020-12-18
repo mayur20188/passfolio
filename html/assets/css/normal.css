@@ -13,8 +13,8 @@
 html,body{width: 100%;}
 body {
     font-family: 'Rubik', sans-serif;
-    font-size: 16px;
-    color: #4F4F4F;
+    font-size: 14px;
+    color: #445882;
     font-weight: normal;
 }
 *{
@@ -85,6 +85,10 @@ h3, .h3{
 }
 img{
     max-width: 100%;
+}
+
+b, strong{
+    font-weight: 600;
 }
 /*---------sitemap-------------*/
 .sitemap-heading h2{
@@ -184,6 +188,10 @@ img{
 }
 .btn-text{
 
+}
+.text-underline, 
+.text-underline:hover{
+    text-decoration: underline;
 }
 .font-17{
     font-size: 17px !important;
@@ -454,7 +462,7 @@ select{
     color: #727272;
 }
 .text-green-color{
-    color: #01A39D;
+    color: #01A39D !important;
 }
 .alert-sections {
     position: fixed;
@@ -1403,6 +1411,28 @@ select{
 }
 
 
+
+.tooltip-inner {
+    background: #01A39D;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 15px;
+    line-height: 19px;
+    text-align: left;
+}
+.bs-tooltip-auto[x-placement^=bottom] .arrow::before, .bs-tooltip-bottom .arrow::before {
+    border-bottom-color: #01A39D;
+}
+.bs-tooltip-auto[x-placement^=left] .arrow::before, .bs-tooltip-left .arrow::before{
+    border-left-color: #01A39D;
+}
+.bs-tooltip-auto[x-placement^=top] .arrow::before, .bs-tooltip-top .arrow::before{
+    border-top-color: #01A39D;
+}
+.bs-tooltip-auto[x-placement^=right] .arrow::before, .bs-tooltip-right .arrow::before{
+    border-right-color: #01A39D;
+}
 
 
 
