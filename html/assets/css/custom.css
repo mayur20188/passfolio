@@ -1,4 +1,6 @@
-
+textarea.form-control{
+    resize: none;
+}
 .wrapper{
     height: 100%;
     width: 100%;
@@ -406,6 +408,9 @@ div#submissionsChart {
     color: #102A5E;
     margin-bottom: 30px;
 }
+.form-title.form-title-border{
+    border-bottom: 1px solid #E3E5EF;
+}
 .ags-upload-logo h4{
     font-weight: 500;
     font-size: 17px;
@@ -454,6 +459,7 @@ div#submissionsChart {
     background: #FFFFFF;
     border-radius: 28px;
     border: none;
+    box-shadow: 0px 4px 12px rgba(68, 88, 130, 0.2);
 }
 .d-modal-body {
     padding: 55px 50px;
@@ -673,7 +679,6 @@ div#submissionsChart {
     color: #102A5E;
 }
 .manage-pp-switch {
-    line-height: 1.1;
     margin: 45px 0;
 }
 .manage-pp-part {
@@ -830,9 +835,6 @@ div#submissionsChart {
     border-radius: 14px;
     margin-bottom: 25px;
 }
-.review-plan-left{
-
-}
 .review-plan-left h4{
     font-weight: 500;
     font-size: 17px;
@@ -893,8 +895,50 @@ text-align: right;
     border-radius: 50%;
     font-size: 20px;
     color: #fff;
-    background-color: rgb(3 163 157 / 70%);
+    background-color: rgba(3, 163, 157, 0.7);
     margin: 5px;
+}
+.newform-title{
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 28px;
+    color: #102A5E;
+    margin-bottom: 50px;
+}
+.newform-content-row{
+    margin-bottom: 70px;
+}
+.con-export-text h4{
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 22px;
+    color: #102A5E;
+}
+.con-export-text p{
+    font-size: 14px;
+    line-height: 25px;
+    color: #102A5E;
+}
+.con-export-text a{
+    font-size: 14px;
+    line-height: 18px;
+    color: #1C85E8;
+}
+.share-send-via label.form-label{
+    color: #102A5E;
+}
+.share-send-qrcode {
+    max-width: 160px;
+    margin: auto;
+    border: 2px solid #01A39D;
+    padding: 8px;
+}
+.customize-input {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.customize-iframe input.form-control {
+    text-overflow: ellipsis;
 }
 
 
@@ -962,7 +1006,11 @@ text-align: right;
     .manage-pp-content {
         padding: 20px 5px;
     }
+    .share-send-qrcode{
+        margin-left: 0;
+    }
 }
+
 @media (max-width: 767.98px) {
     .top-bar-left > p{
         position: absolute;
@@ -991,6 +1039,11 @@ text-align: right;
     .popup-back{margin-bottom: 10px;}
     .manage-pp-part {
         max-width: 300px;
+    }
+    .customize-input {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 10px;
     }
 }
 
@@ -1101,5 +1154,17 @@ text-align: right;
     } */
     .sidebar-mini .navleft-menu ul li ul{
         display: none;
+    }
+}
+
+@media (min-width: 1200px) {
+    .newform-content {
+        padding: 0 60px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .newform-content {
+        padding: 0 100px;
     }
 }
