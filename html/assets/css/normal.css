@@ -233,6 +233,9 @@ b, strong{
 .pb-6{
     padding-bottom: 6rem !important;
 }
+.resize-none{
+    resize: none;
+}
 .form-group {
     margin-bottom: 20px;
 }
@@ -291,6 +294,12 @@ b, strong{
     margin-left: 10px;
     margin-bottom: 10px;
 }
+.form-text-small{
+    color: #8A93A6;
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
 .form-control{
     border:2px solid #F6F7FB;
     color: #445882;
@@ -318,6 +327,18 @@ b, strong{
 }
 .form-control:-moz-placeholder { /* Firefox 18- */
   color: #8A93A6;
+}
+.form-group-hrl>.row{
+    align-items: center;
+}
+.form-group-hrl .form-label{
+    margin-bottom: 0;
+    padding-left: 0px;
+}
+.form-data-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 select{
     -webkit-appearance: none;
@@ -876,6 +897,7 @@ select{
     position: relative;
     display: inline-block;
     width: 48px;
+    min-width: 48px;
 }
 .text-switch-check{
     position: absolute;
@@ -936,6 +958,7 @@ select{
 
 .yesno-switch.text-switch{
     width: 62px;
+    min-width: 62px;
 }
 .yesno-switch.text-switch .text-swtch-data .left,
 .yesno-switch.text-switch .text-swtch-data .right{
@@ -955,6 +978,7 @@ select{
 
 .status-switch.text-switch{
     width: 85px;
+    min-width: 85px;
 }
 .status-switch.text-switch .text-swtch-data .left,
 .status-switch.text-switch .text-swtch-data .right{
@@ -975,6 +999,7 @@ select{
 
 .pay-switch.text-switch{
     width: 127px;
+    min-width: 127px;
 }
 .pay-switch.text-switch .text-swtch-data .left,
 .pay-switch.text-switch .text-swtch-data .right{

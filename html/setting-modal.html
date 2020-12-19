@@ -1,0 +1,1139 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="apple-touch-fullscreen" content="yes">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="author" content="">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <title>Forms</title>
+        <!-- ================= Favicon ================== -->
+        <link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="assets/images/favicon/site.webmanifest">
+        <link rel="mask-icon" href="assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+        <link rel="stylesheet" href="assets/css/style.css" media="all">
+        <link rel="stylesheet" href="assets/css/responsive.css" media="all">
+        <link rel="stylesheet" href="assets/css/custom.css" media="all">
+    </head>
+    <body>
+        <div class="preloader">
+            <div class="loader-icon animate__animated">
+                <lottie-player src="assets/js/loader.json"  background="transparent"  speed="1"  style="width: 200px; height: 200px;"  loop autoplay></lottie-player>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="sidenav-container">
+                <div class="sidenav-logo">
+                    <a href="index.html">
+                        <span class="logo-icon">
+                            <img src="assets/images/icon-logo.svg" class="img-fluid" alt="">
+                        </span>
+                    </a>
+                    <a href="index.html">
+                        <span class="logo-text">
+                            <img src="assets/images/logo-text.svg" class="img-fluid" alt="">
+                        </span>
+                    </a>
+                </div>
+                <div class="scroll-sidebar">
+                    <div class="navleft-menu">
+                        <ul id="sidebarmenu">
+                            <li>
+                                <a href="index.html">
+                                    <img src="assets/images/icons/home.svg" alt="Dashboard">
+                                    <span class="left-menu-title">Dashboard</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#submissions" data-toggle="collapse" aria-expanded="false">
+                                    <img src="assets/images/icons/message.svg" alt="Submissions">
+                                    <span class="left-menu-title">Submissions</span>
+                                </a>
+                                <ul class="collapse submenu list-unstyled" id="submissions" data-parent="#sidebarmenu">
+                                    <li>
+                                        <a href="javascript:;">Applications</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">Signed Documents</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#templates" data-toggle="collapse" aria-expanded="false">
+                                    <img src="assets/images/icons/forms.svg" alt="">
+                                    <span class="left-menu-title">Templates</span>
+                                </a>
+                                <ul class="collapse submenu list-unstyled" id="templates" data-parent="#sidebarmenu">
+                                    <li>
+                                        <a href="javascript:;">Forms</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">Documents</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">Send Document</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <img src="assets/images/icons/users.svg" alt="">
+                                    <span class="left-menu-title">Users</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <img src="assets/images/icons/profile.svg" alt="">
+                                    <span class="left-menu-title">Profile</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="setting.html">
+                                    <img src="assets/images/icons/settings.svg" alt="">
+                                    <span class="left-menu-title">Settings</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="content-page">
+                <div class="top-bar">
+                    <div class="top-bar-left d-flex align-items-center">
+                        <a href="index.html" class="icon-logo-left d-lg-none">
+                            <img src="assets/images/icon-logo.svg" class="img-fluid" alt="">
+                        </a>
+                        <p>Australian Government Services</p>
+                        <ul class="top-bar-icon d-flex list-inline">
+                            <li class="d-lg-none">
+                                <a href="javascript:;" class="toggle-menu-btn">
+                                    <!-- <i class="feather icon-menu"></i> -->
+                                    <img src="assets/images/icons/menu.svg" class="img-fluid" alt="menu">
+                                </a>
+                            </li>
+                            <li class="dropdown notification-dropdown active-notification">
+                                <a href="javascript:void(0);" class="dropdown-toggle" id="notificationdropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-display="static">
+                                    <img src="assets/images/icons/notification.svg" class="img-fluid" alt="notification">
+                                    <span class="notifi-badge"></span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="notificationdropdown">
+                                    <div class="notification-drp">
+                                        <div class="notification-header">
+                                            <p class="noti-head">22 New Notifications</p>
+                                        </div>
+                                        <div class="notification-content">
+                                            <ul class="mCustomScrollbar">
+                                                <li class="unread-notifi">
+                                                    <a href="javascript:void(0);">
+                                                        <div class="notifi-box">
+                                                            <div class="notifi-header">
+                                                                <h5>Form 12658124522NGH135</h5>
+                                                                <p class="notifi-time">2m ago</p>
+                                                            </div>
+                                                            <div class="notifi-message">
+                                                                <p>Medine export declaration has been reviewed. Awaiting your confirmation.</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="unread-notifi">
+                                                    <a href="javascript:void(0);">
+                                                        <div class="notifi-box">
+                                                            <div class="notifi-header">
+                                                                <h5>Submission 82658124522NH135</h5>
+                                                                <p class="notifi-time">34m ago</p>
+                                                            </div>
+                                                            <div class="notifi-message">
+                                                                <p>Application to enroll into a NSW Government School, awaiting your review.</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);">
+                                                        <div class="notifi-box">
+                                                            <div class="notifi-header">
+                                                                <h5>Application 12658124522NH135</h5>
+                                                                <p class="notifi-time">45m ago</p>
+                                                            </div>
+                                                            <div class="notifi-message">
+                                                                <p>Loan Agreement, awaiting for your review.</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);">
+                                                        <div class="notifi-box">
+                                                            <div class="notifi-header">
+                                                                <h5>Submission 34658124522NH133</h5>
+                                                                <p class="notifi-time">45m ago</p>
+                                                            </div>
+                                                            <div class="notifi-message">
+                                                                <p>Parents or guardians additional details for Youth Allowance or ABSTUDY, awaiting your review.</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);">
+                                                        <div class="notifi-box">
+                                                            <div class="notifi-header">
+                                                                <h5>Submission 45358124522NH121</h5>
+                                                                <p class="notifi-time">3h ago</p>
+                                                            </div>
+                                                            <div class="notifi-message">
+                                                                <p>Parents or guardians additional details for Youth Allowance or ABSTUDY, awaiting your review.</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);">
+                                                        <div class="notifi-box">
+                                                            <div class="notifi-header">
+                                                                <h5>Application 12658124522NH135</h5>
+                                                                <p class="notifi-time">45m ago</p>
+                                                            </div>
+                                                            <div class="notifi-message">
+                                                                <p>Loan Agreement, awaiting for your review.</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);">
+                                                        <div class="notifi-box">
+                                                            <div class="notifi-header">
+                                                                <h5>Submission 34658124522NH133</h5>
+                                                                <p class="notifi-time">45m ago</p>
+                                                            </div>
+                                                            <div class="notifi-message">
+                                                                <p>Parents or guardians additional details for Youth Allowance or ABSTUDY, awaiting your review.</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);">
+                                                        <div class="notifi-box">
+                                                            <div class="notifi-header">
+                                                                <h5>Submission 45358124522NH121</h5>
+                                                                <p class="notifi-time">3h ago</p>
+                                                            </div>
+                                                            <div class="notifi-message">
+                                                                <p>Parents or guardians additional details for Youth Allowance or ABSTUDY, awaiting your review.</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);">
+                                                        <div class="notifi-box">
+                                                            <div class="notifi-header">
+                                                                <h5>Application 12658124522NH135</h5>
+                                                                <p class="notifi-time">45m ago</p>
+                                                            </div>
+                                                            <div class="notifi-message">
+                                                                <p>Loan Agreement, awaiting for your review.</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);">
+                                                        <div class="notifi-box">
+                                                            <div class="notifi-header">
+                                                                <h5>Submission 34658124522NH133</h5>
+                                                                <p class="notifi-time">45m ago</p>
+                                                            </div>
+                                                            <div class="notifi-message">
+                                                                <p>Parents or guardians additional details for Youth Allowance or ABSTUDY, awaiting your review.</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);">
+                                                        <div class="notifi-box">
+                                                            <div class="notifi-header">
+                                                                <h5>Submission 45358124522NH121</h5>
+                                                                <p class="notifi-time">3h ago</p>
+                                                            </div>
+                                                            <div class="notifi-message">
+                                                                <p>Parents or guardians additional details for Youth Allowance or ABSTUDY, awaiting your review.</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="p-2">
+                                                    <div class="notifi-loader text-center">
+                                                        <div class="spinner-border icon-load text-grey" role="status"></div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="notification-footer">
+                                            <a href="notification.html">See All</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="top-bar-right">
+                        <div class="navbar-custom">
+                            <ul>
+                                <li class="dropdown header-profile-dropdown">
+                                    <a href="javascript:void(0);" class="dropdown-toggle userProfile" id="userProfileDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-display="static">
+                                        <img src="assets/images/avatar.jpg" class="img-fluid" alt="avatar">
+                                        <div class="userProfile-info d-none d-sm-block">
+                                            <span>Hello, <i>Pixie</i></span>
+                                            <p>Administrator</p>
+                                        </div>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userProfileDropdown">
+                                        <div class="userProfile-info d-sm-none">
+                                            <span>Hello, <i>Pixie</i></span>
+                                            <p>Administrator</p>
+                                        </div>
+                                        <div class="profile-dropdown-link">
+                                            <a class="" href="javascript:;"><i class="feather icon-user profile-icon"></i> Profile</a>
+                                            <a class="" href="javascript:;"><i class="feather icon-lock profile-icon"></i> Change Password</a>
+                                            <a class="" href="javascript:;"><i class="feather icon-log-out profile-icon"></i> Sign Out</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-content-area main-content-white-area">
+                    <div class="row m-0">
+                        <div class="col-md-12">
+                            <div class="content-title-part multiple-filter-title d-flex justify-content-between mt-2">
+                                <h1>Forms</h1>
+                                <div class="content-title-right">
+                                    <div class="action-buttons">
+                                        <div class="serach-filter">
+                                            <a href="javascript:void(0);" class="search-filter-btn">
+                                                <img src="assets/images/search.svg" alt="">
+                                            </a>
+                                            <div class="serach-store-box">
+                                                <button class="search-icon"><img src="assets/images/search.svg" alt=""></button>
+                                                <input type="text" name="" class="search-store-input">
+                                                <button class="search-close-icon"><i class="feather icon-x"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="side-filter">
+                                            <a href="javascript:void(0);">
+                                                <img src="assets/images/filter.svg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="side-dropdown dropdown">
+                                            <a href="javascript:void(0);" class="dropdown-toggle" id="actiondropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-display="static">
+                                                <img src="assets/images/actions.svg" alt="">
+                                            </a>
+                                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="actiondropdown">
+                                                <div class="actions-links-data">
+                                                    <ul>
+                                                        <li class="disable"><a href="javascript:void(0);">Approve</a></li>
+                                                        <li class="disable"><a href="javascript:void(0);">Deny</a></li>
+                                                        <li class="disable"><a href="javascript:void(0);">Mark as  unread</a></li>
+                                                        <li class="active"><a href="javascript:void(0);">Edit column</a></li>
+                                                        <li><a href="javascript:void(0);">Edit status</a></li>
+                                                        <li><a href="javascript:void(0);">Import data</a></li>
+                                                        <li><a href="javascript:void(0);">Download data</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="add-area-btn">
+                                            <a href="javascript:void(0);"  data-toggle="modal" data-target="#addformmodal">
+                                                <i class="feather icon-plus"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="table-responsive form-table-box">
+                                <table class="table table-design table-style form-table">
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                <div class="form-group mb-0">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="allcheck">
+                                                        <label class="custom-control-label" for="allcheck"></label>
+                                                    </div>
+                                                </div>
+                                            </th>
+                                            <th>Form ID</th>
+                                            <th>Form Name</th>
+                                            <th>Responses</th>
+                                            <th>Status</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="form-group mb-0">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="check2">
+                                                        <label class="custom-control-label" for="check2"></label>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-id"><p>26198124522NH135</p></div>
+                                            </td>
+                                            <td>
+                                                <div class="table-formname">
+                                                    <h6>Medicine export declaration</h6>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-form-date">
+                                                    <p>Not applicable</p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-status badge-warning" data-toggle="tooltip" data-placement="top" title="This form is pending review by Passfolio for unmapped fields."><i class="fa fa-info-circle mr-1"></i>Pending</div>
+                                            </td>
+                                            <td>
+                                                <div class="side-dropdown custom-dropdown dropdown">
+                                                    <a href="javascript:void(0);" class="dropdown-toggle" id="actiondropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-display="static">
+                                                        <img src="assets/images/actions.svg" alt="">
+                                                    </a>
+                                                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="actiondropdown">
+                                                        <div class="actions-links-data">
+                                                            <ul>
+                                                                <li><a href="javascript:void(0);">Edit</a></li>
+                                                                <li><a href="javascript:void(0);">Delete</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-group mb-0">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="check1">
+                                                        <label class="custom-control-label" for="check1"></label>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-id"><p>A211526198124522</p></div>
+                                            </td>
+                                            <td>
+                                                <div class="table-formname">
+                                                    <h6>Parents or guardians additional details for Youth Allowance or ABSTUDY</h6>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-form-date active">
+                                                    <h6>4 new</h6>
+                                                    <p>123 m</p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-status badge-success">Active</div>
+                                            </td>
+                                            <td>
+                                                <div class="side-dropdown custom-dropdown dropdown">
+                                                    <a href="javascript:void(0);" class="dropdown-toggle" id="actiondropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-display="static">
+                                                        <img src="assets/images/actions.svg" alt="">
+                                                    </a>
+                                                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="actiondropdown">
+                                                        <div class="actions-links-data">
+                                                            <ul>
+                                                                <li><a href="javascript:void(0);">Edit</a></li>
+                                                                <li><a href="javascript:void(0);">Delete</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-group mb-0">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="check2">
+                                                        <label class="custom-control-label" for="check2"></label>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-id"><p>I723R26198124522</p></div>
+                                            </td>
+                                            <td>
+                                                <div class="table-formname">
+                                                    <h6>Application to enroll into a NSW Government School</h6>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-form-date active">
+                                                    <h6>4 new</h6>
+                                                    <p>142 m</p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-status badge-success">Active</div>
+                                            </td>
+                                            <td>
+                                                <div class="side-dropdown custom-dropdown dropdown">
+                                                    <a href="javascript:void(0);" class="dropdown-toggle" id="actiondropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-display="static">
+                                                        <img src="assets/images/actions.svg" alt="">
+                                                    </a>
+                                                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="actiondropdown">
+                                                        <div class="actions-links-data">
+                                                            <ul>
+                                                                <li><a href="javascript:void(0);">Edit</a></li>
+                                                                <li><a href="javascript:void(0);">Delete</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                    <!-- <tbody>
+                                        <tr>
+                                            <td colspan="6">
+                                                <div class="empty-table">
+                                                    <p>There are no  forms yet.</p>
+                                                    <a href="javascript:void(0);">Create your first form.</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody> -->
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-footer">
+                    <p>© 2020 <a href="javascript:void(0);">Passfolio</a>. All rights reserved. ABN 13 132 738 142</p>
+                </div>
+            </div>
+            <div class="overlay_bg"></div>
+        </div>
+
+
+
+        <div class="modal fade" id="addformmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body d-modal-body">
+                        <div class="d-modal-content">
+                            <div class="popup-back mt-align-back text-right">
+                                <a href="javascript:;" data-dismiss="modal" class="cancel-btn py-0">Back</a>
+                            </div>
+                            <div class="d-modal-content-title">
+                                <h2>Create Form</h2>
+                            </div>
+                            <div class="download-AllData-form mt-5">
+                                <div class="form-group">
+                                    <label class="form-label">Enter Form Name</label>
+                                    <input type="text" class="form-control" placeholder="My Form">
+                                </div>
+                                <div class="form-group mt-5">
+                                    <button class="default-btn btn-small mt-1">Start from scratch</button>
+                                    <button class="default-btn btn-small ml-1 mt-1">Use a template</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="modal fade" id="settingmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog setting-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body setting-modal-body">
+                        <div class="d-modal-content">
+                            <div class="custom-modal-header">
+                                <h2>Create Form</h2>
+                                <div class="modal-header-right">
+                                    <div class="setting-slider-button">
+                                        <button class="setting-prev disabled">
+                                            <i class="fa fa-chevron-left"></i>
+                                        </button>
+                                        <button class="setting-next">
+                                            <i class="fa fa-chevron-right"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="custom-modal-content mb-0">
+                                <div class="seting-data-header">
+                                    <div class="setting-id">
+                                        <h6>AID-SA0001</h6>
+                                        <p>Answer ID</p>
+                                    </div>
+                                    <div class="setting-togglebtn">
+                                        <div class="text-switch pay-switch">
+                                            <input type="checkbox" name="" id="check4" class="text-switch-check" checked>
+                                            <label for="check4" class="text-switch-label">
+                                                <span class="text-swtch-data">
+                                                    <span class="left">Required</span>
+                                                    <span class="dot-circle"></span>
+                                                    <span class="right">Not Required</span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="setings-form-data">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group form-group-hrl">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <label class="form-label label-light">Label or Question</label>
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                         <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group form-group-hrl">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <label class="form-label label-light">Placeholder</label>
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                         <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group form-group-hrl">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <label class="form-label label-light">Question Type</label>
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                        <div class="select2Part default-select w-100">
+                                                            <select name="" id="" class="form-control customSelect">
+                                                                <option value="">Short answer</option>
+                                                                <option value="">Answer 1</option>
+                                                                <option value="">Answer 2</option>
+                                                                <option value="">Answer 3</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 mt-3">
+                                            <div class="form-group form-group-hrl">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <label class="form-label label-light">Select</label>
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                        <div class="data-form-buttons">
+                                                            <button class="form-btn-data active">Time</button>
+                                                            <button class="form-btn-data">Duration</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="row mt-3 mb-3">
+                                                <div class="col-md-12">
+                                                    <div class="form-group form-group-hrl">
+                                                        <div class="row">
+                                                            <div class="col-md-8">
+                                                                <label class="form-label label-light">Max number of files</label>
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                                <div class="select2Part default-select w-100">
+                                                                    <select name="" id="" class="form-control customSelect">
+                                                                        <option value="">1</option>
+                                                                        <option value="">2</option>
+                                                                        <option value="">3</option>
+                                                                        <option value="">4</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 mt-3">
+                                                    <div class="form-group form-group-hrl">
+                                                        <div class="row">
+                                                            <div class="col-md-8">
+                                                                <label class="form-label label-light">Max file size</label>
+                                                                <p class="form-text-small">This form can accept up to 1 GB of files.</p>
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                                <div class="select2Part default-select w-100">
+                                                                    <select name="" id="" class="form-control customSelect">
+                                                                        <option value="">1 GB</option>
+                                                                        <option value="">2 GB</option>
+                                                                        <option value="">3 GB</option>
+                                                                        <option value="">4 GB</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <div class="form-data-flex">
+                                                    <label class="form-label label-light pl-0 mb-0">Include Year</label>
+                                                    <div class="text-switch">
+                                                        <input type="checkbox" name="" id="swchcheck8" class="text-switch-check" checked>
+                                                        <label for="swchcheck8" class="text-switch-label">
+                                                            <span class="text-swtch-data">
+                                                                <span class="dot-circle"></span>
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <div class="form-data-flex">
+                                                    <label class="form-label label-light pl-0 mb-0">Include Time</label>
+                                                    <div class="text-switch">
+                                                        <input type="checkbox" name="" id="swchcheck9" class="text-switch-check" checked>
+                                                        <label for="swchcheck9" class="text-switch-label">
+                                                            <span class="text-swtch-data">
+                                                                <span class="dot-circle"></span>
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-md-12 mt-4">
+                                            <div class="form-group">
+                                                <div class="form-data-flex">
+                                                    <label class="form-label label-light pl-0 mb-0">Add description</label>
+                                                    <div class="text-switch">
+                                                        <input type="checkbox" name="" id="swchcheck1" class="text-switch-check" checked>
+                                                        <label for="swchcheck1" class="text-switch-label">
+                                                            <span class="text-swtch-data">
+                                                                <span class="dot-circle"></span>
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="data-show-with-check">
+                                                <div class="form-group">
+                                                    <textarea class="form-control resize-none" rows="5" placeholder="Add description"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <div class="form-data-flex">
+                                                    <label class="form-label label-light pl-0 mb-0">Show number beside the question</label>
+                                                    <div class="text-switch">
+                                                        <input type="checkbox" name="" id="swchcheck2" class="text-switch-check" checked>
+                                                        <label for="swchcheck2" class="text-switch-label">
+                                                            <span class="text-swtch-data">
+                                                                <span class="dot-circle"></span>
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <div class="form-data-flex">
+                                                    <label class="form-label label-light pl-0 mb-0">Allow specific file types</label>
+                                                    <div class="text-switch">
+                                                        <input type="checkbox" name="" id="swchcheck5" class="text-switch-check" checked>
+                                                        <label for="swchcheck5" class="text-switch-label">
+                                                            <span class="text-swtch-data">
+                                                                <span class="dot-circle"></span>
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="data-show-with-check">
+                                                <div class="row mb-3">
+                                                    <div class="col-md-6">
+                                                        <div class="form-group mb-2">
+                                                            <div class="custom-control custom-checkbox">
+                                                                <input type="checkbox" class="custom-control-input" id="type1">
+                                                                <label class="custom-control-label" for="type1">Document</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group mb-2">
+                                                            <div class="custom-control custom-checkbox">
+                                                                <input type="checkbox" class="custom-control-input" id="type2">
+                                                                <label class="custom-control-label" for="type2">Presentation</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group mb-2">
+                                                            <div class="custom-control custom-checkbox">
+                                                                <input type="checkbox" class="custom-control-input" id="type3">
+                                                                <label class="custom-control-label" for="type3">Spreadsheet</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group mb-2">
+                                                            <div class="custom-control custom-checkbox">
+                                                                <input type="checkbox" class="custom-control-input" id="type4">
+                                                                <label class="custom-control-label" for="type4">Image</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group mb-2">
+                                                            <div class="custom-control custom-checkbox">
+                                                                <input type="checkbox" class="custom-control-input" id="type5">
+                                                                <label class="custom-control-label" for="type5">PDF</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group mb-2">
+                                                            <div class="custom-control custom-checkbox">
+                                                                <input type="checkbox" class="custom-control-input" id="type6">
+                                                                <label class="custom-control-label" for="type6">Audio</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group mb-2">
+                                                            <div class="custom-control custom-checkbox">
+                                                                <input type="checkbox" class="custom-control-input" id="type7">
+                                                                <label class="custom-control-label" for="type7">Video</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group mb-2">
+                                                            <div class="custom-control custom-checkbox">
+                                                                <input type="checkbox" class="custom-control-input" id="type8">
+                                                                <label class="custom-control-label" for="type8">Zip</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <div class="form-data-flex">
+                                                    <label class="form-label label-light pl-0 mb-0">Backup responder’s file uploads</label>
+                                                    <div class="text-switch">
+                                                        <input type="checkbox" name="" id="swchcheck6" class="text-switch-check" checked>
+                                                        <label for="swchcheck6" class="text-switch-label">
+                                                            <span class="text-swtch-data">
+                                                                <span class="dot-circle"></span>
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <div class="row form-row">
+                                                    <div class="col-md-12">
+                                                        <label class="form-label label-light pl-0">Connect with</label>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <div class="upload-radio-box">
+                                                            <input type="radio" class="upload-radio-input" name="uploadradio" id="googledrive">
+                                                            <label for="googledrive" class="upload-radio-label">
+                                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M7.03792 4.7425L4.79617 0.875L0 9.25575L2.20383 13.125L7.03792 4.7425Z" fill="#4CAF50"/>
+                                                                    <path d="M4.79688 0.875L9.64379 9.25575H14.0007L9.20454 0.875H4.79688Z" fill="#FFC107"/>
+                                                                    <path d="M4.43438 9.25781L2.20312 13.127H11.7955L13.9993 9.25781H4.43438Z" fill="#2196F3"/>
+                                                                </svg>
+                                                                <span>Google Drive</span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <div class="upload-radio-box">
+                                                            <input type="radio" class="upload-radio-input" name="uploadradio" id="dropdbox">
+                                                            <label for="dropdbox" class="upload-radio-label">
+                                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M7.19364 2.70007L4.56869 0.366796C4.47523 0.283591 4.33909 0.269263 4.23037 0.331222L0.1471 2.6645C0.00721245 2.74437 -0.0414311 2.92251 0.0384111 3.0624C0.0567037 3.09445 0.0809024 3.12272 0.10975 3.14574L3.02637 5.47902C3.07799 5.52044 3.14217 5.54306 3.20836 5.54319C3.26231 5.54322 3.31522 5.52826 3.36119 5.50002L7.15279 3.16674C7.29002 3.08239 7.3329 2.90277 7.24854 2.76553C7.23356 2.74114 7.21505 2.71908 7.19364 2.70007Z" fill="#2196F3"/>
+                                                                <path d="M7.16575 7.63778L3.37415 5.01283C3.26863 4.93974 3.12773 4.94425 3.02708 5.0239L0.110463 7.33386C-0.0157529 7.43394 -0.0369438 7.61738 0.0631323 7.7436C0.0860186 7.77245 0.114127 7.7967 0.146037 7.8151L4.22928 10.1717C4.33215 10.2314 4.46093 10.2226 4.55477 10.1496L7.17972 8.10792C7.30695 8.00913 7.33 7.8259 7.23121 7.69868C7.213 7.67522 7.19129 7.65468 7.16687 7.63776L7.16575 7.63778Z" fill="#2196F3"/>
+                                                                <path d="M13.8909 7.35499L10.9743 5.02171C10.8733 4.94025 10.7307 4.93525 10.6243 5.00946L6.83268 7.63441C6.70026 7.72612 6.66723 7.90781 6.75894 8.04024C6.77583 8.06465 6.7964 8.08636 6.81986 8.10458L9.4448 10.1462C9.53802 10.2189 9.66587 10.2281 9.76855 10.1695L13.8518 7.83626C13.9917 7.75639 14.0403 7.57825 13.9605 7.43836C13.9422 7.40631 13.918 7.37804 13.8891 7.35502L13.8909 7.35499Z" fill="#2196F3"/>
+                                                                <path d="M13.8536 2.6645L9.77037 0.331222C9.66163 0.269263 9.52551 0.283591 9.43206 0.366796L6.8071 2.70007C6.68659 2.80696 6.67557 2.99131 6.78246 3.11181C6.80146 3.13322 6.82353 3.15173 6.84792 3.16674L10.6395 5.50002C10.6856 5.52807 10.7385 5.54281 10.7924 5.54259C10.8585 5.54265 10.9226 5.52023 10.9744 5.47902L13.891 3.14574C14.0169 3.04526 14.0375 2.86173 13.937 2.73584C13.914 2.70699 13.8857 2.68279 13.8536 2.6645Z" fill="#2196F3"/>
+                                                                <path d="M10.0582 10.676C9.75059 10.8517 9.36735 10.8245 9.08757 10.6072L6.99929 8.98438L4.91158 10.6083C4.63068 10.8267 4.24558 10.8532 3.93742 10.6754L2.91602 10.0863V11.0843C2.91599 11.1856 2.96854 11.2797 3.05484 11.3328L6.84644 13.6661C6.94003 13.7235 7.05794 13.7235 7.15151 13.6661L10.9431 11.3328C11.0296 11.2798 11.0824 11.1858 11.0825 11.0843V10.0927L10.0582 10.676Z" fill="#2196F3"/>
+                                                                </svg>
+                                                                <span>Dropbox</span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <div class="form-data-flex">
+                                                    <label class="form-label label-light pl-0 mb-0">Validate answer</label>
+                                                    <div class="text-switch">
+                                                        <input type="checkbox" name="" id="swchcheck3" class="text-switch-check" checked>
+                                                        <label for="swchcheck3" class="text-switch-label">
+                                                            <span class="text-swtch-data">
+                                                                <span class="dot-circle"></span>
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="data-show-with-check">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <ul class="nav nav-pills flex-column flex-sm-row nav-justified setting-tabs mb-2" id="pills-tab" role="tablist">
+                                                            <li class="nav-item" role="presentation">
+                                                                <a class="nav-link active" id="number-tab" data-toggle="pill" href="#number-tab-data" role="tab" aria-controls="number" aria-selected="true">Number</a>
+                                                            </li>
+                                                            <li class="nav-item" role="presentation">
+                                                                <a class="nav-link" id="text-tab" data-toggle="pill" href="#text-tab-data" role="tab" aria-controls="text" aria-selected="false">Text</a>
+                                                            </li>
+                                                            <li class="nav-item" role="presentation">
+                                                                <a class="nav-link" id="length-tab" data-toggle="pill" href="#length-tab-data" role="tab" aria-controls="length" aria-selected="false">Length</a>
+                                                            </li>
+                                                            <li class="nav-item" role="presentation">
+                                                                <a class="nav-link" id="expression-tab" data-toggle="pill" href="#expression-tab-data" role="tab" aria-controls="expression" aria-selected="false">Regular expression</a>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="tab-content" id="pills-tabContent">
+                                                            <div class="tab-pane show active" id="number-tab-data" role="tabpanel" aria-labelledby="number-tab">
+                                                                <div class="row form-row">
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group mb-2">
+                                                                            <div class="select2Part default-select w-100">
+                                                                                <select name="" id="" class="form-control customSelect">
+                                                                                    <option value="">Greater than</option>
+                                                                                    <option value="">10</option>
+                                                                                    <option value="">20</option>
+                                                                                    <option value="">30</option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group mb-2">
+                                                                            <input type="text" class="form-control" placeholder="Number">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-12">
+                                                                        <div class="form-group mb-2">
+                                                                            <input type="text" class="form-control" placeholder="Custom error text">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="tab-pane" id="text-tab-data" role="tabpanel" aria-labelledby="text-tab">
+                                                                <div class="row form-row">
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group mb-2">
+                                                                            <div class="select2Part default-select w-100">
+                                                                                <select name="" id="" class="form-control customSelect">
+                                                                                    <option value="">Contains</option>
+                                                                                    <option value="">10</option>
+                                                                                    <option value="">20</option>
+                                                                                    <option value="">30</option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group mb-2">
+                                                                            <input type="text" class="form-control" placeholder="Text">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-12">
+                                                                        <div class="form-group mb-2">
+                                                                            <input type="text" class="form-control" placeholder="Custom error text">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="tab-pane" id="length-tab-data" role="tabpanel" aria-labelledby="length-tab">
+                                                                <div class="row form-row">
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group mb-2">
+                                                                            <div class="select2Part default-select w-100">
+                                                                                <select name="" id="" class="form-control customSelect">
+                                                                                    <option value="">Max character count</option>
+                                                                                    <option value="">10</option>
+                                                                                    <option value="">20</option>
+                                                                                    <option value="">30</option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group mb-2">
+                                                                            <input type="text" class="form-control" placeholder="Number">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-12">
+                                                                        <div class="form-group mb-2">
+                                                                            <input type="text" class="form-control" placeholder="Custom error text">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="tab-pane" id="expression-tab-data" role="tabpanel" aria-labelledby="expression-tab">
+                                                                <div class="row form-row">
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group mb-2">
+                                                                            <div class="select2Part default-select w-100">
+                                                                                <select name="" id="" class="form-control customSelect">
+                                                                                    <option value="">Contains</option>
+                                                                                    <option value="">10</option>
+                                                                                    <option value="">20</option>
+                                                                                    <option value="">30</option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group mb-2">
+                                                                            <input type="text" class="form-control" placeholder="Pattern">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-12">
+                                                                        <div class="form-group mb-2">
+                                                                            <input type="text" class="form-control" placeholder="Custom error text">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <div class="form-data-flex">
+                                                    <label class="form-label label-light pl-0 mb-0">Limit to one response per column</label>
+                                                    <div class="text-switch">
+                                                        <input type="checkbox" name="" id="swchcheck7" class="text-switch-check" checked>
+                                                        <label for="swchcheck7" class="text-switch-label">
+                                                            <span class="text-swtch-data">
+                                                                <span class="dot-circle"></span>
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 mt-4">
+                                            <div class="form-group">
+                                                <div class="form-data-flex">
+                                                    <label class="form-label label-light pl-0 mb-0">Go to section based on answer</label>
+                                                    <div class="text-switch">
+                                                        <input type="checkbox" name="" id="swchcheck4" class="text-switch-check" checked>
+                                                        <label for="swchcheck4" class="text-switch-label">
+                                                            <span class="text-swtch-data">
+                                                                <span class="dot-circle"></span>
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="data-show-with-check">
+                                                <div class="row form-row">
+                                                    <div class="col-md-6">
+                                                        <div class="form-group mb-2">
+                                                            <input type="text" class="form-control" placeholder="Option one" value="Option one">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group mb-2">
+                                                            <div class="select2Part default-select w-100">
+                                                                <select name="" id="" class="form-control customSelect">
+                                                                    <option value="">Go to next section</option>
+                                                                    <option value="">10</option>
+                                                                    <option value="">20</option>
+                                                                    <option value="">30</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="form-group mb-2">
+                                                            <input type="text" class="form-control" placeholder="Add option">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="custom-modal-footer">
+                                <div class="form-group mt-4">
+                                    <button class="default-btn btn-small">Save</button>
+                                    <a href="javascript:;" data-dismiss="modal" class="cancel-btn">Cancel</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--js -->
+        <script src="assets/js/jquery-3.4.1.min.js"></script>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/lottie-player.js"></script>
+        <script src="assets/js/select2.full.min.js"></script>
+        <script src="assets/js/jquery.mCustomScrollbar.js"></script>
+        <script src="assets/js/jquery.dataTables.min.js"></script>
+        <script src="assets/js/apexcharts.min.js"></script>
+        <script src="assets/js/Sortable.js"></script>
+        <script src="assets/js/custom.js"></script>
+        <script>
+            $('#settingmodal').modal('show');
+        </script>
+    </body>
+</html>
