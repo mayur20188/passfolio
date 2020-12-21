@@ -956,9 +956,12 @@ select{
 .pay-switch.text-switch .text-switch-check:checked + .text-switch-label{
     background-color: #1C85E8;
 }
-
+.modal{
+    z-index: 10000;
+}
 .modal-backdrop{
     background: #102a5e;
+    z-index: 9999;
 }
 .modal-backdrop.show{
     opacity: 0.6;
