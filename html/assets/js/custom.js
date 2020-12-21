@@ -13,17 +13,17 @@ $(document).ready(function() {
 	$('.toggle-menu-btn').on('click', function(){
 		if($(this).hasClass('open')){
 			$('.wrapper').removeClass("sidebar-opened");
-			$('.overlay_bg').hide();
+			$('.overlay_bg').removeClass('active');
 			$(this).removeClass('open');
 		}else{
 			$(this).addClass('open');
 			$('.wrapper').addClass("sidebar-opened");
-			$('.overlay_bg').show();
+			$('.overlay_bg').addClass('active');
 		}
 	});
 	$('.overlay_bg').on('click', function(){
 		$('.wrapper').removeClass("sidebar-opened");
-		$('.overlay_bg').hide();
+		$('.overlay_bg').removeClass('active');
 		$('.toggle-menu-btn').removeClass('open');
 	});
 	TopbarStuck();
