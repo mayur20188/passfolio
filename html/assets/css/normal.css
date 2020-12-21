@@ -334,31 +334,6 @@ select{
     appearance: none;
     background: url(../images/select-arrow.svg) calc(100% - 18px) / 11px no-repeat;
 }
-.font-Roboto{
-    font-family: 'Roboto', sans-serif !important;
-}
-.font-pn-eb{
-    font-family: 'Roboto', sans-serif !important;
-}
-.font-pn-b{
-    font-family: 'Roboto', sans-serif !important;
-}
-.font-pn-sb{
-    font-family: 'Roboto', sans-serif !important;
-    font-weight: 700;
-}
-.font-pn-m{
-    font-family: 'Roboto', sans-serif !important;
-}
-.font-pn-r{
-    font-family: 'Roboto', sans-serif !important;
-}
-.font-pn-ri{
-    font-family: 'Roboto', sans-serif !important;
-}
-.font-pn-l{
-    font-family: 'Roboto', sans-serif !important;
-}
 .fw-400{
     font-weight: 400 !important;
 }
