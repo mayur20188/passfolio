@@ -522,11 +522,11 @@
                                                                             <div class="share-send-input d-md-flex">
                                                                                 <div class="customize-input">
                                                                                     <div class="customize-iframe">
-                                                                                        <input type="text" class="form-control" value='&lt;iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe-OwKRlKwQbqY2-AVgy5jF4tL_BWXdjVahJRaaa51TWZFM_g/viewform?embedded=true" width="640" height="1807" frameborder="0" marginheight="0" marginwidth="0"&gt;Loading…&lt;/iframe&gt;' />
+                                                                                        <input type="text" class="form-control copyinputtext" value='&lt;iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe-OwKRlKwQbqY2-AVgy5jF4tL_BWXdjVahJRaaa51TWZFM_g/viewform?embedded=true" width="640" height="1807" frameborder="0" marginheight="0" marginwidth="0"&gt;Loading…&lt;/iframe&gt;' onClick="copyToClipboard(this);" />
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="customize-input text-md-center">
-                                                                                    <a href="javascript:;" class="default-outline-btn btn-small">Customize</a>
+                                                                                    <a href="javascript:;" class="default-outline-btn btn-small"  data-toggle="modal" data-target="#editHTMLIframe">Customize</a>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
@@ -539,7 +539,7 @@
                                                                             <div class="share-send-input d-md-flex">
                                                                                 <div class="customize-input">
                                                                                     <div class="customize-iframe">
-                                                                                        <input type="text" class="form-control" value='https://forms.pfolio/Rdjstovxerefhth' />
+                                                                                        <input type="text" class="form-control copyinputtext" value='https://forms.pfolio/Rdjstovxerefhth' onClick="copyToClipboard(this);" />
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
@@ -551,6 +551,103 @@
                                                                         <img src="assets/images/qrcode.png" class="img-fluid" alt="" />
                                                                     </div>
                                                                 </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-title form-title-border mb-5">
+                                                        <h3 class="mb-1">Email Received by Responder</h3>
+                                                        <p class="mb-4">Customize what emails are sent when the form is submitted.</p>
+                                                    </div>
+                                                    <div class="newform-content-row">
+                                                        <div class="table-responsive">
+                                                            <table class="table table-design">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th style="width: 40%;">Emails</th>
+                                                                        <th style="width: 20%;">Updated</th>
+                                                                        <th class="text-center">Status</th>
+                                                                        <th class="text-center">Action</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="table-app-msg active">
+                                                                                <h5>Medicine export declaration application received</h5>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="table-simple-text">
+                                                                                <p>Today</p>
+                                                                                <p>12:00PM</p>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td align="center">
+                                                                            <div class="table-status badge-success">Active</div>
+                                                                        </td>
+                                                                        <td align="center">
+                                                                            <div class="action-btn">
+                                                                                <a href="javascript:void(0);" class="cancel-btn" data-toggle="modal" data-target="#editHTMLEmail">Edit</a>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="table-app-msg active">
+                                                                                <h5>Medicine export declaration application received</h5>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="table-simple-text">
+                                                                                <p>Today</p>
+                                                                                <p>12:00PM</p>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td align="center">
+                                                                            <div class="table-status badge-success">Active</div>
+                                                                        </td>
+                                                                        <td align="center">
+                                                                            <div class="action-btn">
+                                                                                <a href="javascript:void(0);" class="cancel-btn" data-toggle="modal" data-target="#editHTMLEmail">Edit</a>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        <div class="addNewEmail mt-4">
+                                                            <a href="javascript:;" class="default-btn btn-small" data-toggle="modal" data-target="#sendFormEmail">Add New Email</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-title form-title-border mb-5">
+                                                        <h3 class="mb-1">Success Page</h3>
+                                                        <p class="mb-4">Configure what people see when they submit the form.</p>
+                                                    </div>
+                                                    <div class="newform-content-row">
+                                                        <div class="success-page-row">
+                                                            <div class="custom-control custom-radio">
+                                                                <input type="radio" id="successPage" name="customRadio" class="custom-control-input" checked />
+                                                                <label class="custom-control-label" for="successPage">Success Page</label>
+                                                                <div class="success-page-input">
+                                                                    <div class="form-group">
+                                                                        <label class="form-label label-light">Title</label>
+                                                                        <input type="text" class="form-control" placeholder="Form Successfully Sent" />
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label class="form-label label-light">Form Title</label>
+                                                                        <textarea rows="5" class="form-control" placeholder="We have received your form."></textarea>
+                                                                    </div>
+                                                                    <div class="custom-control custom-switch">
+                                                                        <input type="checkbox" class="custom-control-input" id="submitAnother">
+                                                                        <label class="custom-control-label" for="submitAnother">Include "Submit Another" button</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="success-page-row">
+                                                            <div class="custom-control custom-radio">
+                                                                <input type="radio" id="redirectRadio1" name="customRadio" class="custom-control-input" />
+                                                                <label class="custom-control-label" for="redirectRadio1">Redirect to another page</label>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -676,283 +773,6 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="tab-pane fade" id="pills-plan" role="tabpanel" aria-labelledby="pills-plan-tab">
-                                                <div class="setting-tabContent">
-                                                    <div class="alert alert-danger mb-4" role="alert">
-                                                        <div class="alert-message">
-                                                            <i class="fa fa-exclamation-circle alert-icon"></i><span>You have 2 days to access your account. <strong>Export your data or Resubscribe Plan.</strong></span>
-                                                        </div>
-                                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                                            <i class="feather icon-x"></i>
-                                                        </button>
-                                                    </div>
-                                                    <div class="plan-title d-flex">
-                                                        <h3>Plan</h3>
-                                                        <div class="plan-title-right">
-                                                            <a href="javascript:;" class="default-outline-btn btn-small">Manage Plan</a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="plan-row">
-                                                        <div class="row align-items-center">
-                                                            <div class="col-md-6">
-                                                                <div class="plan-box-left">
-                                                                    <div class="row form-row justify-content-center mb-5">
-                                                                        <div class="col-6">
-                                                                            <div class="plan-name-left">
-                                                                                <p>Current Plan</p>
-                                                                                <h2>Standard</h2>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="col-6">
-                                                                            <div class="plan-name-right text-right">
-                                                                                <!-- <a href="javascript:;">resubscribe</a> -->
-                                                                                <a href="javascript:;" data-toggle="modal" data-target="#cancelPlan">Cancel Plan</a>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="row form-row justify-content-center align-items-center">
-                                                                        <div class="col-6">
-                                                                            <div class="plan-name-left">
-                                                                                <p>Monthly</p>
-                                                                                <h2>$199</h2>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="col-6">
-                                                                            <div class="plan-name-right text-right">
-                                                                                <p>Billed every</p>
-                                                                                <h2>11th of the month</h2>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="plan-need-more">
-                                                                    <p>Need more? <a href="javascript:;">Upgrade Plan</a></p>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-6">
-                                                                <div class="userPlanProgressbar pl-xl-5">
-                                                                    <div class="row">
-                                                                        <div class="col-sm-6 col-md-12 col-lg-6 mb-4">
-                                                                            <div class="view-plan-col">
-                                                                                <h5>Users</h5>
-                                                                                <p><span class="text-orange">950</span> of 999</p>
-                                                                                <div class="progress bg-light-orange">
-                                                                                    <div class="progress-bar bg-orange" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="col-sm-6 col-md-12 col-lg-6 mb-4">
-                                                                            <div class="view-plan-col">
-                                                                                <h5>Applications</h5>
-                                                                                <p>350 of 2500</p>
-                                                                                <div class="progress bg-light-green">
-                                                                                    <div class="progress-bar bg-green" role="progressbar" style="width: 10%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="col-sm-6 col-md-12 col-lg-6 mb-4">
-                                                                            <div class="view-plan-col">
-                                                                                <h5>Signed Documents</h5>
-                                                                                <p>350 of 2500</p>
-                                                                                <div class="progress bg-light-green">
-                                                                                    <div class="progress-bar bg-green" role="progressbar" style="width: 10%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="col-sm-6 col-md-12 col-lg-6 mb-4">
-                                                                            <div class="view-plan-col">
-                                                                                <h5>Forms</h5>
-                                                                                <p>350 of 2500</p>
-                                                                                <div class="progress bg-light-green">
-                                                                                    <div class="progress-bar bg-green" role="progressbar" style="width: 10%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="col-sm-6 col-md-12 col-lg-6 mb-4">
-                                                                            <div class="view-plan-col">
-                                                                                <h5>Documents</h5>
-                                                                                <p>350 of 2500</p>
-                                                                                <div class="progress bg-light-green">
-                                                                                    <div class="progress-bar bg-green" role="progressbar" style="width: 10%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="col-sm-6 col-md-12 col-lg-6 mb-4">
-                                                                            <div class="view-plan-col">
-                                                                                <h5>Send Documents</h5>
-                                                                                <p>350 of 2500</p>
-                                                                                <div class="progress bg-light-green">
-                                                                                    <div class="progress-bar bg-green" role="progressbar" style="width: 10%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="plan-title">
-                                                        <h3>Payment Method</h3>
-                                                        <div class="plan-title-right text-right">
-                                                            <a href="javascript:;" class="default-outline-btn btn-small" data-toggle="modal" data-target="#pmAddCard">Add New</a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="plan-row">
-                                                        <div class="p-method-row">
-                                                            <div class="p-method-card">
-                                                                <div class="d-flex align-items-center">
-                                                                    <div class="p-card-m p-method-img">
-                                                                        <img src="assets/images/card-visa.png" class="img-fluid" alt="">
-                                                                    </div>
-                                                                    <div class="p-card-m">
-                                                                        <h5>Card Number</h5>
-                                                                        <p><span>&#9679 &#9679 &#9679 &#9679</span> 4335</p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="p-card-m">
-                                                                    <h5>Expires on</h5>
-                                                                    <p>01/25</p>
-                                                                </div>
-                                                            </div>
-                                                            <div class="p-method-right">
-                                                                <div class="side-dropdown custom-dropdown dropdown">
-                                                                    <a href="javascript:void(0);" class="dropdown-toggle" id="pmdropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-display="static">
-                                                                        <img src="assets/images/actions.svg" alt="">
-                                                                    </a>
-                                                                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="pmdropdown1">
-                                                                        <div class="actions-links-data">
-                                                                            <ul>
-                                                                                <li><a href="javascript:void(0);">Edit</a></li>
-                                                                                <li><a href="javascript:void(0);">Delete</a></li>
-                                                                            </ul>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="plan-title d-flex">
-                                                        <h3>Billing</h3>
-                                                        <div class="plan-title-right">
-                                                            <div class="action-buttons">
-                                                                <div class="serach-filter">
-                                                                    <a href="javascript:void(0);" class="search-filter-btn">
-                                                                        <img src="assets/images/search.svg" alt="">
-                                                                    </a>
-                                                                    <div class="serach-store-box">
-                                                                        <button class="search-icon"><img src="assets/images/search.svg" alt=""></button>
-                                                                        <input type="text" name="" class="search-store-input">
-                                                                        <button class="search-close-icon"><i class="feather icon-x"></i></button>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="side-dropdown setting-dropdown dropdown">
-                                                                    <a href="javascript:void(0);" class="dropdown-toggle" id="BillingActionDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-display="static">
-                                                                        <img src="assets/images/actions.svg" alt="">
-                                                                    </a>
-                                                                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="BillingActionDropdown">
-                                                                        <div class="actions-links-data">
-                                                                            <ul>
-                                                                                <!-- <li class="disable"><a href="javascript:void(0);">Approve</a></li>
-                                                                                <li class="disable"><a href="javascript:void(0);">Deny</a></li> -->
-                                                                                <li><a href="javascript:void(0);">Import data</a></li>
-                                                                                <li><a href="javascript:void(0);">Download data</a></li>
-                                                                            </ul>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="plan-row p-billing-table">
-                                                        <div class="table-responsive">
-                                                            <table class="table table-design table-style">
-                                                                <thead>
-                                                                    <tr>
-                                                                        <th>Date of Invoice</th>
-                                                                        <th>Invoice No.</th>
-                                                                        <th>Payment Status</th>
-                                                                        <th>Action</th>
-                                                                    </tr>
-                                                                </thead>
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td><div class="table-type">11 May 2020</div></td>
-                                                                        <td>
-                                                                            <div class="invoice-number">
-                                                                                <h5>PFAGSMAY112020</h5>
-                                                                            </div>
-                                                                        </td>
-                                                                        <td><div class="table-status badge-warning">Pending Payment</div></td>
-                                                                        <td>
-                                                                            <div class="side-dropdown custom-dropdown dropdown">
-                                                                                <a href="javascript:void(0);" class="dropdown-toggle" id="b-actiondropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-display="static">
-                                                                                    <img src="assets/images/actions.svg" alt="">
-                                                                                </a>
-                                                                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="b-actiondropdown1">
-                                                                                    <div class="actions-links-data">
-                                                                                        <ul>
-                                                                                            <li><a href="javascript:void(0);">View</a></li>
-                                                                                            <li><a href="javascript:void(0);">Delete</a></li>
-                                                                                        </ul>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td><div class="table-type">11 Apr 2020</div></td>
-                                                                        <td>
-                                                                            <div class="invoice-number">
-                                                                                <h5>PFAGSAPR112020</h5>
-                                                                            </div>
-                                                                        </td>
-                                                                        <td><div class="table-status badge-success">Paid</div></td>
-                                                                        <td>
-                                                                            <div class="side-dropdown custom-dropdown dropdown">
-                                                                                <a href="javascript:void(0);" class="dropdown-toggle" id="b-actiondropdown2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-display="static">
-                                                                                    <img src="assets/images/actions.svg" alt="">
-                                                                                </a>
-                                                                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="b-actiondropdown2">
-                                                                                    <div class="actions-links-data">
-                                                                                        <ul>
-                                                                                            <li><a href="javascript:void(0);">View</a></li>
-                                                                                            <li><a href="javascript:void(0);">Delete</a></li>
-                                                                                        </ul>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td><div class="table-type">11 May 2020</div></td>
-                                                                        <td>
-                                                                            <div class="invoice-number">
-                                                                                <h5>PFAGSMAY112020</h5>
-                                                                            </div>
-                                                                        </td>
-                                                                        <td><div class="table-status badge-success">Paid</div></td>
-                                                                        <td>
-                                                                            <div class="side-dropdown custom-dropdown dropdown">
-                                                                                <a href="javascript:void(0);" class="dropdown-toggle" id="b-actiondropdown3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-display="static">
-                                                                                    <img src="assets/images/actions.svg" alt="">
-                                                                                </a>
-                                                                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="b-actiondropdown3">
-                                                                                    <div class="actions-links-data">
-                                                                                        <ul>
-                                                                                            <li><a href="javascript:void(0);">View</a></li>
-                                                                                            <li><a href="javascript:void(0);">Delete</a></li>
-                                                                                        </ul>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -967,389 +787,36 @@
             <div class="overlay_bg"></div>
         </div>
 
-        <!-- <div class="alert-sections">
-            <div class="alert alert-primary" role="alert">
-                <div class="alert-message">
-                    <i class="fa fa-exclamation-circle alert-icon"></i><span>Your Data will be sent to <a href="javascript:;">admin@organisation.com</a> when it is ready. Please expect it in 1-3 days.</span>
-                </div>
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                    <i class="feather icon-x"></i>
-                </button>
-            </div>
-            <div class="alert alert-warning" role="alert">
-                <div class="alert-message">
-                    <i class="fa fa-exclamation-circle alert-icon"></i><span>You have reached the limits of your plan. <a href="javascript:;" class="text-white text-underline"><strong>Upgrade your plan</strong></a> to receive pending submissions and more.</span>
-                </div>
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                    <i class="feather icon-x"></i>
-                </button>
-            </div>
-        </div> -->
-
-        <div class="modal fade" id="cancelPlan" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-body d-modal-body">
-                        <div class="d-modal-content">
-                            <div class="d-modal-content-title">
-                                <h2>Cancel Plan</h2>
-                                <p>Your subscription will be cancelled at the end of your billing period and will remain fully accessible until May 11, 2020. After this period you can resubscribe anytime.</p>
-                            </div>
-                            <div class="download-AllData-form">
-                                <div class="form-group">
-                                    <label class="form-label">Enter password to cancel your subscription</label>
-                                    <input type="text" class="form-control">
-                                </div>
-                                <div class="form-group">
-                                    <button class="default-btn default-danger-btn btn-small">Confirm Cancel Plan</button>
-                                    <a href="javascript:;" data-dismiss="modal" class="cancel-btn">Cancel</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="modal fade" id="downloadAllData" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-body d-modal-body">
-                        <div class="d-modal-content">
-                            <div class="d-modal-content-title">
-                                <h2>Download All Data</h2>
-                                <p>An email will be sent once data is ready for download. Enter your email address below.</p>
-                            </div>
-                            <div class="download-AllData-form">
-                                <div class="form-group">
-                                    <label class="form-label">Enter email address</label>
-                                    <input type="text" class="form-control">
-                                </div>
-                                <div class="form-group">
-                                    <button class="default-btn btn-small">Confirm</button>
-                                    <a href="javascript:;" data-dismiss="modal" class="cancel-btn">Cancel</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="modal fade" id="pmAddCard" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="sendFormEmail" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-body d-modal-body">
                         <div class="d-modal-content">
                             <div class="d-modal-content-title mb-5">
-                                <h2>Select Payment Method</h2>
-                            </div>
-                            <div class="select-pm">
-                                <div class="row align-items-center">
-                                    <div class="col-sm-4 col-lg-3 mb-4 mb-sm-0">
-                                        <a href="javascript:;" class="select-pm-icon" data-toggle="modal" data-target="#PayWithCard">
-                                            <img src="assets/images/icons/pay-with-card.svg" class="img-fluid" alt="Pay with Card">
-                                        </a>
-                                    </div>
-                                    <div class="col-sm-8 col-lg-9">
-                                        <div class="select-pm-detail">
-                                            <a href="javascript:;" data-toggle="modal" data-target="#PayWithCard"><h4>Pay with Card</h4></a>
-                                            <p>Fully integrated payment processing, secure payments for you.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row align-items-center">
-                                    <div class="col-sm-4 col-lg-3 mb-4 mb-sm-0">
-                                        <a href="javascript:;" class="select-pm-icon"  data-toggle="modal" data-target="#payWithPayPal">
-                                            <img src="assets/images/icons/pay-with-paypal.svg" class="img-fluid" alt="Pay with PayPal">
-                                        </a>
-                                    </div>
-                                    <div class="col-sm-8 col-lg-9">
-                                        <div class="select-pm-detail">
-                                            <a href="javascript:;" data-toggle="modal" data-target="#payWithPayPal"><h4>Pay with PayPal</h4></a>
-                                            <p>No account yet? Simply <a href="javascript:;"><span class="text-green-color">create your free account</span></a> while paying the benefit from <a href="javascript:;" class="text-underline">buyer protection.</a></p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row align-items-center">
-                                    <div class="col-sm-4 col-lg-3 mb-4 mb-sm-0">
-                                        <a href="javascript:;" class="select-pm-icon"  data-toggle="modal" data-target="#PayWithBank">
-                                            <img src="assets/images/icons/pay-with-bank.svg" class="img-fluid" alt="Pay with Bank Transfer / Online Transfer">
-                                        </a>
-                                    </div>
-                                    <div class="col-sm-8 col-lg-9">
-                                        <div class="select-pm-detail">
-                                            <a href="javascript:;" data-toggle="modal" data-target="#PayWithBank"><h4>Pay with Bank Transfer / Online Transfer</h4></a>
-                                            <p>Please note that it takes approximately 3 to 7 days to process your transfer. If your Passfolio account has not been credited after 7 days please, contact <a href="javascript:;"  class="text-green-color">Customer Support.</a> </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="modal fade" id="PayWithCard" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-body d-modal-body">
-                        <div class="d-modal-content">
-                            <div class="d-modal-content-title mb-4">
-                                <h2>Pay with Card</h2>
-                                <p>Enter the card details below.</p>
-                            </div>
-                            <div class="payCard-form">
-                                <form action="javacript:;">
-                                    <div class="content-title-part mb-4">
-                                        <h1>Card Details</h1>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm-8">
-                                            <div class="form-group has-typing">
-                                                <label class="form-label">Card number</label>
-                                                <div class="left-input-icon input-icon-right">
-                                                    <input type="text" class="form-control" />
-                                                    <div class="spinner-border icon-load input-icon text-primary"></div>
-                                                    <div class="password-show-icon left-icon"><img src="assets/images/icons/card-icon.svg" class="img-fluid" alt=""></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <div class="form-group">
-                                                <label class="form-label">Expiration Date</label>
-                                                <input type="text" class="form-control" placeholder="mm/yy">
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-8">
-                                            <div class="form-group">
-                                                <label class="form-label">Cardholder’s name</label>
-                                                <input type="text" class="form-control" />
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <div class="form-group">
-                                                <label class="form-label">CVV</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="content-title-part mb-4">
-                                        <h1>Billing Address</h1>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <div class="form-group">
-                                                <label class="form-label">Address Line</label>
-                                                <input type="text" class="form-control" />
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group select2Part w-100 default-select">
-                                                <label class="form-label">Country</label>
-                                                <select class="form-control customSelect">
-                                                    <option value="">Select Country</option>
-                                                    <option value="">India</option>
-                                                    <option value="">USA</option>
-                                                    <option value="">UK</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group select2Part w-100 default-select">
-                                                <label class="form-label">State / Province</label>
-                                                <select class="form-control customSelect">
-                                                    <option value="">Select State / Province</option>
-                                                    <option value="">Gujarat</option>
-                                                    <option value="">New York</option>
-                                                    <option value="">Mirzapur</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label class="form-label">Zip Code</label>
-                                                <input type="text" class="form-control" />
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="form-group">
-                                                <div class="custom-control custom-checkbox ">
-                                                    <input type="checkbox" class="custom-control-input" id="pmDefault">
-                                                    <label class="custom-control-label" for="pmDefault">Set as default payment method</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="form-group">
-                                                <button class="default-btn btn-small">Add Card</button>
-                                                <a href="javascript:;" data-dismiss="modal" class="cancel-btn">Back</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="modal fade" id="payWithPayPal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-body d-modal-body">
-                        <div class="d-modal-content">
-                            <div class="popup-back text-right">
-                                <a href="javascript:;" data-dismiss="modal" class="cancel-btn py-0">Back</a>
-                            </div>
-                            <div class="d-modal-content-title">
-                                <h2>Pay with PayPal</h2>
-                                <p>Enter the card details below.</p>
+                                <h2>Send Form via Email</h2>
                             </div>
                             <div class="download-AllData-form">
-                                <div class="form-group">
-                                    <label class="form-label">PayPal email address</label>
-                                    <input type="text" class="form-control">
-                                </div>
-                                <div class="form-group">
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="payPalDefault">
-                                        <label class="custom-control-label" for="payPalDefault">Set as default payment method</label>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <button class="default-btn btn-small">Continue</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="modal fade" id="PayWithBank" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-body d-modal-body">
-                        <div class="d-modal-content">
-                            <div class="popup-back text-right">
-                                <a href="javascript:;" data-dismiss="modal" class="cancel-btn py-0">Back</a>
-                            </div>
-                            <div class="d-modal-content-title mb-4">
-                                <h2>Pay with Bank Transfer / Online Transfer</h2>
-                                <p>Select payment option:</p>
-                            </div>
-                            <div class="PayWithBank-form">
                                 <form action="javacript:;">
-                                    <div class="paybank-option d-flex mb-5">
-                                        <div class="custom-control custom-radio mr-4">
-                                            <input type="radio" id="paybanktransfer" name="paymentoption" class="custom-control-input" checked>
-                                            <label class="custom-control-label" for="paybanktransfer">Pay by Bank Transfer</label>
-                                        </div>
-                                        <div class="custom-control custom-radio">
-                                            <input type="radio" id="paycheque" name="paymentoption" class="custom-control-input">
-                                            <label class="custom-control-label" for="paycheque">Pay by Cheque</label>
-                                        </div>
+                                    <div class="form-group select2Part w-100 sendEmail-select dark-multiple">
+                                        <label class="form-label label-light">To</label>
+                                        <select class="form-control customSelectSearchmultiple" multiple>
+                                            <option value="" selected>elaunch@gmail.com</option>
+                                            <option value="">mayur@elaunchinfotech.com</option>
+                                            <option value="">elaunch@gmail.com</option>
+                                            <option value="">elaunch@gmail.com</option>
+                                        </select>
                                     </div>
-                                    <div class="paybank-content">
-                                        <div id="paybanktransfer" class="paybank">
-                                            <div class="content-title-part d-flex justify-content-between mb-4">
-                                                <div>
-                                                    <h1>Pay by Bank Transfer</h1>
-                                                    <p>Send your payment to:</p>
-                                                </div>
-                                                <div class="plan-title-right">
-                                                    <a href="javascript:;" class="default-btn btn-small">Copy</a>
-                                                </div>
-                                            </div>
-                                            <div class="bank-detail">
-                                                <div class="row">
-                                                    <div class="col-sm-5 col-md-5 col-xl-4">
-                                                        <p>Bank Name:</p>
-                                                    </div>
-                                                    <div class="col-sm-7 col-md-7 col-xl-8">
-                                                        <p>Commonwealth Bank of Australia</p>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-sm-5 col-md-5 col-xl-4">
-                                                        <p>Bank Address:</p>
-                                                    </div>
-                                                    <div class="col-sm-7 col-md-7 col-xl-8">
-                                                        <p>Westfield Shoppingtown Parramatta</p>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-sm-5 col-md-5 col-xl-4">
-                                                        <p>BSB (Routing Number):</p>
-                                                    </div>
-                                                    <div class="col-sm-7 col-md-7 col-xl-8">
-                                                        <p>023341</p>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-sm-5 col-md-5 col-xl-4">
-                                                        <p>Account Name:</p>
-                                                    </div>
-                                                    <div class="col-sm-7 col-md-7 col-xl-8">
-                                                        <p>Passfolio</p>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-sm-5 col-md-5 col-xl-4">
-                                                        <p>Account Number:</p>
-                                                    </div>
-                                                    <div class="col-sm-7 col-md-7 col-xl-8">
-                                                        <p>1034220</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <p>Bank charges and currency exchange costs (if any) will be borne by the sender. Therefore, please ensure that the amount you send is suffcient to cover all such charges by your bank.</p>
-                                            <div class="content-title-part mb-2">
-                                                <h1>Send Proof of Payment</h1>
-                                            </div>
-                                            <p>After you have made the bank transfer, please complete the information below so that we can track your payment.</p>
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <div class="form-group">
-                                                        <label class="form-label">Transaction Number</label>
-                                                        <input type="text" class="form-control" />
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-6">
-                                                    <div class="form-group">
-                                                        <label class="form-label">Amount Sent</label>
-                                                        <input type="text" class="form-control">
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-6">
-                                                    <div class="form-group">
-                                                        <label class="form-label">Date Sent</label>
-                                                        <input type="text" class="form-control" />
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-6">
-                                                    <div class="form-group">
-                                                        <label class="form-label">Sender Name</label>
-                                                        <input type="text" class="form-control">
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-6">
-                                                    <div class="form-group">
-                                                        <label class="form-label">Bank Name</label>
-                                                        <input type="text" class="form-control" />
-                                                    </div>
-                                                </div>
-                                                <!-- <div class="col-12">
-                                                    <div class="form-group">
-                                                        <button class="default-btn btn-small">Add Card</button>
-                                                        <a href="javascript:;" data-dismiss="modal" class="cancel-btn">Back</a>
-                                                    </div>
-                                                </div> -->
-                                            </div>
-                                        </div>
+                                    <div class="form-group">
+                                        <label class="form-label label-light">Subject</label>
+                                        <input type="text" class="form-control" placeholder="Medicine export declaration form" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label label-light">Message</label>
+                                        <textarea rows="5" class="form-control" placeholder="We invite you to fill this form."></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <button class="default-btn btn-small">Send Email</button>
+                                        <a href="javascript:;" data-dismiss="modal" class="cancel-btn">Back</a>
                                     </div>
                                 </form>
                             </div>
@@ -1358,7 +825,118 @@
                 </div>
             </div>
         </div>
-        
+        <div class="modal fade" id="editHTMLIframe" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body d-modal-body">
+                        <div class="d-modal-content">
+                            <div class="d-modal-content-title mb-5">
+                                <h2>Edit HTML</h2>
+                            </div>
+                            <div class="download-AllData-form">
+                                <form action="javacript:;">
+                                    <div class="form-group">
+                                        <label class="form-label label-light">Code Below</label>
+                                        <textarea rows="4" class="form-control copyinput" onClick="copyToClipboard(this)" value='&lt;iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe-OwKRlKwQbqY2-AVgy5jF4tL_BWXdjVahJRaaa51TWZFM_g/viewform?embedded=true" width="640" height="1807" frameborder="0" marginheight="0" marginwidth="0"&gt;Loading…&lt;/iframe&gt;'>&lt;iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe-OwKRlKwQbqY2-AVgy5jF4tL_BWXdjVahJRaaa51TWZFM_g/viewform?embedded=true" width="640" height="1807" frameborder="0" marginheight="0" marginwidth="0"&gt;Loading…&lt;/iframe&gt;</textarea>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="form-label label-light">Width</label>
+                                                <input type="text" class="form-control" placeholder="640 px" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="form-label label-light">Height</label>
+                                                <input type="text" class="form-control" placeholder="1807 px" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <button class="default-btn btn-small">Copy</button>
+                                        <a href="javascript:;" data-dismiss="modal" class="cancel-btn">Cancel</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="editHTMLEmail" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body d-modal-body">
+                        <div class="d-modal-content">
+                            <div class="d-modal-content-title mb-5">
+                                <h2>Edit HTML</h2>
+                            </div>
+                            <div class="download-AllData-form">
+                                <form action="javacript:;">
+                                    <div class="form-group">
+                                        <label class="form-label label-light">From</label>
+                                        <input type="text" class="form-control" placeholder="no-reply@australiangovernmentservices.com" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label label-light">Subject</label>
+                                        <input type="text" class="form-control" placeholder="Medicine export declaration form" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label label-light">Message</label>
+                                        <textarea rows="8" class="form-control">Hi [name],
+
+Thank you for filling in the Medicine export declaration form.  The form will will be reviewed. You will received a notification for any status change.
+                                        
+Australian Government Services
+                                        </textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <button class="default-btn btn-small">Save</button>
+                                        <a href="javascript:;" class="cancel-btn" data-toggle="modal" data-target="#sendTestEmail">Send Test</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="sendTestEmail" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body d-modal-body">
+                        <div class="d-modal-content">
+                            <div class="d-modal-content-title mb-5">
+                                <h2>Send Test Email</h2>
+                            </div>
+                            <div class="alert alert-success" role="alert">
+                                <div class="alert-message">
+                                    <i class="fa fa-check-circle alert-icon"></i><span>Test email sent to <strong>admin@organisation.com</strong>.</span>
+                                </div>
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <i class="feather icon-x"></i>
+                                </button>
+                            </div>
+                            <div class="download-AllData-form">
+                                <form action="javacript:;">
+                                    <div class="form-group">
+                                        <label class="form-label label-light">Send to</label>
+                                        <input type="text" class="form-control" placeholder="admin@organisation.com" />
+                                    </div>
+                                    <div class="form-group">
+                                        <button class="default-btn btn-small">Send Test</button>
+                                        <a href="javascript:;" data-dismiss="modal" class="cancel-btn">Cancel</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!--js -->
         <script src="assets/js/jquery-3.4.1.min.js"></script>
         <script src="assets/js/popper.min.js"></script>
@@ -1370,5 +948,16 @@
         <script src="assets/js/apexcharts.min.js"></script>
         <script src="assets/js/Sortable.js"></script>
         <script src="assets/js/custom.js"></script>
+        <script>
+            function copyToClipboard(elem) {
+                $(elem).tooltip().attr('data-original-title', 'Copied!').tooltip('show');
+                elem.select(); 
+                elem.setSelectionRange(0, 99999);
+                document.execCommand("copy");
+                setTimeout(() => {
+                    $(elem).tooltip('dispose');
+                }, 3000);
+            }
+        </script>
     </body>
 </html>

@@ -940,6 +940,19 @@ text-align: right;
 .customize-iframe input.form-control {
     text-overflow: ellipsis;
 }
+.form-title p{
+    color: #102A5E;
+}
+.success-page-row:not(:last-child){
+    margin-bottom: 30px;
+}
+.success-page-input{
+    margin-top: 22px;
+}
+.sendEmail-select .select2-container--default .select2-selection--multiple .select2-selection__rendered:before{
+    display: none;
+}
+.d-modal-content .alert{min-width: inherit;}
 
 
 @media (max-width: 1199.98px) {

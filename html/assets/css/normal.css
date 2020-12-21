@@ -1,11 +1,3 @@
-/*@font-face{ 
-	font-family: 'NoSpace';
-	src: url('../fonts/zerowidthspaces.eot');
-	src: url('../fonts/zerowidthspaces.eot?#iefix') format('embedded-opentype'),
-		 url('../fonts/zerowidthspaces.woff') format('woff'),
-		 url('../fonts/zerowidthspaces.ttf') format('truetype'),
-		 url('../fonts/zerowidthspaces.svg#NoSpace') format('svg');
-}*/
 
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
 /* font-family: 'Rubik', sans-serif; */
@@ -186,9 +178,6 @@ b, strong{
 .text-grey {
     color: #8A93A6!important;
 }
-.btn-text{
-
-}
 .text-underline, 
 .text-underline:hover{
     text-decoration: underline;
@@ -307,7 +296,7 @@ b, strong{
     padding: 12px 20px;
     border-radius: 7px;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 14px;
     letter-spacing: 0.2px;
     background-color: #F6F7FB;
 }
@@ -315,7 +304,6 @@ b, strong{
     box-shadow: none;
     border-color: #1C85E8;
 }
-
 .form-control::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: #8A93A6;
 }
@@ -346,7 +334,6 @@ select{
     appearance: none;
     background: url(../images/select-arrow.svg) calc(100% - 18px) / 11px no-repeat;
 }
-
 .font-Roboto{
     font-family: 'Roboto', sans-serif !important;
 }
@@ -372,7 +359,6 @@ select{
 .font-pn-l{
     font-family: 'Roboto', sans-serif !important;
 }
-
 .fw-400{
     font-weight: 400 !important;
 }
@@ -385,7 +371,6 @@ select{
 .fw-700{
     font-weight: 600 !important;
 }
-
 .btn-default {
     font-family: 'Rubik', sans-serif;
     font-weight: 700;
@@ -398,7 +383,6 @@ select{
     text-align: center;
     text-transform: capitalize;
 }
-
 .btn-default.btn-medium{padding: 6px 32px;}
 .btn-default.btn-small{padding: 2px 32px;}
 .bg-default-light{
@@ -474,11 +458,9 @@ select{
     top: 50%;
     transform: translateY(-50%);
 }
-
 .text-blue-color{
     color: #006AFA;
 }
-
 .text-gray-color{
     color: #727272;
 }
@@ -572,7 +554,6 @@ select{
 .bg-danger{
     background: #FC5D68 !important;
 }
-
 .bg-light-success{
     background-color: #d5e9d2 !important;
 }
@@ -585,7 +566,6 @@ select{
 .bg-light-danger {
     background-color: #f5d7d0 !important;
 }
-
 .badge {
     font-family: 'Rubik', sans-serif;
     font-weight: 700;
@@ -595,7 +575,6 @@ select{
     line-height: inherit;
     font-weight: normal;
 }
-
 .badge-light-yellow{
     background-color: rgba(255, 188, 16, 0.3);
     color: #926F16;
@@ -711,7 +690,6 @@ select{
 .has-success .error-message{
     display: block;
 }
-
 .bg-fixed{
     background-repeat: no-repeat;
     background-size: cover;
@@ -889,9 +867,6 @@ select{
 .custom-control-input:focus~.custom-control-label::before{
     box-shadow: none;
 }
-
-
-
 /*-----text-switch--------*/
 .text-switch{
     position: relative;
@@ -953,9 +928,6 @@ select{
     width: 49px;
     text-align: center;
 }
-
-
-
 .yesno-switch.text-switch{
     width: 62px;
     min-width: 62px;
@@ -973,8 +945,6 @@ select{
 .yesno-switch.text-switch .text-switch-check:checked + .text-switch-label{
     background-color: #1C85E8;
 }
-
-
 
 .status-switch.text-switch{
     width: 85px;
@@ -994,9 +964,6 @@ select{
     background-color: #01A39D;
 }
 
-
-
-
 .pay-switch.text-switch{
     width: 127px;
     min-width: 127px;
@@ -1015,19 +982,12 @@ select{
     background-color: #1C85E8;
 }
 
-
-
-
-
-
-
 .modal-backdrop{
     background: #102a5e;
 }
 .modal-backdrop.show{
     opacity: 0.6;
 }
-
 .card-number-input{
     position: relative;
 }
@@ -1039,7 +999,6 @@ select{
     top: 33px;
     right: 15px;
 }
-
 .card-number-img img{
     max-width: 136px;
 }
@@ -1153,7 +1112,6 @@ select{
     padding: 12px 15px;
     position: relative;
 }
-
 .select2-container--default .select2-search--dropdown .select2-search__field{
     font-family: 'Rubik', sans-serif;
     font-size: 14px;
@@ -1192,7 +1150,6 @@ select{
     margin-left: 0px;
 }
 
-
 .custom-radio-check-align-boxes .custom-radio-check{
     display: inline-block;
     margin-left: 15px;
@@ -1218,8 +1175,6 @@ select{
     background-position: 50% 60%;
     background-size: 57%;
 }
-
-
 
 .select2-container--default .select2-selection--multiple{
     background-color: #F6F7FB;
@@ -1360,8 +1315,6 @@ select{
     filter:"alpha(opacity=50)";-ms-filter:"alpha(opacity=50)";
 }
 
-
-
 .mCS-minimal-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
 .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
     background-color: rgba(68,88,130, 0.2);
@@ -1446,8 +1399,6 @@ select{
     padding: 8px 32px;
 }
 
-
-
 /*----border------*/
 .border-top{
     border-top: 1px solid #F6F7FB !important;
@@ -1461,8 +1412,6 @@ select{
 .border-bottom{
     border-bottom: 1px solid #F6F7FB !important;
 }
-
-
 
 .tooltip-inner {
     background: #01A39D;
@@ -1486,19 +1435,11 @@ select{
     border-right-color: #01A39D;
 }
 
-
-
 @media (min-width: 768px){
     .alert-popup{
         min-width: 400px;
     }
 }
-
-
-@media (max-width: 767px){
-
-}
-
 
 @media (max-width: 575px){
     .card-number-input .form-control {
