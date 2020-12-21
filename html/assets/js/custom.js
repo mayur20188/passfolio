@@ -2,6 +2,7 @@
 $(window).on('load', function() {
 	setTimeout(() => {
 		$('.loader-icon').addClass('animate__backOutDown');
+		$('.page-ath-gfx').addClass('active');
 		$('.preloader').fadeOut('slow');
 	}, 1000);
 	TopbarStuck();

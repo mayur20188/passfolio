@@ -67,7 +67,7 @@ textarea.form-control{
 }
 .navleft-menu li a img {
     margin-right: 14px;
-    min-width: 20px;
+    width: 20px;
 }
 .navleft-menu li a span{
     display: none;
@@ -372,6 +372,14 @@ div#submissionsChart {
 .setting-tab-view .nav-pills .nav-item{
     margin-right: 15px;
 }
+
+.newform-tabview.setting-tab-view .nav-pills .nav-link{
+    font-size: 15px;
+}
+.newform-tabview.setting-tab-view .nav-pills {
+    border-bottom: none;
+    margin-bottom: 0px;
+}
 .setting-tab-view .nav-pills .nav-link{
     font-weight: 500;
     font-size: 17px;
@@ -384,10 +392,20 @@ div#submissionsChart {
     background-color:transparent;
     color: #01A39D;
 }
+.newform-head-flex .cancel-btn{
+    padding-bottom: 20px;
+}
+.newform-head-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 3px solid #F6F7FB;
+    margin-bottom: 40px;
+}
 .setting-tab-view .nav-pills .nav-link::before{
     content: '';
     position: absolute;
-    bottom: -1px;
+    top: 100%;
     left: 0;
     height: 3px;
     width: 0%;
@@ -948,6 +966,7 @@ text-align: right;
 }
 .success-page-input{
     margin-top: 22px;
+    padding-left: 32px;
 }
 .sendEmail-select .select2-container--default .select2-selection--multiple .select2-selection__rendered:before{
     display: none;
@@ -1058,6 +1077,12 @@ text-align: right;
         max-width: 100%;
         margin-bottom: 10px;
     }
+    .newform-tabview.setting-tab-view .nav-pills .nav-link{
+        padding: 15px 4px;
+    }
+    .newform-head-flex .cancel-btn {
+        padding-bottom: 6px;
+    }
 }
 
 @media (max-width: 575.98px){
@@ -1143,6 +1168,16 @@ text-align: right;
     }
     .manage-pp-switch {
         margin: 35px 0;
+    }
+    .newform-head-flex{
+        flex-direction: column-reverse;
+    }
+    .newform-tabview.setting-tab-view .nav-pills{
+        flex-direction: column;
+        width: 100%;
+    }
+    .newform-tabview.setting-tab-view .nav-pills .nav-link {
+        padding: 11px 4px;
     }
 }
 

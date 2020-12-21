@@ -12,6 +12,9 @@
 
 
 /*----------drodpown----------*/
+.top-16{
+    top: 16px !important;
+}
 .dropdown-toggle::after{
     display: none;
 }
@@ -446,16 +449,20 @@
     overflow: hidden;
 }
 .page-ath-gfx:before{
-        content: '';
+    content: '';
     position: absolute;
     width: 100%;
-    bottom: 0;
+    bottom: -100%;
+    transition: 0.5s;
     left: 0;
     height: 100%;
     background-size: 100% auto;
     background-position: center bottom;
     background-image: url(../images/auth-bg.svg);
     background-repeat: no-repeat;
+}
+.page-ath-gfx.active:before{
+    bottom: 0;
 }
 .forgot-link a{
     color: #121212;
@@ -1235,6 +1242,7 @@ table.table-style.dataTable.display tbody tr:hover{
 }
 .view-more-dropdown .dropdown-toggle img{
     width: 16px;
+    min-width: 16px;
 }
 .view-more-dropdown .dropdown-menu{
     min-width: 180px;
@@ -1776,7 +1784,7 @@ table.table-style.dataTable.display tbody tr:hover{
     width: 280px !important;
 }
 .permission-table thead tr th:nth-child(2){
-    width: auto !important;
+    width: 340px !important;
 }
 .permission-table thead tr th:nth-child(3){
     width: 150px !important;

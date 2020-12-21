@@ -322,26 +322,29 @@
                         <div class="col-12 mb-4">
                             <div class="card">
                                 <div class="card-body">
-                                    <div class="setting-tab-view">
-                                        <ul class="nav nav-pills" id="pills-tab" role="tablist">
-                                            <li class="nav-item">
-                                                <a class="nav-link" id="pills-newform-tab" data-toggle="pill" href="#pills-newform" role="tab" aria-controls="pills-newform" aria-selected="false">New Form</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" id="pills-configure-tab" data-toggle="pill" href="#pills-configure" role="tab" aria-controls="pills-configure" aria-selected="true">Configure</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link active" id="pills-share-tab" data-toggle="pill" href="#pills-share" role="tab" aria-controls="pills-share" aria-selected="false">Share</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" id="pills-settings-tab" data-toggle="pill" href="#pills-settings" role="tab" aria-controls="pills-settings" aria-selected="false">Settings</a>
-                                            </li>
-                                        </ul>
+                                    <div class="setting-tab-view newform-tabview">
+                                        <div class="newform-head-flex">
+                                            <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                                                <li class="nav-item">
+                                                    <a class="nav-link " id="pills-newform-tab" data-toggle="pill" href="#pills-newform" role="tab" aria-controls="pills-newform" aria-selected="false">New Form</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" id="pills-configure-tab" data-toggle="pill" href="#pills-configure" role="tab" aria-controls="pills-configure" aria-selected="true">Configure</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link " id="pills-share-tab" data-toggle="pill" href="#pills-share" role="tab" aria-controls="pills-share" aria-selected="false">Share</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" id="pills-settings-tab" data-toggle="pill" href="#pills-settings" role="tab" aria-controls="pills-settings" aria-selected="false">Settings</a>
+                                                </li>
+                                            </ul>
+                                            <a href="javascript:;" class="cancel-btn">Back</a>
+                                        </div>
                                         <div class="tab-content" id="pills-tabContent">
                                             <div class="tab-pane fade" id="pills-newform" role="tabpanel" aria-labelledby="pills-newform-tab">
                                                 New Form
                                             </div>
-                                            <div class="tab-pane fade" id="pills-configure" role="tabpanel" aria-labelledby="pills-configure-tab">
+                                            <div class="tab-pane fade  show active" id="pills-configure" role="tabpanel" aria-labelledby="pills-configure-tab">
                                                 <div class="newform-content">
                                                     <h2 class="newform-title">Configure Form</h2>
                                                     <div class="form-title form-title-border mb-5">
@@ -460,7 +463,7 @@
                                                                         <label class="custom-control-label mb-2" for="submissionsdate">Submissions open after date/time <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="" data-original-title="Lorem ipsum dolor, sit amet consectetur adipisicing elit. "><i class="fa fa-info-circle"></i></a></label>
                                                                         <div class="right-input-icon">
                                                                             <input type="text" placeholder="dd/mm/yyyy" class="form-control">
-                                                                            <i class="far fa-calendar-alt right-icon"></i>
+                                                                            <i class="far fa-calendar-alt right-icon top-16"></i>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -468,8 +471,8 @@
                                                             <div class="col-md-6">
                                                                 <div class="form-group">
                                                                     <div class="custom-control custom-switch">
-                                                                        <input type="checkbox" class="custom-control-input" id="hideformsearch">
-                                                                        <label class="custom-control-label mb-2" for="hideformsearch">Hide form from search engine results <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="" data-original-title="Lorem ipsum dolor, sit amet consectetur adipisicing elit. "><i class="fa fa-info-circle"></i></a></label>
+                                                                        <input type="checkbox" class="custom-control-input" id="hideformsearch2">
+                                                                        <label class="custom-control-label mb-2" for="hideformsearch2">Disable after a maximum number of submissions</label>
                                                                         <div>
                                                                             <input type="text" placeholder="Max number of submissions" class="form-control">
                                                                         </div>
@@ -489,7 +492,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="tab-pane fade show active" id="pills-share" role="tabpanel" aria-labelledby="pills-share-tab">
+                                            <div class="tab-pane fade" id="pills-share" role="tabpanel" aria-labelledby="pills-share-tab">
                                                 <div class="newform-content">
                                                     <h2 class="newform-title">Share</h2>
                                                     <div class="form-title form-title-border mb-5">
@@ -628,19 +631,19 @@
                                                             <div class="custom-control custom-radio">
                                                                 <input type="radio" id="successPage" name="customRadio" class="custom-control-input" checked />
                                                                 <label class="custom-control-label" for="successPage">Success Page</label>
-                                                                <div class="success-page-input">
-                                                                    <div class="form-group">
-                                                                        <label class="form-label label-light">Title</label>
-                                                                        <input type="text" class="form-control" placeholder="Form Successfully Sent" />
-                                                                    </div>
-                                                                    <div class="form-group">
-                                                                        <label class="form-label label-light">Form Title</label>
-                                                                        <textarea rows="5" class="form-control" placeholder="We have received your form."></textarea>
-                                                                    </div>
-                                                                    <div class="custom-control custom-switch">
-                                                                        <input type="checkbox" class="custom-control-input" id="submitAnother">
-                                                                        <label class="custom-control-label" for="submitAnother">Include "Submit Another" button</label>
-                                                                    </div>
+                                                            </div>
+                                                            <div class="success-page-input">
+                                                                <div class="form-group">
+                                                                    <label class="form-label label-light">Title</label>
+                                                                    <input type="text" class="form-control" placeholder="Form Successfully Sent" />
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label class="form-label label-light">Form Title</label>
+                                                                    <textarea rows="5" class="form-control" placeholder="We have received your form."></textarea>
+                                                                </div>
+                                                                <div class="custom-control custom-switch">
+                                                                    <input type="checkbox" class="custom-control-input" id="submitAnother">
+                                                                    <label class="custom-control-label" for="submitAnother">Include "Submit Another" button</label>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -703,7 +706,7 @@
                                     </div>
                                     <div class="form-group">
                                         <button class="default-btn btn-small">Send Email</button>
-                                        <a href="javascript:;" data-dismiss="modal" class="cancel-btn">Back</a>
+                                        <a href="javascript:;" data-dismiss="modal" class="cancel-btn">Cancel</a>
                                     </div>
                                 </form>
                             </div>
@@ -724,7 +727,7 @@
                                 <form action="javacript:;">
                                     <div class="form-group">
                                         <label class="form-label label-light">Code Below</label>
-                                        <textarea rows="4" class="form-control copyinput" onClick="copyToClipboard(this)" value='&lt;iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe-OwKRlKwQbqY2-AVgy5jF4tL_BWXdjVahJRaaa51TWZFM_g/viewform?embedded=true" width="640" height="1807" frameborder="0" marginheight="0" marginwidth="0"&gt;Loading…&lt;/iframe&gt;'>&lt;iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe-OwKRlKwQbqY2-AVgy5jF4tL_BWXdjVahJRaaa51TWZFM_g/viewform?embedded=true" width="640" height="1807" frameborder="0" marginheight="0" marginwidth="0"&gt;Loading…&lt;/iframe&gt;</textarea>
+                                        <textarea rows="4" class="form-control" value='&lt;iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe-OwKRlKwQbqY2-AVgy5jF4tL_BWXdjVahJRaaa51TWZFM_g/viewform?embedded=true" width="640" height="1807" frameborder="0" marginheight="0" marginwidth="0"&gt;Loading…&lt;/iframe&gt;'>&lt;iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe-OwKRlKwQbqY2-AVgy5jF4tL_BWXdjVahJRaaa51TWZFM_g/viewform?embedded=true" width="640" height="1807" frameborder="0" marginheight="0" marginwidth="0"&gt;Loading…&lt;/iframe&gt;</textarea>
                                     </div>
                                     <div class="row">
                                         <div class="col-md-6">

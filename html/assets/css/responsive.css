@@ -193,7 +193,7 @@
         align-items: flex-start;
     }
     .barcode-flex-box{
-        margin-bottom: 15px;
+        margin-bottom: 25px;
     }
     .form-content-area{
         max-width: inherit;
@@ -252,8 +252,6 @@
     }
     .form-content-area{
         max-width: inherit;
-        padding-left: 0px;
-        padding-right: 0px;
     }
     .status-dropdown .dropdown-toggle{
         min-width: 170px;
@@ -263,7 +261,9 @@
         width: 100%;
         max-width: 340px;
     }
-
+    .setting-modal-body{
+        padding: 45px 12px;
+    }
     
 }
 
@@ -302,6 +302,16 @@
     .edit-pr-heading .serach-store-box{
         left: -19px;
     }
+    .barcode-flex-box{
+        flex-direction: column;
+        align-items: center;
+            width: 100%;
+    }
+    .barcode-box{
+        margin-right: 0px;
+        margin-bottom: 12px;
+    }
+
 }
 
 
