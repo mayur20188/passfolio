@@ -116,7 +116,7 @@ left: 240px;
     background-color: #fff;
     padding-bottom: 20px;
     padding-top: 20px;
-    box-shadow: 15px 0px 15px rgb(0 0 0 / 20%);
+    box-shadow: 15px 0px 15px rgba(0,0,0,0.2);
 } 
 
 .icon-logo-left img{
@@ -968,7 +968,7 @@ text-align: right;
 @media (max-width: 991.98px) {
     .sidenav-container{
         left: -240px;
-        box-shadow: 0 0px 15px rgb(0 0 0 / 20%);
+        box-shadow: 0 0px 15px rgba(0,0,0,0.2);
     }
     .content-page, .sidebar-opened .content-page{
         margin-left: 0;
@@ -990,7 +990,7 @@ text-align: right;
         height: 100%;
         left: 0;
         top: 0;
-        background: rgb(0 0 0 / 10%);
+        background: rgba(0,0,0,0.2);
         display: none;
         z-index: 1;
         transition: 0.4s;
@@ -1033,7 +1033,7 @@ text-align: right;
         text-align: center;
         padding: 6px 10px;
         background: #fff;
-        box-shadow: 0 0 3px rgb(0 0 0 / 27%);
+        box-shadow: 0 0 3px rgba(0,0,0 , 0.27);
         font-size: 15px;
     }
     .content-page{
