@@ -7,7 +7,7 @@ textarea.form-control{
 }
 .sidenav-container {
     position: fixed;
-    z-index: 22;
+    z-index: 9999;
     width: 75px;
     height: 100vh;
     background-color: #fff;
@@ -102,7 +102,7 @@ textarea.form-control{
     justify-content: space-between;
     align-items: center;
     transition: 0.4s;
-    z-index: 2;
+    z-index: 999;
     position: fixed;
     top: 0;
     left: 75px;
@@ -1020,9 +1020,8 @@ text-align: right;
     overflow: hidden;
 }
 .dropzone .dz-preview .dz-success-mark, .dropzone .dz-preview .dz-error-mark {
-    margin-left: 0;
-    margin-top: 0;
-    transform: translate(-50%, -50%);
+    margin-left: -20px;
+    margin-top: -20px;
 }
 
 
