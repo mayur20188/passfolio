@@ -64,6 +64,7 @@ textarea.form-control{
     color: #445882;
     line-height: 18px;
     align-items: center;
+    white-space: nowrap;
 }
 .navleft-menu li a img {
     margin-right: 14px;
