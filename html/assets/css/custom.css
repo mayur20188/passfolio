@@ -209,7 +209,8 @@ left: 240px;
     display: inline-block;
     vertical-align: middle;
 }
-.small-dropdown-btn:hover{
+.small-dropdown-btn:hover,
+.small-dropdown-btn:focus{
     color: #01A39D;
     background-color: transparent;
 }
