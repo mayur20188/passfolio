@@ -975,6 +975,56 @@ text-align: right;
 }
 .d-modal-content .alert{min-width: inherit;}
 
+.dropzone{
+    background: #F6F7FB;
+    border: 2px solid #01A39D;
+    border-radius: 7px;
+    min-height: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 7px;
+}
+.dropzone .dz-message .dz-button{
+    color: #8A93A6;
+}
+.dropzone .dz-message .dz-button span{
+    color: #01A39D;
+    font-weight: 500;
+}
+.dropzone .dz-preview{
+    margin: 10px;
+}
+.dropzone .dz-preview .dz-success-mark svg, .dropzone .dz-preview .dz-error-mark svg {
+    width: 40px;
+    height: 40px;
+}
+.dropzone .dz-preview .dz-image {
+    width: 100px;
+    height: 100px;
+}
+.dropzone .dz-preview .dz-details {
+    padding: 8px;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    
+}
+.dropzone .dz-preview .dz-details .dz-size {
+    display: none;
+}
+.dropzone .dz-preview .dz-details .dz-filename {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.dropzone .dz-preview .dz-success-mark, .dropzone .dz-preview .dz-error-mark {
+    margin-left: 0;
+    margin-top: 0;
+    transform: translate(-50%, -50%);
+}
+
 
 @media (max-width: 1199.98px) {
     .manage-pp-header{

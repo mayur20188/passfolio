@@ -20,6 +20,7 @@
         <link rel="mask-icon" href="assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="theme-color" content="#ffffff">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.7.2/dropzone.css" media="all">
         <link rel="stylesheet" href="assets/css/style.css" media="all">
         <link rel="stylesheet" href="assets/css/responsive.css" media="all">
         <link rel="stylesheet" href="assets/css/custom.css" media="all">
@@ -345,152 +346,156 @@
                                                 New Form
                                             </div>
                                             <div class="tab-pane fade  show active" id="pills-configure" role="tabpanel" aria-labelledby="pills-configure-tab">
-                                                <div class="newform-content">
-                                                    <h2 class="newform-title">Configure Form</h2>
-                                                    <div class="form-title form-title-border mb-5">
-                                                        <h3>Form Details and Preview</h3>
-                                                    </div>
-                                                    <div class="newform-content-row">
-                                                        <div class="row">
-                                                            <div class="col-md-6">
-                                                                <div class="form-group">
-                                                                    <label class="form-label label-light">Form Title</label>
-                                                                    <input type="text" class="form-control" />
-                                                                </div>
-                                                                <div class="form-group">
-                                                                    <label class="form-label label-light">Form ID</label>
-                                                                    <input type="text" class="form-control" />
-                                                                </div>
-                                                                <div class="form-group">
-                                                                    <label class="form-label label-light">Description</label>
-                                                                    <textarea rows="5" class="form-control"></textarea>
-                                                                </div>
-                                                                <div class="form-group">
-                                                                    <label class="form-label label-light">Customize URL</label>
-                                                                    <input type="text" class="form-control" />
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-6">
-                                                                <div class="form-group">
-                                                                    <label class="form-label label-light">When Sent</label>
-                                                                    <input type="text" class="form-control" />
-                                                                </div>
-                                                                <div class="form-group">
-                                                                    <div class="con-export-text">
-                                                                        <h4>Medicine export declaration</h4>
-                                                                        <p>Use this form to declare any medicines you are taking or sending out of Australia. This declaration must accompany the medicines being taken or sent out of Australia.</p>
-                                                                        <a href="javascript:;">medicine-export-declaration/AustralianGovernment Services/passfolio.com</a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
+                                                <form action="" method="post" enctype="multipart/form-data">
+                                                    <div class="newform-content">
+                                                        <h2 class="newform-title">Configure Form</h2>
+                                                        <div class="form-title form-title-border mb-5">
+                                                            <h3>Form Details and Preview</h3>
                                                         </div>
-                                                    </div>
-                                                    <div class="form-title form-title-border mb-5">
-                                                        <h3>Form Behaviour</h3>
-                                                    </div>
-                                                    <div class="newform-content-row">
-                                                        <div class="row">
-                                                            <div class="col-md-6">
-                                                                <div class="form-group">
-                                                                    <div class="custom-control custom-switch">
-                                                                        <input type="checkbox" class="custom-control-input" id="captchaverification">
-                                                                        <label class="custom-control-label" for="captchaverification">Require captcha verification <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="" data-original-title="Lorem ipsum dolor, sit amet consectetur adipisicing elit. "><i class="fa fa-info-circle"></i></a></label>
+                                                        <div class="newform-content-row">
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group">
+                                                                        <label class="form-label label-light">Form Title</label>
+                                                                        <input type="text" class="form-control" />
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label class="form-label label-light">Form ID</label>
+                                                                        <input type="text" class="form-control" />
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label class="form-label label-light">Description</label>
+                                                                        <textarea rows="5" class="form-control"></textarea>
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label class="form-label label-light">Customize URL</label>
+                                                                        <input type="text" class="form-control" />
                                                                     </div>
                                                                 </div>
-                                                                <div class="form-group">
-                                                                    <div class="custom-control custom-switch">
-                                                                        <input type="checkbox" class="custom-control-input" id="automatic">
-                                                                        <label class="custom-control-label" for="automatic">Automatic save and resume later <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="" data-original-title="Lorem ipsum dolor, sit amet consectetur adipisicing elit. "><i class="fa fa-info-circle"></i></a></label>
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group">
+                                                                        <label class="form-label label-light">When Sent</label>
+                                                                        <div class="dropzone">
+                                                                            <input type="file" class="form-control custom-control-input" multiple />
+                                                                        </div>
                                                                     </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-6">
-                                                                <div class="form-group">
-                                                                    <div class="custom-control custom-switch">
-                                                                        <input type="checkbox" class="custom-control-input" id="hideformsearch">
-                                                                        <label class="custom-control-label" for="hideformsearch">Hide form from search engine results <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="" data-original-title="Lorem ipsum dolor, sit amet consectetur adipisicing elit. "><i class="fa fa-info-circle"></i></a></label>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-title form-title-border mb-5">
-                                                        <h3>Form Analytics</h3>
-                                                    </div>
-                                                    <div class="newform-content-row">
-                                                        <div class="row">
-                                                            <div class="col-md-6">
-                                                                <div class="form-group">
-                                                                    <label class="form-label label-light">Google Analytics ID <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="" data-original-title="Lorem ipsum dolor, sit amet consectetur adipisicing elit. "><i class="fa fa-info-circle"></i></a></label>
-                                                                    <input type="text" class="form-control">
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-6">
-                                                                <div class="form-group">
-                                                                    <label class="form-label label-light">Facebook Pixel ID <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="" data-original-title="Lorem ipsum dolor, sit amet consectetur adipisicing elit. "><i class="fa fa-info-circle"></i></a></label>
-                                                                    <input type="text" class="form-control">
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-6">
-                                                                <div class="form-group">
-                                                                    <label class="form-label label-light">Page load scripts <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="" data-original-title="Lorem ipsum dolor, sit amet consectetur adipisicing elit. "><i class="fa fa-info-circle"></i></a></label>
-                                                                    <textarea rows="5" class="form-control" placeholder="Paste third party analytics script here."></textarea>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-6">
-                                                                <div class="form-group">
-                                                                    <label class="form-label label-light">Successful submission scripts <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="" data-original-title="Lorem ipsum dolor, sit amet consectetur adipisicing elit. "><i class="fa fa-info-circle"></i></a></label>
-                                                                    <textarea rows="5" class="form-control" placeholder="Paste conversion tracking scripts here."></textarea>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-title form-title-border mb-5">
-                                                        <h3>Submissions</h3>
-                                                    </div>
-                                                    <div class="newform-content-row">
-                                                        <div class="row">
-                                                            <div class="col-md-6">
-                                                                <div class="form-group">
-                                                                    <div class="custom-control custom-switch">
-                                                                        <input type="checkbox" class="custom-control-input" id="disablesubmissions">
-                                                                        <label class="custom-control-label" for="disablesubmissions">Disable submissions <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="" data-original-title="Lorem ipsum dolor, sit amet consectetur adipisicing elit. "><i class="fa fa-info-circle"></i></a></label>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="form-group">
-                                                                    <div class="custom-control custom-switch">
-                                                                        <input type="checkbox" class="custom-control-input" id="submissionsdate">
-                                                                        <label class="custom-control-label mb-2" for="submissionsdate">Submissions open after date/time <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="" data-original-title="Lorem ipsum dolor, sit amet consectetur adipisicing elit. "><i class="fa fa-info-circle"></i></a></label>
-                                                                        <div class="right-input-icon">
-                                                                            <input type="text" placeholder="dd/mm/yyyy" class="form-control">
-                                                                            <i class="far fa-calendar-alt right-icon top-16"></i>
+                                                                    <div class="form-group">
+                                                                        <div class="con-export-text">
+                                                                            <h4>Medicine export declaration</h4>
+                                                                            <p>Use this form to declare any medicines you are taking or sending out of Australia. This declaration must accompany the medicines being taken or sent out of Australia.</p>
+                                                                            <a href="javascript:;">medicine-export-declaration/AustralianGovernment Services/passfolio.com</a>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-md-6">
-                                                                <div class="form-group">
-                                                                    <div class="custom-control custom-switch">
-                                                                        <input type="checkbox" class="custom-control-input" id="hideformsearch2">
-                                                                        <label class="custom-control-label mb-2" for="hideformsearch2">Disable after a maximum number of submissions</label>
-                                                                        <div>
-                                                                            <input type="text" placeholder="Max number of submissions" class="form-control">
+                                                        </div>
+                                                        <div class="form-title form-title-border mb-5">
+                                                            <h3>Form Behaviour</h3>
+                                                        </div>
+                                                        <div class="newform-content-row">
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group">
+                                                                        <div class="custom-control custom-switch">
+                                                                            <input type="checkbox" class="custom-control-input" id="captchaverification">
+                                                                            <label class="custom-control-label" for="captchaverification">Require captcha verification <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="" data-original-title="Lorem ipsum dolor, sit amet consectetur adipisicing elit. "><i class="fa fa-info-circle"></i></a></label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <div class="custom-control custom-switch">
+                                                                            <input type="checkbox" class="custom-control-input" id="automatic">
+                                                                            <label class="custom-control-label" for="automatic">Automatic save and resume later <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="" data-original-title="Lorem ipsum dolor, sit amet consectetur adipisicing elit. "><i class="fa fa-info-circle"></i></a></label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group">
+                                                                        <div class="custom-control custom-switch">
+                                                                            <input type="checkbox" class="custom-control-input" id="hideformsearch">
+                                                                            <label class="custom-control-label" for="hideformsearch">Hide form from search engine results <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="" data-original-title="Lorem ipsum dolor, sit amet consectetur adipisicing elit. "><i class="fa fa-info-circle"></i></a></label>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-12">
-                                                                <div class="form-group">
-                                                                    <div class="custom-control custom-switch">
-                                                                        <input type="checkbox" class="custom-control-input" id="closesubmissions">
-                                                                        <label class="custom-control-label mb-2" for="closesubmissions">Close Submissions <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="" data-original-title="Lorem ipsum dolor, sit amet consectetur adipisicing elit. "><i class="fa fa-info-circle"></i></a></label>
-                                                                        <textarea rows="5" class="form-control" placeholder="Submissions are closed."></textarea>
+                                                        </div>
+                                                        <div class="form-title form-title-border mb-5">
+                                                            <h3>Form Analytics</h3>
+                                                        </div>
+                                                        <div class="newform-content-row">
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group">
+                                                                        <label class="form-label label-light">Google Analytics ID <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="" data-original-title="Lorem ipsum dolor, sit amet consectetur adipisicing elit. "><i class="fa fa-info-circle"></i></a></label>
+                                                                        <input type="text" class="form-control">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group">
+                                                                        <label class="form-label label-light">Facebook Pixel ID <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="" data-original-title="Lorem ipsum dolor, sit amet consectetur adipisicing elit. "><i class="fa fa-info-circle"></i></a></label>
+                                                                        <input type="text" class="form-control">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group">
+                                                                        <label class="form-label label-light">Page load scripts <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="" data-original-title="Lorem ipsum dolor, sit amet consectetur adipisicing elit. "><i class="fa fa-info-circle"></i></a></label>
+                                                                        <textarea rows="5" class="form-control" placeholder="Paste third party analytics script here."></textarea>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group">
+                                                                        <label class="form-label label-light">Successful submission scripts <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="" data-original-title="Lorem ipsum dolor, sit amet consectetur adipisicing elit. "><i class="fa fa-info-circle"></i></a></label>
+                                                                        <textarea rows="5" class="form-control" placeholder="Paste conversion tracking scripts here."></textarea>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-title form-title-border mb-5">
+                                                            <h3>Submissions</h3>
+                                                        </div>
+                                                        <div class="newform-content-row">
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group">
+                                                                        <div class="custom-control custom-switch">
+                                                                            <input type="checkbox" class="custom-control-input" id="disablesubmissions">
+                                                                            <label class="custom-control-label" for="disablesubmissions">Disable submissions <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="" data-original-title="Lorem ipsum dolor, sit amet consectetur adipisicing elit. "><i class="fa fa-info-circle"></i></a></label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <div class="custom-control custom-switch">
+                                                                            <input type="checkbox" class="custom-control-input" id="submissionsdate">
+                                                                            <label class="custom-control-label mb-2" for="submissionsdate">Submissions open after date/time <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="" data-original-title="Lorem ipsum dolor, sit amet consectetur adipisicing elit. "><i class="fa fa-info-circle"></i></a></label>
+                                                                            <div class="right-input-icon">
+                                                                                <input type="text" placeholder="dd/mm/yyyy" class="form-control">
+                                                                                <i class="far fa-calendar-alt right-icon top-16"></i>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group">
+                                                                        <div class="custom-control custom-switch">
+                                                                            <input type="checkbox" class="custom-control-input" id="hideformsearch2">
+                                                                            <label class="custom-control-label mb-2" for="hideformsearch2">Disable after a maximum number of submissions</label>
+                                                                            <div>
+                                                                                <input type="text" placeholder="Max number of submissions" class="form-control">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <div class="form-group">
+                                                                        <div class="custom-control custom-switch">
+                                                                            <input type="checkbox" class="custom-control-input" id="closesubmissions">
+                                                                            <label class="custom-control-label mb-2" for="closesubmissions">Close Submissions <a href="javascript:;" data-toggle="tooltip" data-placement="top" title="" data-original-title="Lorem ipsum dolor, sit amet consectetur adipisicing elit. "><i class="fa fa-info-circle"></i></a></label>
+                                                                            <textarea rows="5" class="form-control" placeholder="Submissions are closed."></textarea>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>
+                                                </form>
                                             </div>
                                             <div class="tab-pane fade" id="pills-share" role="tabpanel" aria-labelledby="pills-share-tab">
                                                 <div class="newform-content">
@@ -837,8 +842,17 @@ Australian Government Services
         <script src="assets/js/jquery.dataTables.min.js"></script>
         <script src="assets/js/apexcharts.min.js"></script>
         <script src="assets/js/Sortable.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.7.2/min/dropzone.min.js"></script>
         <script src="assets/js/custom.js"></script>
         <script>
+            Dropzone.autoDiscover = false;
+            $(document).ready(function(){
+                var myDropzone = new Dropzone(".dropzone", { 
+                    dictDefaultMessage: 'Drag and drop image or <span>upload image</span>.',
+                    url: "/assets/images"
+                });
+            });
+            
             function copyToClipboard(elem) {
                 $(elem).tooltip().attr('data-original-title', 'Copied!').tooltip('show');
                 elem.select(); 
