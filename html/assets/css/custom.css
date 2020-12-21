@@ -1024,6 +1024,20 @@ text-align: right;
     margin-top: -20px;
 }
 
+/*--------*/
+.email-table thead tr th:nth-child(1){
+    width: 370px !important
+}
+.email-table thead tr th:nth-child(2){
+    width: 172px !important
+}
+.email-table thead tr th:nth-child(3){
+    width: 120px !important
+}
+.email-table thead tr th:nth-child(4){
+    width: 120px !important
+}
+
 
 @media (max-width: 1199.98px) {
     .manage-pp-header{
@@ -1063,7 +1077,7 @@ text-align: right;
         background: rgba(16,42,94 ,0.6);
         visibility: hidden;
         opacity: 0;
-        z-index: 999;
+        z-index: 1000;
         transition: 0.4s;
     }
     .overlay_bg.active{

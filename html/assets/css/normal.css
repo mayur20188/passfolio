@@ -241,7 +241,7 @@ b, strong{
     font-size: 14px;
     color: #01A39D;
     right: 100%;
-    margin-right: 12px;
+    margin-right: 2px;
 }
 .form-group .form-label.label-light{
     font-size: 14px;
@@ -446,7 +446,7 @@ select{
     position: fixed;
     top: 10px;
     left: 100px;
-    z-index: 2;
+    z-index: 999;
 }
 .alert {
     padding: 18px 24px;
