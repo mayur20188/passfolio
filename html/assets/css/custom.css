@@ -1063,7 +1063,7 @@ text-align: right;
         background: rgba(16,42,94 ,0.6);
         visibility: hidden;
         opacity: 0;
-        z-index: 1;
+        z-index: 999;
         transition: 0.4s;
     }
     .overlay_bg.active{
