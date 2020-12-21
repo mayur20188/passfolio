@@ -802,6 +802,7 @@
     padding: 6px 16px;
     text-align: center;
     display: inline-block;
+    white-space: nowrap;
 }
 .table-status.badge-danger{
     background-color: #fee7eb;

@@ -1336,14 +1336,41 @@ select{
     top: 11px;
 }*/
 
-.mCS-minimal-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
-    background-color: rgb(68 88 130 / 0.2);
+
+.mCSB_scrollTools .mCSB_draggerRail{
+    background-color: inherit;
+    background-color: inherit;
+    filter: none;
+    -ms-filter: none;
+}
+.mCSB_inside>.mCSB_container{
+    margin-right: 0px;
+}
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+    opacity: 0;
+}
+.mCustomScrollbar:hover .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+    background-color: rgba(68,88,130, 0.2);
+    opacity: 1;
+}
+.mCustomScrollbar .mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar,
+.mCustomScrollbar .mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar{
+    background-color: #445882;
+    background-color: #445882; 
+    filter:"alpha(opacity=50)";-ms-filter:"alpha(opacity=50)";
+}
+
+
+
+.mCS-minimal-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+    background-color: rgba(68,88,130, 0.2);
 }
 .mCS-minimal-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar,
 .mCS-minimal-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar{
     background-color: #445882;
-    background-color: #445882;
-    filter:"alpha(opacity=50)";-ms-filter:"alpha(opacity=50)"
+    background-color: #445882; 
+    filter:"alpha(opacity=50)";-ms-filter:"alpha(opacity=50)";
 }
 .default-outline-btn{
     background-color: #fff;
