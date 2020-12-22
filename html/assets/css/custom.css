@@ -86,7 +86,9 @@ textarea.form-control{
 .navleft-menu li ul li a{
     padding: 10px 0px 10px 35px;
 }
-
+.navleft-menu li ul.submenu li a.active{
+    color: #01A39D;
+}
 .sidebar-opened .sidenav-container{
     width: 240px;
 }

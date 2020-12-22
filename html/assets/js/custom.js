@@ -135,15 +135,11 @@ $(document).ready(function() {
 		path = 'index.html';
 	}
 
-	var target = $('.account-sidebar ul li a[href="'+path+'"]');
+	var target = $('.navleft-menu ul li a[href="'+path+'"]');
 	// Add active class to target2 link
 	target.parent().addClass('active');
 
-	$("#imgInp").on('change',function() {
-		readURL(this);
-	});
 
-	
 });
 
 function TopbarStuck(){
@@ -158,24 +154,6 @@ function TopbarStuck(){
 		}
 	});
 }
-
-
-
-// ----------profile-image-update---------
-function readURL(input) {
-	if (input.files && input.files[0]) {
-		var reader = new FileReader();
-		
-		reader.onload = function(e) {
-			$('#imgpreviewPrf').attr('src', e.target.result);
-		}
-		
-		reader.readAsDataURL(input.files[0]); // convert to base64 string
-	}
-}
-
-
-
 
 
 // ----tooltip----------
