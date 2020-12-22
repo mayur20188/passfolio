@@ -1024,6 +1024,17 @@ text-align: right;
     margin-top: -20px;
 }
 
+
+.paybank-option{
+    display: flex;
+    align-items: center;
+}
+.paybank-option .custom-radio:first-child{
+    margin-left: 0px;
+}
+.paybank-option .custom-radio{
+    margin-left: 10px;
+}
 /*--------*/
 .email-table thead tr th:nth-child(1){
     width: 370px !important
@@ -1248,6 +1259,18 @@ text-align: right;
     }
     .newform-tabview.setting-tab-view .nav-pills .nav-link {
         padding: 11px 4px;
+    }
+    .paybank-option{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .paybank-option .custom-radio:last-child{
+        margin-bottom: 0px;
+        margin-left: 0;
+    }
+    .paybank-option .custom-radio{
+        margin-bottom: 10px;
+        margin-left: 0;
     }
 }
 
