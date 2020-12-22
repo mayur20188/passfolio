@@ -70,9 +70,7 @@
     .page-ath-content {
         width: 65%;
     }
-    .notification-dropdown .dropdown-menu{
-        left: 0;
-    }
+    
 }
 
 
@@ -103,6 +101,9 @@
 }
 
 @media (max-width: 767.98px) {
+    .notification-dropdown .dropdown-menu{
+        left: 0;
+    }
     .account-right {
         margin-left: auto;
     }
