@@ -2092,7 +2092,89 @@ table.table-style.dataTable.display tbody tr:hover{
         color: #fff;
     background-color: #01a39d;
 }
+.form-dark-label-area{
+    background-color: #445882;
+    display: flex;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 20px;
+    min-height: 59px;
+}
+.page-list-right-buttons {
+    display: flex;
+    align-items: center;
+}
+.approve-btn {
+    padding: 9px 36px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #01A39D;
+    border-radius: 7px;
+    border: 2px solid #01a39d;
+    margin: 3px;
+}
+.note-btn{
+    padding: 9px 36px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #445882;
+    border-radius: 7px;
+    border:  2px solid rgba(255, 255, 255, 0.3);
+    margin: 3px;
+}
+.note-dropdown-menu {
+    min-width: 350px;
+    border: 1px solid #E3E5EF;
+    box-shadow: 0px 4px 12px rgba(68, 88, 130, 0.2);
+    padding: 0;
+    border-radius: 14px;
+}
 
+
+
+.note-drp-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 22px;
+}
+.note-drp-head-tags {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.note-drp-header h3{
+    font-size: 13px;
+    font-weight: 500;
+    color: #102A5E;
+    margin-bottom: 0;
+}
+.note-drp-header{
+    border-bottom: 1px solid #D7DAE0;
+}
+.note-tag-maped:first-child{
+    margin-left: 0;
+}
+.note-tag-maped{
+    font-size: 12px;
+    font-weight: 500;
+    padding: 3px 9px;
+    background-color: #01A39D;
+    border-radius: 7px;
+    color: #fff;
+    margin-left: 8px;
+    white-space: nowrap;
+}
+
+.note-tag-maped.pending-tag{
+    background-color: #D7DAE0;
+    color: #445882;
+}
 
 
 

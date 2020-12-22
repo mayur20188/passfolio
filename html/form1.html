@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width"/>
+        <meta name="apple-mobile-web-app-capable" content="yes"/>
+        <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+        <meta name="apple-touch-fullscreen" content="yes"/>
+        <meta name="format-detection" content="telephone=no"/>
+        <meta name="author" content=""/>
+        <meta name="description" content=""/>
+        <meta name="keywords" content=""/>
+        <title>Application Form</title>
+        <link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicon/apple-touch-icon.png"/>
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png"/>
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png"/>
+        <link rel="manifest" href="assets/images/favicon/site.webmanifest"/>
+        <link rel="mask-icon" href="assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5"/>
+        <meta name="msapplication-TileColor" content="#da532c"/>
+        <meta name="theme-color" content="#ffffff"/>
+        <link rel="stylesheet" href="assets/css/style.css" media="all"/>
+        <link rel="stylesheet" href="assets/css/responsive.css" media="all"/>
+        <link rel="stylesheet" href="assets/css/custom.css" media="all"/>
+    </head>
+    <body>
+        <div class="preloader">
+            <div class="loader-icon animate__animated">
+                <lottie-player src="assets/js/loader.json"  background="transparent"  speed="1"  loop autoplay></lottie-player>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="sidenav-container">
+                <div class="sidenav-logo">
+                    <a href="index.html">
+                        <span class="logo-icon">
+                            <img src="assets/images/icon-logo.svg" class="img-fluid" alt="" />
+                        </span>
+                    </a>
+                    <a href="index.html">
+                        <span class="logo-text">
+                            <img src="assets/images/logo-text.svg" class="img-fluid" alt="" />
+                        </span>
+                    </a>
+                </div>
+                <div class="scroll-sidebar">
+                    <div class="navleft-menu">
+                        <ul id="sidebarmenu">
+                            <li>
+                                <a href="index.html">
+                                    <img src="assets/images/icons/home.svg" alt="Dashboard" />
+                                    <span class="left-menu-title">Dashboard</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#submissions" data-toggle="collapse" aria-expanded="false">
+                                    <img src="assets/images/icons/message.svg" alt="Submissions" />
+                                    <span class="left-menu-title">Submissions</span>
+                                </a>
+                                <ul class="collapse submenu list-unstyled" id="submissions" data-parent="#sidebarmenu">
+                                    <li>
+                                        <a href="javascript:;">Applications</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">Signed Documents</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#templates" data-toggle="collapse" aria-expanded="false">
+                                    <img src="assets/images/icons/forms.svg" alt="" />
+                                    <span class="left-menu-title">Templates</span>
+                                </a>
+                                <ul class="collapse submenu list-unstyled" id="templates" data-parent="#sidebarmenu">
+                                    <li>
+                                        <a href="javascript:;">Forms</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">Documents</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">Send Document</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="users.html">
+                                    <img src="assets/images/icons/users.svg" alt="" />
+                                    <span class="left-menu-title">Users</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="profile.html">
+                                    <img src="assets/images/icons/profile.svg" alt="" />
+                                    <span class="left-menu-title">Profile</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="setting.html">
+                                    <img src="assets/images/icons/settings.svg" alt="" />
+                                    <span class="left-menu-title">Settings</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="content-page">
+                <div class="top-bar">
+                    <div class="top-bar-left d-flex align-items-center">
+                        <a href="index.html" class="icon-logo-left d-lg-none">
+                            <img src="assets/images/icon-logo.svg" class="img-fluid" alt="" />
+                        </a>
+                        <p>Australian Government Services</p>
+                        <ul class="top-bar-icon d-flex list-inline">
+                            <li class="d-lg-none">
+                                <a href="javascript:;" class="toggle-menu-btn">
+                                    
+                                    <img src="assets/images/icons/menu.svg" class="img-fluid" alt="menu" />
+                                </a>
+                            </li>
+                            <li class="dropdown notification-dropdown active-notification">
+                                <a href="javascript:void(0);" class="dropdown-toggle" id="notificationdropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-display="static">
+                                    <img src="assets/images/icons/notification.svg" class="img-fluid" alt="notification" />
+                                    <span class="notifi-badge"></span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="notificationdropdown">
+                                    <div class="notification-drp">
+                                        <div class="notification-header">
+                                            <p class="noti-head">22 New Notifications</p>
+                                        </div>
+                                        <div class="notification-content">
+                                            <ul class="mCustomScrollbar">
+                                                <li class="unread-notifi">
+                                                    <a href="javascript:void(0);">
+                                                        <div class="notifi-box">
+                                                            <div class="notifi-header">
+                                                                <h5>Form 12658124522NGH135</h5>
+                                                                <p class="notifi-time">2m ago</p>
+                                                            </div>
+                                                            <div class="notifi-message">
+                                                                <p>Medine export declaration has been reviewed. Awaiting your confirmation.</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="unread-notifi">
+                                                    <a href="javascript:void(0);">
+                                                        <div class="notifi-box">
+                                                            <div class="notifi-header">
+                                                                <h5>Submission 82658124522NH135</h5>
+                                                                <p class="notifi-time">34m ago</p>
+                                                            </div>
+                                                            <div class="notifi-message">
+                                                                <p>Application to enroll into a NSW Government School, awaiting your review.</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);">
+                                                        <div class="notifi-box">
+                                                            <div class="notifi-header">
+                                                                <h5>Application 12658124522NH135</h5>
+                                                                <p class="notifi-time">45m ago</p>
+                                                            </div>
+                                                            <div class="notifi-message">
+                                                                <p>Loan Agreement, awaiting for your review.</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);">
+                                                        <div class="notifi-box">
+                                                            <div class="notifi-header">
+                                                                <h5>Submission 34658124522NH133</h5>
+                                                                <p class="notifi-time">45m ago</p>
+                                                            </div>
+                                                            <div class="notifi-message">
+                                                                <p>Parents or guardians additional details for Youth Allowance or ABSTUDY, awaiting your review.</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);">
+                                                        <div class="notifi-box">
+                                                            <div class="notifi-header">
+                                                                <h5>Submission 45358124522NH121</h5>
+                                                                <p class="notifi-time">3h ago</p>
+                                                            </div>
+                                                            <div class="notifi-message">
+                                                                <p>Parents or guardians additional details for Youth Allowance or ABSTUDY, awaiting your review.</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);">
+                                                        <div class="notifi-box">
+                                                            <div class="notifi-header">
+                                                                <h5>Application 12658124522NH135</h5>
+                                                                <p class="notifi-time">45m ago</p>
+                                                            </div>
+                                                            <div class="notifi-message">
+                                                                <p>Loan Agreement, awaiting for your review.</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);">
+                                                        <div class="notifi-box">
+                                                            <div class="notifi-header">
+                                                                <h5>Submission 34658124522NH133</h5>
+                                                                <p class="notifi-time">45m ago</p>
+                                                            </div>
+                                                            <div class="notifi-message">
+                                                                <p>Parents or guardians additional details for Youth Allowance or ABSTUDY, awaiting your review.</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);">
+                                                        <div class="notifi-box">
+                                                            <div class="notifi-header">
+                                                                <h5>Submission 45358124522NH121</h5>
+                                                                <p class="notifi-time">3h ago</p>
+                                                            </div>
+                                                            <div class="notifi-message">
+                                                                <p>Parents or guardians additional details for Youth Allowance or ABSTUDY, awaiting your review.</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);">
+                                                        <div class="notifi-box">
+                                                            <div class="notifi-header">
+                                                                <h5>Application 12658124522NH135</h5>
+                                                                <p class="notifi-time">45m ago</p>
+                                                            </div>
+                                                            <div class="notifi-message">
+                                                                <p>Loan Agreement, awaiting for your review.</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);">
+                                                        <div class="notifi-box">
+                                                            <div class="notifi-header">
+                                                                <h5>Submission 34658124522NH133</h5>
+                                                                <p class="notifi-time">45m ago</p>
+                                                            </div>
+                                                            <div class="notifi-message">
+                                                                <p>Parents or guardians additional details for Youth Allowance or ABSTUDY, awaiting your review.</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0);">
+                                                        <div class="notifi-box">
+                                                            <div class="notifi-header">
+                                                                <h5>Submission 45358124522NH121</h5>
+                                                                <p class="notifi-time">3h ago</p>
+                                                            </div>
+                                                            <div class="notifi-message">
+                                                                <p>Parents or guardians additional details for Youth Allowance or ABSTUDY, awaiting your review.</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="p-2">
+                                                    <div class="notifi-loader text-center">
+                                                        <div class="spinner-border icon-load text-grey" role="status"></div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="notification-footer">
+                                            <a href="notification.html">See All</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="top-bar-right">
+                        <div class="navbar-custom">
+                            <ul>
+                                <li class="dropdown header-profile-dropdown">
+                                    <a href="javascript:void(0);" class="dropdown-toggle userProfile" id="userProfileDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-display="static">
+                                        <img src="assets/images/avatar.jpg" class="img-fluid" alt="avatar" />
+                                        <div class="userProfile-info d-none d-sm-block">
+                                            <span>Hello, <i>Pixie</i></span>
+                                            <p>Administrator</p>
+                                        </div>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userProfileDropdown">
+                                        <div class="userProfile-info d-sm-none">
+                                            <span>Hello, <i>Pixie</i></span>
+                                            <p>Administrator</p>
+                                        </div>
+                                        <div class="profile-dropdown-link">
+                                            <a class="" href="javascript:;"><i class="feather icon-user profile-icon"></i> Profile</a>
+                                            <a class="" href="javascript:;"><i class="feather icon-lock profile-icon"></i> Change Password</a>
+                                            <a class="" href="javascript:;"><i class="feather icon-log-out profile-icon"></i> Sign Out</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-content-area">
+                    <div class="form-card">
+                        <div class="form-body border-bottom">
+                            <div class="content-title-part d-flex justify-content-between mt-0 mb-0">
+                                <h1>Application Form</h1>
+                                <div class="content-title-right">
+                                    <div class="action-buttons">
+                                        <div class="user-icon-box mr-3">
+                                            <img src="assets/images/avatar.jpg" alt=""/>
+                                            <div class="user-status bg-success"></div>
+                                        </div>
+                                        <div class="status-dropdown status-warning dropdown">
+                                            <a href="javascript:void(0);" class="dropdown-toggle" id="actiondropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-display="static">
+                                                <span>Pending</span>
+                                                <i class="feather icon-chevron-down"></i>
+                                            </a>
+                                            <div class="dropdown-menu dropdown-medium dropdown-menu-right" aria-labelledby="d-addNew">
+                                                <div class="actions-links-data">
+                                                    <ul>
+                                                        <li class="active"><a href="javascript:void(0);">Pending</a></li>
+                                                        <li><a href="javascript:void(0);">Reviewing</a></li>
+                                                        <li><a href="javascript:void(0);">Approved</a></li>
+                                                        <li><a href="javascript:void(0);">Denied</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="view-more-dropdown dropdown">
+                                            <a href="javascript:void(0);" class="dropdown-toggle" id="actiondropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-display="static">
+                                                <img src="assets/images/actions.svg" alt=""/>
+                                            </a>
+                                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="actiondropdown">
+                                                <div class="actions-links-data">
+                                                    <ul>
+                                                        <li><a href="javascript:void(0);">Download form</a></li>
+                                                        <li><a href="javascript:void(0);">Print form</a></li>
+                                                        <li><a href="application-pdf.html">View PDF version</a></li>
+                                                        <li><a href="javascript:void(0);">View form template<i class="fa fa-external-link-alt ml-2"></i></a></li>
+                                                        <li><a href="javascript:void(0);">Status history</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-body border-bottom">
+                            <div class="form-barcode-header">
+                                <div class="barcode-flex-box">
+                                    <div class="barcode-box">
+                                        <img src="assets/images/qrcode.png" alt=""/>
+                                    </div>
+                                    <div class="barcode-detail">
+                                        <h5>Medicine export declaration<i class="fa fa-check-circle ml-2 text-success"></i></h5>
+                                        <p>Application ID 12658124522NH135</p>
+                                    </div>
+                                </div>
+                                <div class="table-user-data">
+                                    <div class="tb-user-img">
+                                        <img src="assets/images/avatar.jpg" alt=""/>
+                                    </div>
+                                    <div class="tb-user-dtl">
+                                        <h6>Lincoln John Herwitz</h6>
+                                        <p>lincoln@gmail.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-dark-label-area">
+                            <div class="page-list-no">
+                                <div class="page-list-tag">1 to 17</div>
+                                <span>Items for review</span>
+                            </div>
+                            <div class="page-list-right-buttons">
+                                <button class="approve-btn">Approve</button>
+                                <div class="note-dropdown dropdown">
+                                    <button class="dropdown-toggle note-btn" id="notedropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-display="static">Note</button>
+                                    <div class="dropdown-menu dropdown-menu-right note-dropdown-menu" aria-labelledby="notedropdown">
+                                        <div class="note-drp-header">
+                                            <div class="note-drp-head-text">
+                                                <h3>Question Type Status</h3>
+                                            </div>
+                                            <div class="note-drp-head-tags">
+                                                <div class="note-tag-maped"><i class="fa fa-check mr-1"></i>Mapped</div>
+                                                <div class="note-tag-maped pending-tag">Pending</div>
+                                            </div>
+                                        </div>
+                                        <div class="note-drp-content">
+                                            <div class="user-msg-box">
+                                                <div class="user-msg-img">
+                                                    <img src="assets/images/avatar.jpg" alt=""/>
+                                                </div>
+                                                <p>The answer field is replaced with First Name and Last Name.</p>
+                                                <div class="edit-delet-buttons dropdown">
+                                                    <a href="javascript:void(0);" class="dropdown-toggle" id="actiondrp" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-display="static"><i class="fa fa-ellipsis-h"></i></a>
+                                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="actiondrp">
+                                                        gsgsgg
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-body">
+                            <div class="form-data-area">
+                                <div class="tab-content" id="pills-tabContent">
+                                    <div class="tab-pane fade" id="instructor" role="tabpanel" aria-labelledby="instructor-tab">
+                                        Instructions
+                                    </div>
+                                    <div class="tab-pane fade show active" id="form" role="tabpanel" aria-labelledby="form-tab">
+                                        <div class="form-content-area">
+                                            <form action="javascript:void(0);">
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <div class="form-heading">
+                                                            <h6>Your Details</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-6">
+                                                        <div class="row">
+                                                            <div class="col-lg-12">
+                                                                <div class="form-group">
+                                                                    <label class="form-label label-light"><span class="label-no">1</span>Full name</label>
+                                                                    <input type="text" class="form-control"/>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-12">
+                                                                <div class="form-group mb-2">
+                                                                    <label class="form-label label-light"><span class="label-no">2</span>Address</label>
+                                                                    <input type="text" class="form-control"/>
+                                                                </div>
+                                                                <div class="form-group mb-2">
+                                                                    <input type="text" class="form-control"/>
+                                                                </div>
+                                                                <div class="form-group mb-2">
+                                                                    <input type="text" class="form-control"/>
+                                                                </div>
+                                                                <div class="form-group mb-2">
+                                                                    <input type="text" class="form-control"/>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="row">
+                                                            <div class="col-lg-12">
+                                                                <div class="form-group">
+                                                                    <label class="form-label label-light"><span class="label-no">3</span>Mobile number</label>
+                                                                    <input type="text" class="form-control"/>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label class="form-label label-light">Telephone number</label>
+                                                                    <input type="text" class="form-control"/>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-12">
+                                                                <div class="form-group">
+                                                                    <label class="form-label label-light"><span class="label-no">4</span>Email</label>
+                                                                    <input type="text" class="form-control"/>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <div class="form-heading">
+                                                            <h6>Medicine being exported</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <div class="form-group mb-2">
+                                                            <label class="form-label label-light"><span class="label-no">5</span>The medicine I am taking/sending out of Australis is: <span class="label-bold">Tick all that apply.</span></label>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <div class="custom-control custom-checkbox mb-2">
+                                                                <input type="checkbox" class="custom-control-input" id="check1" checked/>
+                                                                <label class="custom-control-label" for="check1">Non prescription medicine</label>
+                                                            </div>
+                                                            <div class="custom-control custom-checkbox mb-2">
+                                                                <input type="checkbox" class="custom-control-input" id="check2" checked/>
+                                                                <label class="custom-control-label" for="check2">Prescription medicine that has been subsides by PBS</label>
+                                                            </div>
+                                                            <div class="custom-control custom-checkbox mb-2">
+                                                                <input type="checkbox" class="custom-control-input" id="check3" checked/>
+                                                                <label class="custom-control-label" for="check3">PBS subsidised medicine for my personal use</label>
+                                                            </div>
+                                                            <div class="custom-control custom-checkbox mb-2">
+                                                                <input type="checkbox" class="custom-control-input" id="check4" checked/>
+                                                                <label class="custom-control-label" for="check4">PBS subsidised medicine for a person travelling in my company</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <div class="form-group max-form-data">
+                                                            <label class="form-label label-light"><span class="label-no">6</span>Full name of the person for whom the medicine was prescribed for</label>
+                                                            <input type="text" class="form-control"/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <div class="form-group mb-2">
+                                                            <label class="form-label label-light"><span class="label-no">7</span>Names of medicine (including strength, quantity, daily dose)</label>
+                                                            <input type="text" class="form-control"/>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control"/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <div class="form-heading">
+                                                            <h6>Exportation details</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <div class="form-group mb-2">
+                                                            <label class="form-label label-light"><span class="label-no">8</span>I am:</label>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <div class="custom-control custom-radio mb-2">
+                                                                <input type="radio" id="radio1" name="formradio" class="custom-control-input" checked/>
+                                                                <label class="custom-control-label" for="radio1">Taking PBS medicine overseas</label>
+                                                            </div>
+                                                            <div class="custom-control custom-radio mb-2">
+                                                                <input type="radio" id="radio2" name="formradio" class="custom-control-input"/>
+                                                                <label class="custom-control-label" for="radio2">Sending PBS medicine overseas</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <div class="row">
+                                                            <div class="col-lg-6">
+                                                                <div class="form-group">
+                                                                    <label class="form-label label-light"><span class="label-no">9</span>Passport number</label>
+                                                                    <input type="text" class="form-control"/>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-6">
+                                                                <div class="form-group">
+                                                                    <label class="form-label label-light">Destination</label>
+                                                                    <input type="text" class="form-control"/>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                            <div class="col-lg-6">
+                                                                <div class="form-group">
+                                                                    <label class="form-label label-light">Passport country of issue</label>
+                                                                    <input type="text" class="form-control"/>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-6">
+                                                                <div class="form-group">
+                                                                    <label class="form-label label-light">Expected length of stay</label>
+                                                                    <input type="text" class="form-control"/>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-6">
+                                                                <div class="form-group">
+                                                                    <label class="form-label label-light">Flight number</label>
+                                                                    <input type="text" class="form-control"/>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="row">
+                                                            <div class="col-lg-12">
+                                                                <div class="form-group">
+                                                                    <label class="form-label label-light"><span class="label-no">10</span>Full name of person PBS medicine is being sent to</label>
+                                                                    <input type="text" class="form-control"/>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-12">
+                                                                <div class="form-group mb-2">
+                                                                    <label class="form-label label-light"><span class="label-no">11</span>Address</label>
+                                                                    <input type="text" class="form-control"/>
+                                                                </div>
+                                                                <div class="form-group mb-2">
+                                                                    <input type="text" class="form-control"/>
+                                                                </div>
+                                                                <div class="form-group mb-2">
+                                                                    <input type="text" class="form-control"/>
+                                                                </div>
+                                                                <div class="form-group mb-2">
+                                                                    <input type="text" class="form-control"/>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="row">
+                                                            <div class="col-lg-12">
+                                                                <div class="form-group">
+                                                                    <label class="form-label label-light"><span class="label-no">12</span>Your relationship to the recipient of medication</label>
+                                                                    <input type="text" class="form-control"/>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-12">
+                                                                <div class="form-group">
+                                                                    <label class="form-label label-light"><span class="label-no">13</span>Reasons for sending PBS medicines overseas</label>
+                                                                    <input type="text" class="form-control"/>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="row">
+                                                            <div class="col-lg-12">
+                                                                <div class="form-heading">
+                                                                    <h6>Doctor’s details</h6>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-lg-12">
+                                                                <div class="form-group">
+                                                                    <label class="form-label label-light"><span class="label-no">14</span>Full name of the doctor who prescribed the prescription medecine</label>
+                                                                    <input type="text" class="form-control"/>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-12">
+                                                                <div class="form-group mb-2">
+                                                                    <label class="form-label label-light"><span class="label-no">15</span>Address</label>
+                                                                    <input type="text" class="form-control"/>
+                                                                </div>
+                                                                <div class="form-group mb-2">
+                                                                    <input type="text" class="form-control"/>
+                                                                </div>
+                                                                <div class="form-group mb-2">
+                                                                    <input type="text" class="form-control"/>
+                                                                </div>
+                                                                <div class="form-group mb-2">
+                                                                    <input type="text" class="form-control"/>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="row">
+                                                            <div class="col-lg-12">
+                                                                <div class="form-heading">
+                                                                    <h6>Pharmacist’s details</h6>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-lg-12">
+                                                                <div class="form-group">
+                                                                    <label class="form-label label-light"><span class="label-no">16</span>Full name of the doctor who prescribed the prescription medecine</label>
+                                                                    <input type="text" class="form-control"/>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-12">
+                                                                <div class="form-group mb-2">
+                                                                    <label class="form-label label-light"><span class="label-no">17</span>Address</label>
+                                                                    <input type="text" class="form-control"/>
+                                                                </div>
+                                                                <div class="form-group mb-2">
+                                                                    <input type="text" class="form-control"/>
+                                                                </div>
+                                                                <div class="form-group mb-2">
+                                                                    <input type="text" class="form-control"/>
+                                                                </div>
+                                                                <div class="form-group mb-2">
+                                                                    <input type="text" class="form-control"/>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <div class="form-heading">
+                                                            <h6>Declaration</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <div class="row">
+                                                            <div class="col-lg-12">
+                                                                <div class="form-group mb-2">
+                                                                    <label class="form-label label-light"><span class="label-no">18</span><span class="label-bold">I declare that:</span> The information on this form is correct.</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-6">
+                                                                <div class="form-group">
+                                                                    <label class="form-label label-light">Exporter’s signature</label>
+                                                                    <div class="signature-form signature-pad--body">
+                                                                        <canvas id="signature-input" class="signature-input" ></canvas>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-6">
+                                                                <div class="row">
+                                                                    <div class="col-lg-12">
+                                                                        <div class="form-group">
+                                                                            <label class="form-label label-light">Printed name</label>
+                                                                            <input type="text" class="form-control"/>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-12">
+                                                                        <div class="form-group">
+                                                                            <label class="form-label label-light">Date</label>
+                                                                            <input type="text" class="form-control"/>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>   
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <div class="form-heading">
+                                                            <h6>Privacy note</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <p class="form-info-note">
+                                                            The information on this declaration is collected for the the purpose of detecting and investigating breaches of the <i>National Health Act 1953.</i> We will not disclose this information to a third party unless authorised or required by law.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-footer">
+                    <p>© 2020 <a href="javascript:void(0);">Passfolio</a>. All rights reserved. ABN 13 132 738 142</p>
+                </div>
+            </div>
+            <div class="overlay_bg"></div>
+        </div>
+        
+        
+        <script src="assets/js/jquery-3.4.1.min.js"></script>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/lottie-player.js"></script>
+        <script src="assets/js/select2.full.min.js"></script>
+        <script src="assets/js/jquery.mCustomScrollbar.js"></script>
+        <script src="assets/js/jquery.dataTables.min.js"></script>
+        <script src="assets/js/apexcharts.min.js"></script>
+        <script src="assets/js/Sortable.js"></script>
+        <script src="assets/js/signature_pad.min.js"></script>
+        <script src="assets/js/custom.js"></script>
+        <script type="text/javascript">
+            var canvas = document.getElementById('signature-input');
+            function resizeCanvas() {
+                var ratio =  Math.max(window.devicePixelRatio || 1, 1);
+                canvas.width = canvas.offsetWidth * ratio;
+                canvas.height = canvas.offsetHeight * ratio;
+                canvas.getContext("2d").scale(ratio, ratio);
+            }
+            window.onresize = resizeCanvas;
+            resizeCanvas();
+
+            var signaturePad = new SignaturePad(canvas, {
+                backgroundColor: 'rgba(255,255,255,0)',
+            });
+
+
+
+            // ---mutli-level-dropdown
+            $(document).ready(function(){
+                  $('.dropdown-submenu a.test').on("click", function(e){
+                    $(this).next('ul').toggle();
+                    e.stopPropagation();
+                    e.preventDefault();
+                  });
+                });
+        </script>
+    </body>
+</html>
