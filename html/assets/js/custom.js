@@ -137,7 +137,7 @@ $(document).ready(function() {
 
 	var target = $('.navleft-menu ul li a[href="'+path+'"]');
 	// Add active class to target2 link
-	target.parent().addClass('active');
+	target.addClass('active');
 
 
 });
