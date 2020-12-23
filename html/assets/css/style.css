@@ -1290,7 +1290,9 @@ table.table-style.dataTable.display tbody tr:hover{
     padding-bottom: 40px;
 }
 .form-barcode-header {
-    display: flex;
+        display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
@@ -1320,6 +1322,18 @@ table.table-style.dataTable.display tbody tr:hover{
     font-size: 14px;
     margin-bottom: 0;
 }
+.right-action-buttons ul li{
+    display: inline-block;
+}
+.right-action-buttons ul li a{
+    display: inline-block;
+    padding: 4px 6px;
+    color: #8A93A6;
+    font-size: 14px;
+}
+.right-action-buttons ul li a:hover{
+    color: #01A39D;
+}
 .form-label-area{
     background-color: #1C85E8;
     display: flex;
@@ -1331,6 +1345,13 @@ table.table-style.dataTable.display tbody tr:hover{
 }
 .form-barcode-header .table-user-data{
     min-width: 265px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.form-barcode-header .right-action-buttons{
+    min-width: 265px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 .form-barcode-header .tb-user-dtl h6{
     font-size: 17px;
@@ -2410,6 +2431,6 @@ table.table-style.dataTable.display tbody tr:hover{
     margin-left: -28px;
     margin-bottom: 20px;
 }
-.drag-input-box>.form-group{
+.drag-input-box>.form-group:last-child{
     margin-bottom: 0;
 }

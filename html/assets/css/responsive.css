@@ -63,7 +63,9 @@
 }
 
 @media (max-width: 1199.98px) {
-    
+    .form-barcode-header .right-action-buttons{
+        min-width: inherit;
+    }
 }
 
 @media (max-width: 991.98px) {
@@ -192,13 +194,6 @@
     .dataTables_wrapper .dataTables_paginate{
         margin-bottom: 20px;
     }
-    .form-barcode-header{
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .barcode-flex-box{
-        margin-bottom: 25px;
-    }
     .form-content-area{
         max-width: inherit;
         padding-left: 20px;
@@ -260,6 +255,8 @@
     }
     .form-content-area{
         max-width: inherit;
+        padding-left: 5px;
+        padding-right: 5px;
     }
     .status-dropdown .dropdown-toggle{
         min-width: 170px;
@@ -342,6 +339,10 @@
         left: inherit;
         right: -17px;
         min-width: 290px;
+    }
+    .form-barcode-header .right-action-buttons{
+        width: 100%;
+        text-align: center;
     }
 
 }

@@ -647,6 +647,14 @@ select{
     border-color: #01a39d;
     background-color: #fff;
 }
+.has-green .form-control{
+    border-color: #00C48C;
+    background-color: #fff;
+}
+.has-yellow .form-control{
+    border-color: #F5AA3F;
+    background-color: #fff;
+}
 .has-typing .form-control{
     border-color: #1c85e8;
     background-color: #fff;
@@ -733,6 +741,17 @@ select{
     font-weight: 900;
     color: #fff; 
 }
+
+.has-yellow .custom-checkbox .custom-control-label:before,
+.has-yellow .custom-radio .custom-control-label:before{
+    border: 2px solid #F5AA3F;
+}
+.has-green .custom-checkbox .custom-control-label:before,
+.has-green .custom-radio .custom-control-label:before{
+    border: 2px solid #00C48C;
+}
+
+
 
 .custom-radio .custom-control-label{
     font-size: 14px;
