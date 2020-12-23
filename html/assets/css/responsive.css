@@ -25,6 +25,9 @@
     .modal-dialog.setting-dialog{
         max-width: 600px;
     }
+    .modal-dialog.modal-dialog-review{
+        max-width: 500px;
+    }
 }
 
 @media (min-width: 767.98px) {
@@ -210,6 +213,10 @@
     .popup-back.mt-align-back{
         margin-bottom: -24px;
     }
+    .user-msg-box .edit-delet-buttons{
+        visibility: visible;
+        opacity: 1;
+    }
 }
 
 @media (max-width: 575.98px) {
@@ -265,6 +272,12 @@
     .setting-modal-body{
         padding: 45px 12px;
     }
+    .form-dark-label-area{
+        flex-direction: column;
+    }
+    .page-list-no{
+        margin-bottom: 10px;
+    }
     
 }
 
@@ -312,10 +325,30 @@
         margin-right: 0px;
         margin-bottom: 12px;
     }
+    .note-drp-head-text{
+        margin-bottom: 8px;
+    }
+    .note-drp-header{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .user-msg-img img{
+        width: 30px;
+        height: 30px;
+        min-height: 30px;
+        min-width: 30px;
+    }
+    .note-dropdown-menu{
+        left: inherit;
+        right: -17px;
+        min-width: 290px;
+    }
 
 }
 
 
 @media (max-width: 349.98px) {
-	
+	.barcode-detail h5{
+        font-size: 16px;
+    }
 }

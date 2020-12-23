@@ -160,3 +160,57 @@ function TopbarStuck(){
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
+
+
+
+// ------note-dropdown------
+$(document).ready(function(){
+
+	// ---delete-dropdown
+	$('.delete-cmnt').on('click', function(e){
+		if ($(this).hasClass('open')) {
+			$(this).parents('.user-msg-box').removeClass('delete-box');
+			$(this).removeClass('open');
+			$(this).parents('.user-msg-box').find('.custom-dropdown-menu').addClass('show');
+			$(this).parents('.user-msg-box').find('.custom-toggle').addClass('open');
+		}else{
+			$('.delete-cmnt').removeClass('open');
+			$(this).addClass('open');
+			$('.user-msg-box').removeClass('delete-box');
+			$(this).parents('.user-msg-box').addClass('delete-box');
+			$(this).parents('.user-msg-box').find('.custom-dropdown-menu').removeClass('show');
+			$(this).parents('.user-msg-box').find('.custom-toggle').removeClass('open');
+		}
+		e.stopPropagation();
+	});	
+
+	// ---custom-dropdown
+    $('.custom-dropdown .custom-toggle').on("click", function(e){
+    	if ($(this).hasClass('open')) {
+			$(this).parent().find('.custom-dropdown-menu').removeClass('show');
+			$(this).removeClass('open');
+    	}else{
+    		$('.custom-toggle').removeClass('open');
+    		$(this).addClass('open');
+    		$('.custom-dropdown-menu').removeClass('show');
+    		$(this).parent().find('.custom-dropdown-menu').addClass('show');
+    		$('.user-msg-box').removeClass('delete-box');
+			$('.delete-cmnt').removeClass('open');
+    	}
+        e.stopPropagation();
+    });
+    $('.note-drp-header, .user-msg-box').on("click", function(e){
+    	if (!$(e.target).hasClass('show')) {
+            $(".custom-dropdown-menu").removeClass("show");
+            $('.custom-toggle').removeClass('open');
+            $('.user-msg-box').removeClass('delete-box');
+            $('.delete-cmnt').removeClass('open');
+        }
+        e.stopPropagation();
+    });
+    $(document).click('.user-msg-box', function(event) {
+        if (!$(event.target).hasClass('show')) {
+            $(".custom-dropdown-menu").removeClass("show");
+        }
+    });
+});

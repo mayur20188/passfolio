@@ -22,6 +22,17 @@
         <link rel="stylesheet" href="assets/css/style.css" media="all"/>
         <link rel="stylesheet" href="assets/css/responsive.css" media="all"/>
         <link rel="stylesheet" href="assets/css/custom.css" media="all"/>
+        <style type="text/css">
+            .dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -1px;
+}
+        </style>
     </head>
     <body>
         <div class="preloader">
@@ -402,21 +413,69 @@
                                             <div class="note-drp-head-tags">
                                                 <div class="note-tag-maped"><i class="fa fa-check mr-1"></i>Mapped</div>
                                                 <div class="note-tag-maped pending-tag">Pending</div>
+                                                <!-- <div class="table-status badge-danger">Denied</div> -->
                                             </div>
                                         </div>
                                         <div class="note-drp-content">
                                             <div class="user-msg-box">
                                                 <div class="user-msg-img">
-                                                    <img src="assets/images/avatar.jpg" alt=""/>
+                                                    <img src="assets/images/default-avatar.svg" alt=""/>
                                                 </div>
-                                                <p>The answer field is replaced with First Name and Last Name.</p>
-                                                <div class="edit-delet-buttons dropdown">
-                                                    <a href="javascript:void(0);" class="dropdown-toggle" id="actiondrp" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-display="static"><i class="fa fa-ellipsis-h"></i></a>
-                                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="actiondrp">
-                                                        gsgsgg
+                                                <div class="user-msg-text">
+                                                    <p>The answer field is replaced with First Name and Last Name.</p>
+                                                </div>
+                                                <div class="edit-delet-buttons custom-dropdown">
+                                                    <a href="javascript:void(0);" class="custom-toggle"><i class="fa fa-ellipsis-h"></i></a>
+                                                    <div class="custom-dropdown-menu">
+                                                        <ul class="edit-delete-links">
+                                                            <li><a href="javascript:void(0);">Edit</a></li>
+                                                            <li><a href="javascript:void(0);" class="delete-cmnt">Delete</a></li>
+                                                        </ul>
                                                     </div>
                                                 </div>
+                                                <div class="delete-dropdown">
+                                                    <h5><i class="fa fa-times-circle mr-2"></i>Remove comment?</h5>
+                                                    <ul>
+                                                        <li><a href="javascript:void(0);">Yes, Remove</a></li>
+                                                        <li><a href="javascript:void(0);" class="cancel-click">Cancel</a></li>
+                                                    </ul>
+                                                </div>
                                             </div>
+                                            <div class="user-msg-box">
+                                                <div class="user-msg-img">
+                                                    <img src="assets/images/avatar.jpg" alt=""/>
+                                                </div>
+                                                <div class="user-msg-text">
+                                                    <p>I want to keep it as a single input answer. Won’t it be possible?</p>
+                                                </div>
+                                                <div class="edit-delet-buttons custom-dropdown">
+                                                    <a href="javascript:void(0);" class="custom-toggle"><i class="fa fa-ellipsis-h"></i></a>
+                                                    <div class="custom-dropdown-menu">
+                                                        <ul class="edit-delete-links">
+                                                            <li><a href="javascript:void(0);">Edit</a></li>
+                                                            <li><a href="javascript:void(0);" class="delete-cmnt">Delete</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="delete-dropdown">
+                                                    <h5><i class="fa fa-times-circle mr-2"></i>Remove comment?</h5>
+                                                    <ul>
+                                                        <li><a href="javascript:void(0);">Yes, Remove</a></li>
+                                                        <li><a href="javascript:void(0);" class="cancel-click">Cancel</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="note-drp-footer">
+                                            <form action="">
+                                                <div class="form-group mb-0">
+                                                    <input type="text" placeholder="Write a reply..." class="form-control" />
+                                                </div>
+                                                <div class="form-group mb-0 mt-3">
+                                                    <button type="button" class="note-blue-btn" data-toggle="modal" data-target="#reviewcompletemodal">Reply</button>
+                                                    <button type="button" class="note-cancel-btn">Cancel</button>
+                                                </div>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
@@ -753,6 +812,32 @@
             </div>
             <div class="overlay_bg"></div>
         </div>
+
+
+        <div class="modal fade" id="reviewcompletemodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-review" role="document">
+                <div class="modal-content">
+                    <div class="modal-body d-modal-body">
+                        <div class="d-modal-content">
+                            <div class="review-complete-box">
+                                <div class="complete-header-img">
+                                    <img src="assets/images/avatar.jpg" alt=""/>
+                                </div>
+                                <div class="complete-header">
+                                    <h4>Form Review Completed</h4>
+                                    <p>All items have been reviewed. The form has been approved and ready for published.</p>
+                                </div>
+                                <div class="complete-buttons">
+                                    <button class="default-btn btn-small mt-1">Publish Form</button>
+                                    <button class="default-outline-btn btn-small ml-1 mt-1">Edit Form</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         
         
         <script src="assets/js/jquery-3.4.1.min.js"></script>
@@ -781,16 +866,6 @@
                 backgroundColor: 'rgba(255,255,255,0)',
             });
 
-
-
-            // ---mutli-level-dropdown
-            $(document).ready(function(){
-                  $('.dropdown-submenu a.test').on("click", function(e){
-                    $(this).next('ul').toggle();
-                    e.stopPropagation();
-                    e.preventDefault();
-                  });
-                });
         </script>
     </body>
 </html>
