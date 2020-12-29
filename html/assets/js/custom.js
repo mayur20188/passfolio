@@ -143,7 +143,7 @@ $(document).ready(function() {
 });
 
 function TopbarStuck(){
-	$(window).scroll(function(){
+	$(window).on('scroll load', function(){
 		var headerHeight = $('.top-bar');
 		var scroll = $(window).scrollTop();
 		if (scroll >= 50)
