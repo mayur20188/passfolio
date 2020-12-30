@@ -1040,7 +1040,10 @@ table.table-style.dataTable.display tbody tr:hover{
     background-color: #8a93a62e;
     color: #8A93A6;
 }
-.actions-links-data ul li a:hover,
+.actions-links-data ul li a:hover{
+    background-color: #d9f1f0;
+    color: #01A39D;
+}
 .actions-links-data ul li.active a{
     background-color: #01A39D;
     color: #fff;
