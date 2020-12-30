@@ -211,6 +211,9 @@ $(document).ready(function(){
     $(document).click('.user-msg-box', function(event) {
         if (!$(event.target).hasClass('show')) {
             $(".custom-dropdown-menu").removeClass("show");
+            $('.custom-toggle').removeClass('open');
+            $('.user-msg-box').removeClass('delete-box');
+            $('.delete-cmnt').removeClass('open');
         }
     });
 });
