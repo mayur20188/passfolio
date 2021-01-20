@@ -217,3 +217,18 @@ $(document).ready(function(){
         }
     });
 });
+
+
+
+
+$('[data-tootltip-length="small"]').tooltip({
+  template: '<div class="tooltip tooltip-small bs-tooltip-top" role="tooltip"><div class="arrow"></div><div class="tooltip-inner">Some tooltip text!</div></div>'
+})
+
+
+
+$(document).ready(function(){
+	$('.more-qst-btn').click(function(){
+		$('.question-container').toggleClass('show');
+	});
+});

@@ -1284,6 +1284,7 @@ table.table-style.dataTable.display tbody tr:hover{
 .form-card{
     background-color: #fff;
     border-radius: 14px;
+    position: relative;
 }
 
 .form-body{
