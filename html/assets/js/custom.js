@@ -114,6 +114,9 @@ $(document).ready(function() {
     $(document).ready(function(e) {
         $('.search-filter-btn, .search-close-icon').click(function(event) {
             $(".serach-store-box").toggleClass("active");
+            setTimeout(()=>{
+            		$(".search-store-input").focus();
+    		}, 300);
             event.stopPropagation();
         });
         $(".serach-store-box").click(function(event) {
