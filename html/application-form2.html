@@ -22,6 +22,53 @@
         <link rel="stylesheet" href="assets/css/style.css" media="all"/>
         <link rel="stylesheet" href="assets/css/responsive.css" media="all"/>
         <link rel="stylesheet" href="assets/css/custom.css" media="all"/>
+        <style type="text/css">
+            .toolbar-accordion {
+                border: 1px solid #d6e9fb;
+                border-radius: 4px;
+                margin: 5px 0px;
+            }
+            .toolbar-card{
+                border-bottom: 1px solid #d6e9fb;
+            }
+            .toolbar-card:last-child{
+                border-bottom: none;
+            }
+            .tool-collapse-link{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                padding: 12px 18px;
+                cursor: pointer;
+                font-size: 13px;
+                font-weight: 500;
+                color: #102a5e;
+            }
+            .tool-collapse-link span{
+                display: inline-block;
+                margin-right: 8px;
+            }
+            .tool-collapse-link[aria-expanded="true"]{
+                background-color: #d6e9fb;
+                color: #1c85e8;
+            }
+            .tool-collapse-link[aria-expanded="true"] i{
+                transform: rotate(180deg);
+            }
+            .tool-collapse-link i{
+                font-size: 12px;
+                transition: 0.5s;
+            }
+            .toolbar-body{
+                padding: 10px 0px;
+                border-top: 1px solid #d6e9fb;
+            }
+            .toolbar-body .qst-serach{
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        </style>
     </head>
     <body>
         <div class="preloader">
@@ -351,17 +398,412 @@
                                                 <img src="assets/images/tool-icon/actions.svg" alt=""> 
                                             </div>
                                         </div>
-                                        <div class="qst-serach">
+                                        <!-- <div class="qst-serach">
                                             <div class="form-group mb-2">
                                                 <div class="left-input-icon question-input">
                                                     <input type="text" class="form-control" placeholder="Search..." />
                                                     <button class="left-icon search-btn-submit"><i class="feather icon-search text-success"></i></button>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> -->
                                         <div class="qst-body mCustomScrollbar">
                                             <div class="row">
-                                                <div class="col-sm-6">
+                                                <div class="col-md-12">
+                                                    <div class="accordion toolbar-accordion" id="toolbar_accordion">
+                                                        <div class="toolbar-card">
+                                                            <div class="toolbar-header">
+                                                                <div class="tool-collapse-link" data-toggle="collapse" data-target="#tooldata1" aria-expanded="true" aria-controls="tooldata1">
+                                                                    <span>PRF</span>
+                                                                    <i class="fa fa-chevron-down"></i>
+                                                                </div>
+                                                            </div>
+                                                            <div id="tooldata1" class="collapse show" data-parent="#toolbar_accordion">
+                                                                <div class="toolbar-body">
+                                                                    <div class="qst-serach">
+                                                                        <div class="form-group mb-2">
+                                                                            <div class="left-input-icon question-input">
+                                                                                <input type="text" class="form-control" placeholder="Search..." />
+                                                                                <button class="left-icon search-btn-submit"><i class="feather icon-search text-success"></i></button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-sm-6">
+                                                                            <div class="qst-box">
+                                                                                <img src="assets/images/tool-icon/name.svg" alt="">
+                                                                                <span>Name</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-sm-6">
+                                                                            <div class="qst-box">
+                                                                                <img src="assets/images/tool-icon/short-answer.svg" alt="">
+                                                                                <span>Short answer</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-sm-6">
+                                                                            <div class="qst-box">
+                                                                                <img src="assets/images/tool-icon/date.svg" alt="">
+                                                                                <span>Date</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-sm-6">
+                                                                            <div class="qst-box">
+                                                                                <img src="assets/images/tool-icon/paragraph.svg" alt="">
+                                                                                <span>Paragraph</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-sm-6">
+                                                                            <div class="qst-box">
+                                                                                <img src="assets/images/tool-icon/time.svg" alt="">
+                                                                                <span>Time</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-sm-6">
+                                                                            <div class="qst-box">
+                                                                                <img src="assets/images/tool-icon/multiple-choice.svg" alt="">
+                                                                                <span>Multiple choice</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-sm-6">
+                                                                            <div class="qst-box">
+                                                                                <img src="assets/images/tool-icon/address.svg" alt="">
+                                                                                <span>Address</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-sm-6">
+                                                                            <div class="qst-box">
+                                                                                <img src="assets/images/tool-icon/checkboxes.svg" alt="">
+                                                                                <span>Checkboxes</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-sm-6">
+                                                                            <div class="qst-box">
+                                                                                <img src="assets/images/tool-icon/gender.svg" alt="">
+                                                                                <span>Gender</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-sm-6">
+                                                                            <div class="qst-box">
+                                                                                <img src="assets/images/tool-icon/dropdown.svg" alt="">
+                                                                                <span>Dropdown</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-sm-6">
+                                                                            <div class="qst-box">
+                                                                                <img src="assets/images/tool-icon/phone-number.svg" alt="">
+                                                                                <span>Phone number</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-sm-6">
+                                                                            <div class="qst-box">
+                                                                                <img src="assets/images/tool-icon/file-upload.svg" alt="">
+                                                                                <span>File upload</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-sm-6">
+                                                                            <div class="qst-box">
+                                                                                <img src="assets/images/tool-icon/email.svg" alt="">
+                                                                                <span>Email</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-sm-6">
+                                                                            <div class="qst-box">
+                                                                                <img src="assets/images/tool-icon/linear.svg" alt="">
+                                                                                <span>Linear scale</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-sm-6">
+                                                                            <div class="qst-box">
+                                                                                <img src="assets/images/tool-icon/website.svg" alt="">
+                                                                                <span>Website</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-sm-6">
+                                                                            <div class="qst-box">
+                                                                                <img src="assets/images/tool-icon/multiple-choice-grid.svg" alt="">
+                                                                                <span>Multiple-choice grid</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-sm-6">
+                                                                            <div class="qst-box">
+                                                                                <img src="assets/images/tool-icon/signature.svg" alt="">
+                                                                                <span>Signature</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-sm-6">
+                                                                            <div class="qst-box">
+                                                                                <img src="assets/images/tool-icon/tick-box-grid.svg" alt="">
+                                                                                <span>Tick box grid</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="toolbar-card">
+                                                            <div class="toolbar-header">
+                                                                <div class="tool-collapse-link" data-toggle="collapse" data-target="#tooldata2" aria-expanded="false" aria-controls="tooldata2">
+                                                                    <span>PRF</span>
+                                                                    <i class="fa fa-chevron-down"></i>
+                                                                </div>
+                                                            </div>
+                                                            <div id="tooldata2" class="collapse" data-parent="#toolbar_accordion">
+                                                                <div class="toolbar-body">
+                                                                    <div class="qst-serach">
+                                                                        <div class="form-group mb-2">
+                                                                            <div class="left-input-icon question-input">
+                                                                                <input type="text" class="form-control" placeholder="Search..." />
+                                                                                <button class="left-icon search-btn-submit"><i class="feather icon-search text-success"></i></button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-sm-6">
+                                                                            <div class="qst-box">
+                                                                                <img src="assets/images/tool-icon/name.svg" alt="">
+                                                                                <span>Name</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-sm-6">
+                                                                            <div class="qst-box">
+                                                                                <img src="assets/images/tool-icon/short-answer.svg" alt="">
+                                                                                <span>Short answer</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-sm-6">
+                                                                            <div class="qst-box">
+                                                                                <img src="assets/images/tool-icon/date.svg" alt="">
+                                                                                <span>Date</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-sm-6">
+                                                                            <div class="qst-box">
+                                                                                <img src="assets/images/tool-icon/paragraph.svg" alt="">
+                                                                                <span>Paragraph</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-sm-6">
+                                                                            <div class="qst-box">
+                                                                                <img src="assets/images/tool-icon/time.svg" alt="">
+                                                                                <span>Time</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-sm-6">
+                                                                            <div class="qst-box">
+                                                                                <img src="assets/images/tool-icon/multiple-choice.svg" alt="">
+                                                                                <span>Multiple choice</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-sm-6">
+                                                                            <div class="qst-box">
+                                                                                <img src="assets/images/tool-icon/address.svg" alt="">
+                                                                                <span>Address</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-sm-6">
+                                                                            <div class="qst-box">
+                                                                                <img src="assets/images/tool-icon/checkboxes.svg" alt="">
+                                                                                <span>Checkboxes</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-sm-6">
+                                                                            <div class="qst-box">
+                                                                                <img src="assets/images/tool-icon/gender.svg" alt="">
+                                                                                <span>Gender</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-sm-6">
+                                                                            <div class="qst-box">
+                                                                                <img src="assets/images/tool-icon/dropdown.svg" alt="">
+                                                                                <span>Dropdown</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-sm-6">
+                                                                            <div class="qst-box">
+                                                                                <img src="assets/images/tool-icon/phone-number.svg" alt="">
+                                                                                <span>Phone number</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-sm-6">
+                                                                            <div class="qst-box">
+                                                                                <img src="assets/images/tool-icon/file-upload.svg" alt="">
+                                                                                <span>File upload</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-sm-6">
+                                                                            <div class="qst-box">
+                                                                                <img src="assets/images/tool-icon/email.svg" alt="">
+                                                                                <span>Email</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-sm-6">
+                                                                            <div class="qst-box">
+                                                                                <img src="assets/images/tool-icon/linear.svg" alt="">
+                                                                                <span>Linear scale</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-sm-6">
+                                                                            <div class="qst-box">
+                                                                                <img src="assets/images/tool-icon/website.svg" alt="">
+                                                                                <span>Website</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-sm-6">
+                                                                            <div class="qst-box">
+                                                                                <img src="assets/images/tool-icon/multiple-choice-grid.svg" alt="">
+                                                                                <span>Multiple-choice grid</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-sm-6">
+                                                                            <div class="qst-box">
+                                                                                <img src="assets/images/tool-icon/signature.svg" alt="">
+                                                                                <span>Signature</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-sm-6">
+                                                                            <div class="qst-box">
+                                                                                <img src="assets/images/tool-icon/tick-box-grid.svg" alt="">
+                                                                                <span>Tick box grid</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="toolbar-card">
+                                                            <div class="toolbar-header">
+                                                                <div class="tool-collapse-link" data-toggle="collapse" data-target="#tooldata3" aria-expanded="false" aria-controls="tooldata3">
+                                                                    <span>PRF</span>
+                                                                    <i class="fa fa-chevron-down"></i>
+                                                                </div>
+                                                            </div>
+                                                            <div id="tooldata3" class="collapse" data-parent="#toolbar_accordion">
+                                                                <div class="toolbar-body">
+                                                                    <div class="qst-serach">
+                                                                        <div class="form-group mb-2">
+                                                                            <div class="left-input-icon question-input">
+                                                                                <input type="text" class="form-control" placeholder="Search..." />
+                                                                                <button class="left-icon search-btn-submit"><i class="feather icon-search text-success"></i></button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-sm-6">
+                                                                            <div class="qst-box">
+                                                                                <img src="assets/images/tool-icon/name.svg" alt="">
+                                                                                <span>Name</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-sm-6">
+                                                                            <div class="qst-box">
+                                                                                <img src="assets/images/tool-icon/short-answer.svg" alt="">
+                                                                                <span>Short answer</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-sm-6">
+                                                                            <div class="qst-box">
+                                                                                <img src="assets/images/tool-icon/date.svg" alt="">
+                                                                                <span>Date</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-sm-6">
+                                                                            <div class="qst-box">
+                                                                                <img src="assets/images/tool-icon/paragraph.svg" alt="">
+                                                                                <span>Paragraph</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-sm-6">
+                                                                            <div class="qst-box">
+                                                                                <img src="assets/images/tool-icon/time.svg" alt="">
+                                                                                <span>Time</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-sm-6">
+                                                                            <div class="qst-box">
+                                                                                <img src="assets/images/tool-icon/multiple-choice.svg" alt="">
+                                                                                <span>Multiple choice</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-sm-6">
+                                                                            <div class="qst-box">
+                                                                                <img src="assets/images/tool-icon/address.svg" alt="">
+                                                                                <span>Address</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-sm-6">
+                                                                            <div class="qst-box">
+                                                                                <img src="assets/images/tool-icon/checkboxes.svg" alt="">
+                                                                                <span>Checkboxes</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-sm-6">
+                                                                            <div class="qst-box">
+                                                                                <img src="assets/images/tool-icon/gender.svg" alt="">
+                                                                                <span>Gender</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-sm-6">
+                                                                            <div class="qst-box">
+                                                                                <img src="assets/images/tool-icon/dropdown.svg" alt="">
+                                                                                <span>Dropdown</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-sm-6">
+                                                                            <div class="qst-box">
+                                                                                <img src="assets/images/tool-icon/phone-number.svg" alt="">
+                                                                                <span>Phone number</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-sm-6">
+                                                                            <div class="qst-box">
+                                                                                <img src="assets/images/tool-icon/file-upload.svg" alt="">
+                                                                                <span>File upload</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-sm-6">
+                                                                            <div class="qst-box">
+                                                                                <img src="assets/images/tool-icon/email.svg" alt="">
+                                                                                <span>Email</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-sm-6">
+                                                                            <div class="qst-box">
+                                                                                <img src="assets/images/tool-icon/linear.svg" alt="">
+                                                                                <span>Linear scale</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-sm-6">
+                                                                            <div class="qst-box">
+                                                                                <img src="assets/images/tool-icon/website.svg" alt="">
+                                                                                <span>Website</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-sm-6">
+                                                                            <div class="qst-box">
+                                                                                <img src="assets/images/tool-icon/multiple-choice-grid.svg" alt="">
+                                                                                <span>Multiple-choice grid</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-sm-6">
+                                                                            <div class="qst-box">
+                                                                                <img src="assets/images/tool-icon/signature.svg" alt="">
+                                                                                <span>Signature</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-sm-6">
+                                                                            <div class="qst-box">
+                                                                                <img src="assets/images/tool-icon/tick-box-grid.svg" alt="">
+                                                                                <span>Tick box grid</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- <div class="col-sm-6">
                                                     <div class="qst-box">
                                                         <img src="assets/images/tool-icon/name.svg" alt="">
                                                         <span>Name</span>
@@ -468,7 +910,7 @@
                                                         <img src="assets/images/tool-icon/tick-box-grid.svg" alt="">
                                                         <span>Tick box grid</span>
                                                     </div>
-                                                </div>
+                                                </div> -->
                                                 
                                             </div>
                                         </div>
