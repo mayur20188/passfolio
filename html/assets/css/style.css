@@ -2438,3 +2438,56 @@ table.table-style.dataTable.display tbody tr:hover{
 .drag-input-box>.form-group:last-child{
     margin-bottom: 0;
 }
+
+
+/*---------------*/
+.form-input-group {
+    display: flex;
+    align-items: center;
+}
+.form-input-group .form-control{
+    border: 2px solid #e6e8f3;
+}
+.form-input-right .form-control{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.form-input-left .form-control{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.form-input-right .input-addon-text{
+    margin-left: -2px;
+}
+.form-input-left{
+    flex-direction: row-reverse;
+}
+.form-input-left .input-addon-text{
+    margin-right: -2px;
+}
+.input-addon-text{
+    border: 2px solid #e6e8f3;
+    color: #445882;
+    height: auto;
+    padding: 12px 20px;
+    border-radius: 7px;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    background-color: #F6F7FB;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.form-input-right .input-addon-text{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.form-input-left .input-addon-text{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.form-input-group .form-control:focus,
+.form-input-group .form-control:focus + .input-addon-text{
+    box-shadow: none;
+    border-color: #1C85E8;
+    background-color: #fff;
+}
