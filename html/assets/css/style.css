@@ -2491,3 +2491,23 @@ table.table-style.dataTable.display tbody tr:hover{
     border-color: #1C85E8;
     background-color: #fff;
 }
+.has-error .form-input-group .form-control,
+.has-error .form-input-group .form-control:focus + .input-addon-text,
+.has-error .input-addon-text{
+    border-color: #FF9594;
+    background-color: #fff;
+}
+.has-success .form-input-group .form-control,
+.has-success .form-input-group .form-control:focus + .input-addon-text,
+.has-success .input-addon-text{
+    border-color: #01a39d;
+    background-color: #fff;
+}
+.has-typing .form-input-group .form-control,
+.has-typing .form-input-group .form-control:focus + .input-addon-text,
+.has-typing .input-addon-text{
+    border-color: #1c85e8;
+    background-color: #fff;
+}
+
+
